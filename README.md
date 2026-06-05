@@ -1,3 +1,3 @@
 # Cross-modal-Feature-Alignment
 
-![Model Architecture](figures/pipeline.png)
+![Experiment Pipeline](figures/pipeline.png)
