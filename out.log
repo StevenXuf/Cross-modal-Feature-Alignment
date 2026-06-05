@@ -1,0 +1,127 @@
+imdb clip
+Wasserstein dist: 60.74
+imdb blip_official_itm
+Wasserstein dist: 42.72
+imdb metatransformer
+Wasserstein dist: 125.12
+imdb resnet/bert
+Wasserstein dist: 528.40
+imdb convit/roberta
+Wasserstein dist: 114.83
+imdb convnext/xlnet
+Wasserstein dist: 11668.23
+flickr30k clip
+Wasserstein dist: 56.40
+flickr30k blip_official_itm
+Wasserstein dist: 43.18
+flickr30k metatransformer
+Wasserstein dist: 80.52
+flickr30k resnet/bert
+Wasserstein dist: 524.39
+flickr30k convit/roberta
+Wasserstein dist: 99.20
+flickr30k convnext/xlnet
+Wasserstein dist: 8186.30
+coco_train clip
+Wasserstein dist: 60.41
+coco_train blip_official_itm
+Wasserstein dist: 41.89
+coco_train metatransformer
+Wasserstein dist: 75.68
+coco_train resnet/bert
+Wasserstein dist: 525.61
+coco_train convit/roberta
+Wasserstein dist: 102.50
+coco_train convnext/xlnet
+Wasserstein dist: 6916.52
+********************
+clip imdb
+********************
+Original MG: 8.65
+Reduced KL divergence: 53.96
+********************
+blip_official_itm imdb
+********************
+Original MG: 7.01
+Reduced KL divergence: 52.90
+********************
+metatransformer imdb
+********************
+Original MG: 12.46
+Reduced KL divergence: 68.91
+********************
+resnet/bert imdb
+********************
+Original MG: 27.10
+Reduced KL divergence: 78.49
+********************
+convit/roberta imdb
+********************
+Original MG: 14.07
+Reduced KL divergence: 58.44
+********************
+convnext/xlnet imdb
+********************
+Original MG: 149.71
+Reduced KL divergence: 73.30
+********************
+clip flickr30k
+********************
+Original MG: 7.15
+Reduced KL divergence: 47.76
+********************
+blip_official_itm flickr30k
+********************
+Original MG: 6.49
+Reduced KL divergence: 73.29
+********************
+metatransformer flickr30k
+********************
+Original MG: 9.55
+Reduced KL divergence: 85.50
+********************
+resnet/bert flickr30k
+********************
+Original MG: 25.66
+Reduced KL divergence: 68.21
+********************
+convit/roberta flickr30k
+********************
+Original MG: 12.79
+Reduced KL divergence: 68.73
+********************
+convnext/xlnet flickr30k
+********************
+Original MG: 122.59
+Reduced KL divergence: 96.47
+********************
+clip coco_train
+********************
+Original MG: 7.68
+Reduced KL divergence: 66.72
+********************
+blip_official_itm coco_train
+********************
+Original MG: 6.25
+Reduced KL divergence: 89.39
+********************
+metatransformer coco_train
+********************
+Original MG: 9.08
+Reduced KL divergence: 98.60
+********************
+resnet/bert coco_train
+********************
+Original MG: 25.07
+Reduced KL divergence: 77.48
+********************
+convit/roberta coco_train
+********************
+Original MG: 12.83
+Reduced KL divergence: 92.89
+********************
+convnext/xlnet coco_train
+********************
+Original MG: 111.86
+Reduced KL divergence: 75.65
+Figure saved!

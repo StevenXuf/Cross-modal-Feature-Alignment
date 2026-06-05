@@ -1,0 +1,24 @@
+clip imdb
+tensor([32.0155, 12.3656])
+tensor([-34.2456, -14.0268])
+tensor([ 4.3242, -0.0370], dtype=torch.float64)
+tensor([-4.3242,  0.0370], dtype=torch.float64)
+Figure saved!
+clip flickr30k
+tensor([-42.5952,  -3.6079])
+tensor([42.6366,  3.1745])
+tensor([-3.5736, -0.0889], dtype=torch.float64)
+tensor([3.5736, 0.0889], dtype=torch.float64)
+Figure saved!
+clip celebA
+tensor([-47.3399,   2.8671])
+tensor([48.0268, -4.6663])
+tensor([-4.7919, -0.0117], dtype=torch.float64)
+tensor([4.7919, 0.0117], dtype=torch.float64)
+Figure saved!
+clip coco_train
+tensor([45.7846,  1.3462])
+tensor([-47.6368,  -0.8142])
+tensor([3.8399, 0.0309], dtype=torch.float64)
+tensor([-3.8399, -0.0309], dtype=torch.float64)
+Figure saved!

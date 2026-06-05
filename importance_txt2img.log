@@ -1,0 +1,132 @@
+
+Model: clip, Dataset: imdb
+
+Metric: cosine
+Top-10: [92, 312, 133, 402, 364, 329, 45, 481, 258, 106]
+Number of shared dims: 10
+Percentage of importance of shared dims: 100.00%
+
+Metric: euclidean
+Top-10: [133, 312, 92, 329, 402, 364, 45, 258, 481, 106]
+Number of shared dims: 10
+Percentage of importance of shared dims: 100.00%
+
+Metric: manhattan
+Top-10: [312, 133, 92, 329, 481, 121, 220, 45, 390, 493]
+Number of shared dims: 6
+Percentage of importance of shared dims: 89.97%
+
+Metric: chi-squre
+Top-10: [96, 32, 464, 264, 53, 369, 458, 46, 255, 48]
+Number of shared dims: 0
+Percentage of importance of shared dims: 0.00%
+
+Model: blip, Dataset: imdb
+
+Metric: cosine
+Top-10: [457, 231, 43, 474, 452, 189, 66, 162, 174, 426]
+Number of shared dims: 10
+Percentage of importance of shared dims: 100.00%
+
+Metric: euclidean
+Top-10: [457, 231, 43, 259, 452, 189, 174, 410, 148, 255]
+Number of shared dims: 6
+Percentage of importance of shared dims: 67.40%
+
+Metric: manhattan
+Top-10: [457, 259, 43, 148, 410, 218, 231, 126, 388, 189]
+Number of shared dims: 4
+Percentage of importance of shared dims: 40.88%
+
+Metric: chi-squre
+Top-10: [21, 388, 33, 36, 127, 185, 18, 126, 160, 498]
+Number of shared dims: 0
+Percentage of importance of shared dims: 0.00%
+
+Model: clip, Dataset: flickr30k
+
+Metric: cosine
+Top-10: [92, 133, 312, 493, 67, 376, 106, 152, 329, 317]
+Number of shared dims: 10
+Percentage of importance of shared dims: 100.00%
+
+Metric: euclidean
+Top-10: [92, 133, 312, 493, 67, 376, 106, 329, 152, 317]
+Number of shared dims: 10
+Percentage of importance of shared dims: 100.00%
+
+Metric: manhattan
+Top-10: [92, 133, 312, 493, 67, 329, 317, 121, 106, 152]
+Number of shared dims: 9
+Percentage of importance of shared dims: 95.55%
+
+Metric: chi-squre
+Top-10: [261, 189, 19, 225, 115, 440, 407, 230, 427, 394]
+Number of shared dims: 0
+Percentage of importance of shared dims: nan%
+
+Model: blip, Dataset: flickr30k
+
+Metric: cosine
+Top-10: [65, 231, 457, 255, 361, 265, 410, 67, 207, 398]
+Number of shared dims: 10
+Percentage of importance of shared dims: 100.00%
+
+Metric: euclidean
+Top-10: [231, 457, 410, 259, 255, 65, 174, 67, 148, 266]
+Number of shared dims: 6
+Percentage of importance of shared dims: 63.76%
+
+Metric: manhattan
+Top-10: [259, 148, 410, 231, 457, 218, 432, 255, 174, 479]
+Number of shared dims: 4
+Percentage of importance of shared dims: 40.80%
+
+Metric: chi-squre
+Top-10: [482, 489, 61, 189, 290, 174, 459, 36, 486, 253]
+Number of shared dims: 0
+Percentage of importance of shared dims: nan%
+
+Model: clip, Dataset: coco_train
+
+Metric: cosine
+Top-10: [92, 312, 133, 493, 67, 329, 121, 376, 106, 317]
+Number of shared dims: 10
+Percentage of importance of shared dims: 100.00%
+
+Metric: euclidean
+Top-10: [92, 312, 133, 493, 329, 67, 121, 376, 106, 317]
+Number of shared dims: 10
+Percentage of importance of shared dims: 100.00%
+
+Metric: manhattan
+Top-10: [312, 133, 92, 493, 329, 121, 67, 423, 317, 390]
+Number of shared dims: 8
+Percentage of importance of shared dims: 92.68%
+
+Metric: chi-squre
+Top-10: [287, 321, 213, 195, 182, 168, 424, 8, 335, 95]
+Number of shared dims: 0
+Percentage of importance of shared dims: nan%
+
+Model: blip, Dataset: coco_train
+
+Metric: cosine
+Top-10: [65, 255, 457, 231, 71, 361, 376, 43, 207, 174]
+Number of shared dims: 10
+Percentage of importance of shared dims: 100.00%
+
+Metric: euclidean
+Top-10: [457, 255, 231, 376, 410, 43, 65, 259, 174, 266]
+Number of shared dims: 7
+Percentage of importance of shared dims: 72.97%
+
+Metric: manhattan
+Top-10: [259, 410, 457, 231, 148, 218, 376, 432, 43, 174]
+Number of shared dims: 5
+Percentage of importance of shared dims: 48.35%
+
+Metric: chi-squre
+Top-10: [23, 126, 383, 328, 457, 128, 441, 444, 243, 440]
+Number of shared dims: 1
+Percentage of importance of shared dims: nan%

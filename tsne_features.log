@@ -1,0 +1,91 @@
+tensor([ 31.5678, -13.4645])
+tensor([-31.9944,  14.6233])
+Approximate KL Divergence: 57.13802617609491
+KL divergence: 57.14
+(4000,)
+tensor([36.2584, -0.3815])
+tensor([-38.0131,   0.4794])
+Approximate KL Divergence: 54.9422245608935
+KL divergence: 54.94
+(4000,)
+tensor([-27.1604, -21.3182])
+tensor([29.2327, 22.4636])
+Approximate KL Divergence: 39.82217511912333
+KL divergence: 39.82
+(4000,)
+tensor([-34.9027,  -5.1101])
+tensor([33.4402,  5.2697])
+Approximate KL Divergence: 67.52017905885906
+KL divergence: 67.52
+(4000,)
+tensor([38.6382,  1.7012])
+tensor([-38.0283,  -1.1476])
+Approximate KL Divergence: 45.85628134943643
+KL divergence: 45.86
+(4000,)
+tensor([34.0512,  0.7100])
+tensor([-35.3053,  -0.3092])
+Approximate KL Divergence: 49.75945655305456
+KL divergence: 49.76
+(4000,)
+tensor([42.5270, -3.7695])
+tensor([-42.7178,   3.3595])
+Approximate KL Divergence: 28.024203737715826
+KL divergence: 28.02
+(4000,)
+tensor([-41.9632,   2.9512])
+tensor([42.7302, -3.3608])
+Approximate KL Divergence: 79.06823464350555
+KL divergence: 79.07
+(4000,)
+tensor([-36.0332, -22.0323])
+tensor([36.8043, 22.7807])
+Approximate KL Divergence: 70.31832673470025
+KL divergence: 70.32
+(4000,)
+tensor([-39.0645,  12.1486])
+tensor([ 39.3136, -12.4514])
+Approximate KL Divergence: 110.21416501944722
+KL divergence: 110.21
+(4000,)
+tensor([36.3274,  2.8821])
+tensor([-36.8420,  -3.1134])
+Approximate KL Divergence: 42.32136564137409
+KL divergence: 42.32
+(4000,)
+tensor([39.0608, 14.9244])
+tensor([-38.6582, -14.1495])
+Approximate KL Divergence: 52.72997258170493
+KL divergence: 52.73
+(4000,)
+tensor([45.6552,  1.2865])
+tensor([-47.5683,  -0.7068])
+Approximate KL Divergence: 50.74615484263106
+KL divergence: 50.75
+(4000,)
+tensor([-45.9549,  -0.9626])
+tensor([48.9970,  1.8853])
+Approximate KL Divergence: 101.19511424693144
+KL divergence: 101.20
+(4000,)
+tensor([-35.3680, -28.6134])
+tensor([37.8945, 31.4246])
+Approximate KL Divergence: 118.81516701755767
+KL divergence: 118.82
+(4000,)
+tensor([-42.5494,   3.6829])
+tensor([45.6161, -3.9360])
+Approximate KL Divergence: 79.32044312488384
+KL divergence: 79.32
+(4000,)
+tensor([42.9056,  2.6981])
+tensor([-44.4300,  -3.5408])
+Approximate KL Divergence: 99.32808762801619
+KL divergence: 99.33
+(4000,)
+tensor([43.2172,  5.8459])
+tensor([-42.7651,  -6.7410])
+Approximate KL Divergence: 55.292022817226176
+KL divergence: 55.29
+(4000,)
+Figure saved!

@@ -1,0 +1,556 @@
+W0429 17:51:04.115000 127308326047744 torch/distributed/run.py:757] 
+W0429 17:51:04.115000 127308326047744 torch/distributed/run.py:757] *****************************************
+W0429 17:51:04.115000 127308326047744 torch/distributed/run.py:757] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0429 17:51:04.115000 127308326047744 torch/distributed/run.py:757] *****************************************
+/home/fxu/alignment/convit_models.py:18: UserWarning: Overwriting convit_tiny in registry with convit_models.convit_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_tiny(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:34: UserWarning: Overwriting convit_small in registry with convit_models.convit_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_small(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:50: UserWarning: Overwriting convit_base in registry with convit_models.convit_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_base(pretrained=False, embed_dim=48,**kwargs):
+/home/fxu/alignment/ConvNeXt.py:160: UserWarning: Overwriting convnext_tiny in registry with ConvNeXt.convnext_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_tiny(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:169: UserWarning: Overwriting convnext_small in registry with ConvNeXt.convnext_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_small(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:178: UserWarning: Overwriting convnext_base in registry with ConvNeXt.convnext_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_base(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:187: UserWarning: Overwriting convnext_large in registry with ConvNeXt.convnext_large. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_large(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:196: UserWarning: Overwriting convnext_xlarge in registry with ConvNeXt.convnext_xlarge. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_xlarge(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/convit_models.py:18: UserWarning: Overwriting convit_tiny in registry with convit_models.convit_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_tiny(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:34: UserWarning: Overwriting convit_small in registry with convit_models.convit_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_small(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:50: UserWarning: Overwriting convit_base in registry with convit_models.convit_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_base(pretrained=False, embed_dim=48,**kwargs):
+/home/fxu/alignment/ConvNeXt.py:160: UserWarning: Overwriting convnext_tiny in registry with ConvNeXt.convnext_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_tiny(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:169: UserWarning: Overwriting convnext_small in registry with ConvNeXt.convnext_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_small(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:178: UserWarning: Overwriting convnext_base in registry with ConvNeXt.convnext_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_base(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:187: UserWarning: Overwriting convnext_large in registry with ConvNeXt.convnext_large. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_large(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:196: UserWarning: Overwriting convnext_xlarge in registry with ConvNeXt.convnext_xlarge. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_xlarge(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/convit_models.py:18: UserWarning: Overwriting convit_tiny in registry with convit_models.convit_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_tiny(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:34: UserWarning: Overwriting convit_small in registry with convit_models.convit_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_small(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:50: UserWarning: Overwriting convit_base in registry with convit_models.convit_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_base(pretrained=False, embed_dim=48,**kwargs):
+/home/fxu/alignment/ConvNeXt.py:160: UserWarning: Overwriting convnext_tiny in registry with ConvNeXt.convnext_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_tiny(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:169: UserWarning: Overwriting convnext_small in registry with ConvNeXt.convnext_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_small(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:178: UserWarning: Overwriting convnext_base in registry with ConvNeXt.convnext_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_base(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:187: UserWarning: Overwriting convnext_large in registry with ConvNeXt.convnext_large. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_large(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:196: UserWarning: Overwriting convnext_xlarge in registry with ConvNeXt.convnext_xlarge. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_xlarge(pretrained=False, in_22k=False, **kwargs):
+Running DDP on rank: 2. World size: 3. local GPU number: 3.
+Running DDP on rank: 1. World size: 3. local GPU number: 3.
+Running DDP on rank: 0. World size: 3. local GPU number: 3.
+reshape position embedding from 576 to 196
+reshape position embedding from 576 to 196
+reshape position embedding from 576 to 196
+load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_retrieval_coco.pth
+load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_retrieval_coco.pth
+load checkpoint from https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model_base_retrieval_coco.pth
+Extracting features from coco_train using blip_official_itm.
+Total number of data points: 118287
+Total number of data points: 118287
+Total number of data points: 118287
+  0%|          | 0/78 [00:00<?, ?it/s]  0%|          | 0/78 [00:00<?, ?it/s]  0%|          | 0/78 [00:00<?, ?it/s]batch size on machine 1: 512
+batch size on machine 2: 512
+batch size on machine 0: 512
+feature size on machine 0: torch.Size([512, 256])
+  1%|▏         | 1/78 [00:18<23:22, 18.22s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+  1%|▏         | 1/78 [00:18<23:29, 18.31s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+  1%|▏         | 1/78 [00:18<23:50, 18.58s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+  3%|▎         | 2/78 [00:33<21:08, 16.69s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+  3%|▎         | 2/78 [00:34<21:22, 16.88s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+  3%|▎         | 2/78 [00:34<21:39, 17.10s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+  4%|▍         | 3/78 [00:49<20:07, 16.11s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+  4%|▍         | 3/78 [00:50<20:30, 16.41s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+  4%|▍         | 3/78 [00:50<20:29, 16.39s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+  5%|▌         | 4/78 [01:04<19:38, 15.92s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+  5%|▌         | 4/78 [01:05<20:00, 16.22s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+  5%|▌         | 4/78 [01:06<19:59, 16.21s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+  6%|▋         | 5/78 [01:21<19:27, 15.99s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+  6%|▋         | 5/78 [01:21<19:31, 16.05s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+  6%|▋         | 5/78 [01:22<19:38, 16.15s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+  8%|▊         | 6/78 [01:37<19:14, 16.03s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+  8%|▊         | 6/78 [01:37<19:20, 16.12s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+  8%|▊         | 6/78 [01:38<19:19, 16.11s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+  9%|▉         | 7/78 [01:52<18:49, 15.91s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 256])
+  9%|▉         | 7/78 [01:54<18:58, 16.04s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 256])
+  9%|▉         | 7/78 [01:54<19:04, 16.13s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 256])
+ 10%|█         | 8/78 [02:08<18:36, 15.95s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 10%|█         | 8/78 [02:10<18:54, 16.21s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 10%|█         | 8/78 [02:10<18:57, 16.25s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 12%|█▏        | 9/78 [02:24<18:14, 15.86s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 12%|█▏        | 9/78 [02:26<18:37, 16.19s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 12%|█▏        | 9/78 [02:26<18:34, 16.16s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 13%|█▎        | 10/78 [02:39<17:46, 15.69s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 13%|█▎        | 10/78 [02:42<18:12, 16.07s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 13%|█▎        | 10/78 [02:42<18:12, 16.07s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 14%|█▍        | 11/78 [02:54<17:14, 15.44s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 14%|█▍        | 11/78 [02:58<17:48, 15.94s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 14%|█▍        | 11/78 [02:58<17:47, 15.94s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 15%|█▌        | 12/78 [03:08<16:33, 15.05s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 15%|█▌        | 12/78 [03:13<17:27, 15.87s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 15%|█▌        | 12/78 [03:13<17:24, 15.82s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 17%|█▋        | 13/78 [03:22<15:48, 14.60s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 17%|█▋        | 13/78 [03:29<16:58, 15.67s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 17%|█▋        | 13/78 [03:29<16:58, 15.67s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 18%|█▊        | 14/78 [03:35<15:09, 14.20s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 18%|█▊        | 14/78 [03:44<16:34, 15.55s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 18%|█▊        | 14/78 [03:44<16:36, 15.58s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 19%|█▉        | 15/78 [03:52<15:36, 14.87s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 19%|█▉        | 15/78 [03:58<15:53, 15.13s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 19%|█▉        | 15/78 [03:58<15:59, 15.23s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 21%|██        | 16/78 [04:05<14:50, 14.36s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 21%|██        | 16/78 [04:12<15:25, 14.93s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 21%|██        | 16/78 [04:13<15:28, 14.98s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 22%|██▏       | 17/78 [04:18<14:14, 14.00s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 22%|██▏       | 17/78 [04:29<15:32, 15.29s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 22%|██▏       | 17/78 [04:29<15:39, 15.40s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 23%|██▎       | 18/78 [04:32<14:01, 14.03s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 23%|██▎       | 18/78 [04:43<15:02, 15.04s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 23%|██▎       | 18/78 [04:44<15:12, 15.21s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 24%|██▍       | 19/78 [04:46<13:48, 14.04s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 24%|██▍       | 19/78 [04:58<14:40, 14.93s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 24%|██▍       | 19/78 [04:59<14:51, 15.11s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 26%|██▌       | 20/78 [05:01<13:48, 14.29s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 26%|██▌       | 20/78 [05:11<14:02, 14.52s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 26%|██▌       | 20/78 [05:13<14:26, 14.93s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 27%|██▋       | 21/78 [05:15<13:29, 14.21s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 27%|██▋       | 21/78 [05:25<13:34, 14.28s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 27%|██▋       | 21/78 [05:28<14:02, 14.78s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 28%|██▊       | 22/78 [05:29<13:11, 14.14s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 28%|██▊       | 22/78 [05:39<13:22, 14.32s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 28%|██▊       | 22/78 [05:43<13:53, 14.88s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 29%|██▉       | 23/78 [05:44<13:09, 14.35s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 29%|██▉       | 23/78 [05:53<12:50, 14.01s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 29%|██▉       | 23/78 [05:57<13:32, 14.78s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 31%|███       | 24/78 [05:58<12:52, 14.30s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 31%|███       | 24/78 [06:05<12:12, 13.56s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 31%|███       | 24/78 [06:13<13:31, 15.02s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 32%|███▏      | 25/78 [06:13<12:52, 14.58s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 32%|███▏      | 25/78 [06:19<11:56, 13.52s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 32%|███▏      | 25/78 [06:27<13:06, 14.84s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 33%|███▎      | 26/78 [06:28<12:35, 14.54s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 33%|███▎      | 26/78 [06:32<11:37, 13.41s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 33%|███▎      | 26/78 [06:42<12:45, 14.71s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 35%|███▍      | 27/78 [06:42<12:19, 14.50s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 35%|███▍      | 27/78 [06:45<11:27, 13.49s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 35%|███▍      | 27/78 [06:56<12:26, 14.64s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 36%|███▌      | 28/78 [06:57<12:10, 14.61s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 36%|███▌      | 28/78 [07:00<11:24, 13.69s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 36%|███▌      | 28/78 [07:11<12:09, 14.59s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 37%|███▋      | 29/78 [07:12<12:00, 14.70s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 37%|███▋      | 29/78 [07:14<11:23, 13.94s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 37%|███▋      | 29/78 [07:26<12:02, 14.75s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 38%|███▊      | 30/78 [07:27<11:58, 14.98s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 38%|███▊      | 30/78 [07:29<11:23, 14.24s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 38%|███▊      | 30/78 [07:40<11:44, 14.67s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 40%|███▉      | 31/78 [07:43<11:45, 15.00s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 40%|███▉      | 31/78 [07:44<11:15, 14.37s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 40%|███▉      | 31/78 [07:55<11:29, 14.67s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 41%|████      | 32/78 [07:58<11:34, 15.11s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 41%|████      | 32/78 [07:59<11:10, 14.57s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 41%|████      | 32/78 [08:09<11:07, 14.51s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 42%|████▏     | 33/78 [08:14<11:26, 15.27s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 42%|████▏     | 33/78 [08:14<11:06, 14.81s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 42%|████▏     | 33/78 [08:23<10:47, 14.38s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 44%|████▎     | 34/78 [08:29<11:15, 15.35s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 44%|████▎     | 34/78 [08:29<10:54, 14.87s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 44%|████▎     | 34/78 [08:38<10:34, 14.42s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 45%|████▍     | 35/78 [08:45<11:04, 15.45s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 45%|████▍     | 35/78 [08:45<10:50, 15.12s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 45%|████▍     | 35/78 [08:52<10:14, 14.30s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 46%|████▌     | 36/78 [09:00<10:49, 15.46s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 46%|████▌     | 36/78 [09:00<10:39, 15.23s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 46%|████▌     | 36/78 [09:06<09:59, 14.26s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 47%|████▋     | 37/78 [09:15<10:26, 15.29s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 47%|████▋     | 37/78 [09:15<10:20, 15.14s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 47%|████▋     | 37/78 [09:22<10:04, 14.75s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 49%|████▊     | 38/78 [09:30<10:09, 15.24s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 49%|████▊     | 38/78 [09:30<10:04, 15.12s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 49%|████▊     | 38/78 [09:35<09:33, 14.34s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 50%|█████     | 39/78 [09:45<09:53, 15.23s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 50%|█████     | 39/78 [09:46<09:51, 15.15s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 50%|█████     | 39/78 [09:50<09:21, 14.39s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 51%|█████▏    | 40/78 [10:03<10:00, 15.80s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 51%|█████▏    | 40/78 [10:03<09:59, 15.79s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 51%|█████▏    | 40/78 [10:05<09:15, 14.61s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 53%|█████▎    | 41/78 [10:18<09:42, 15.75s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 53%|█████▎    | 41/78 [10:19<09:44, 15.80s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 53%|█████▎    | 41/78 [10:20<09:06, 14.77s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 54%|█████▍    | 42/78 [10:34<09:28, 15.78s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 54%|█████▍    | 42/78 [10:35<09:31, 15.87s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 54%|█████▍    | 42/78 [10:36<09:01, 15.04s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 55%|█████▌    | 43/78 [10:50<09:09, 15.69s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 55%|█████▌    | 43/78 [10:51<09:16, 15.91s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 55%|█████▌    | 43/78 [10:52<08:54, 15.26s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 56%|█████▋    | 44/78 [11:05<08:53, 15.70s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 56%|█████▋    | 44/78 [11:07<09:01, 15.92s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 56%|█████▋    | 44/78 [11:07<08:44, 15.44s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 58%|█████▊    | 45/78 [11:21<08:36, 15.66s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 58%|█████▊    | 45/78 [11:22<08:44, 15.88s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 58%|█████▊    | 45/78 [11:23<08:31, 15.51s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 59%|█████▉    | 46/78 [11:36<08:16, 15.52s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 59%|█████▉    | 46/78 [11:38<08:27, 15.86s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 59%|█████▉    | 46/78 [11:39<08:19, 15.62s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 60%|██████    | 47/78 [11:51<07:59, 15.45s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 60%|██████    | 47/78 [11:54<08:10, 15.83s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 60%|██████    | 47/78 [11:55<08:04, 15.64s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 62%|██████▏   | 48/78 [12:06<07:38, 15.30s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 62%|██████▏   | 48/78 [12:10<07:52, 15.74s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 62%|██████▏   | 48/78 [12:10<07:48, 15.60s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 63%|██████▎   | 49/78 [12:21<07:17, 15.08s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 63%|██████▎   | 49/78 [12:25<07:34, 15.68s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 63%|██████▎   | 49/78 [12:26<07:31, 15.56s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 64%|██████▍   | 50/78 [12:35<06:50, 14.66s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 64%|██████▍   | 50/78 [12:40<07:14, 15.52s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 64%|██████▍   | 50/78 [12:41<07:12, 15.44s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 65%|██████▌   | 51/78 [12:48<06:29, 14.43s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 65%|██████▌   | 51/78 [12:57<07:11, 15.98s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 65%|██████▌   | 51/78 [12:58<07:11, 15.97s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 67%|██████▋   | 52/78 [13:03<06:14, 14.41s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 67%|██████▋   | 52/78 [13:13<06:52, 15.87s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 67%|██████▋   | 52/78 [13:14<06:52, 15.86s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 68%|██████▊   | 53/78 [13:17<05:59, 14.38s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 68%|██████▊   | 53/78 [13:29<06:36, 15.87s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 68%|██████▊   | 53/78 [13:30<06:38, 15.92s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 69%|██████▉   | 54/78 [13:32<05:49, 14.56s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 69%|██████▉   | 54/78 [13:44<06:13, 15.57s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 69%|██████▉   | 54/78 [13:45<06:18, 15.76s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 71%|███████   | 55/78 [13:47<05:36, 14.61s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 71%|███████   | 55/78 [13:58<05:51, 15.27s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 71%|███████   | 55/78 [14:00<05:59, 15.62s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 72%|███████▏  | 56/78 [14:02<05:25, 14.80s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 72%|███████▏  | 56/78 [14:12<05:29, 14.98s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 72%|███████▏  | 56/78 [14:15<05:38, 15.39s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 73%|███████▎  | 57/78 [14:16<05:08, 14.68s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 73%|███████▎  | 57/78 [14:26<05:06, 14.58s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 73%|███████▎  | 57/78 [14:30<05:17, 15.12s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 74%|███████▍  | 58/78 [14:31<04:50, 14.53s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 74%|███████▍  | 58/78 [14:40<04:46, 14.32s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 74%|███████▍  | 58/78 [14:44<04:57, 14.89s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 76%|███████▌  | 59/78 [14:45<04:34, 14.44s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 76%|███████▌  | 59/78 [14:53<04:25, 13.97s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 76%|███████▌  | 59/78 [14:58<04:39, 14.72s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 77%|███████▋  | 60/78 [14:59<04:18, 14.38s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 77%|███████▋  | 60/78 [15:06<04:05, 13.65s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 77%|███████▋  | 60/78 [15:14<04:30, 15.04s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 78%|███████▊  | 61/78 [15:15<04:11, 14.78s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 78%|███████▊  | 61/78 [15:21<03:58, 14.03s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 78%|███████▊  | 61/78 [15:28<04:11, 14.81s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 79%|███████▉  | 62/78 [15:29<03:54, 14.68s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 79%|███████▉  | 62/78 [15:34<03:40, 13.78s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 79%|███████▉  | 62/78 [15:43<03:56, 14.76s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 81%|████████  | 63/78 [15:44<03:40, 14.69s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 81%|████████  | 63/78 [15:48<03:28, 13.87s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 81%|████████  | 63/78 [16:00<03:49, 15.30s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 82%|████████▏ | 64/78 [16:01<03:34, 15.29s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 82%|████████▏ | 64/78 [16:03<03:19, 14.22s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 82%|████████▏ | 64/78 [16:14<03:31, 15.09s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 83%|████████▎ | 65/78 [16:16<03:17, 15.23s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 83%|████████▎ | 65/78 [16:17<03:04, 14.19s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 83%|████████▎ | 65/78 [16:29<03:16, 15.12s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 85%|████████▍ | 66/78 [16:31<03:03, 15.33s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 85%|████████▍ | 66/78 [16:32<02:53, 14.45s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 85%|████████▍ | 66/78 [16:44<02:58, 14.88s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 86%|████████▌ | 67/78 [16:46<02:46, 15.09s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 86%|████████▌ | 67/78 [16:47<02:38, 14.39s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 86%|████████▌ | 67/78 [16:57<02:39, 14.53s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 87%|████████▋ | 68/78 [17:01<02:30, 15.05s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 87%|████████▋ | 68/78 [17:01<02:25, 14.51s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 87%|████████▋ | 68/78 [17:11<02:21, 14.17s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 88%|████████▊ | 69/78 [17:15<02:12, 14.77s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 88%|████████▊ | 69/78 [17:15<02:08, 14.33s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 88%|████████▊ | 69/78 [17:23<02:03, 13.69s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 90%|████████▉ | 70/78 [17:29<01:56, 14.62s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 90%|████████▉ | 70/78 [17:30<01:54, 14.31s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 90%|████████▉ | 70/78 [17:37<01:49, 13.68s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 91%|█████████ | 71/78 [17:44<01:42, 14.60s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 91%|█████████ | 71/78 [17:44<01:40, 14.41s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 91%|█████████ | 71/78 [17:50<01:34, 13.47s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 92%|█████████▏| 72/78 [17:58<01:27, 14.50s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 92%|█████████▏| 72/78 [17:59<01:26, 14.39s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 92%|█████████▏| 72/78 [18:03<01:20, 13.34s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 94%|█████████▎| 73/78 [18:14<01:14, 14.99s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 94%|█████████▎| 73/78 [18:15<01:14, 14.90s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 94%|█████████▎| 73/78 [18:18<01:09, 13.89s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 95%|█████████▍| 74/78 [18:29<00:59, 14.84s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 95%|█████████▍| 74/78 [18:29<00:59, 14.76s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 95%|█████████▍| 74/78 [18:32<00:55, 13.93s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 96%|█████████▌| 75/78 [18:43<00:44, 14.81s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 96%|█████████▌| 75/78 [18:44<00:44, 14.73s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 96%|█████████▌| 75/78 [18:47<00:42, 14.16s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 256])
+ 97%|█████████▋| 76/78 [18:59<00:29, 14.95s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 256])
+ 97%|█████████▋| 76/78 [18:59<00:29, 14.80s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 256])
+ 97%|█████████▋| 76/78 [19:01<00:28, 14.24s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 256])
+ 99%|█████████▊| 77/78 [19:14<00:14, 14.94s/it]batch size on machine 1: 5
+feature size on machine 1: torch.Size([5, 256])
+100%|██████████| 78/78 [19:14<00:00, 10.49s/it]100%|██████████| 78/78 [19:14<00:00, 14.80s/it]
+length of img_embed on local machine: 78/78
+local image embed size: torch.Size([39429, 256])
+local caption embed size: torch.Size([39429, 256])
+feature size on machine 0: torch.Size([512, 256])
+ 99%|█████████▊| 77/78 [19:14<00:15, 15.16s/it]batch size on machine 0: 5
+feature size on machine 0: torch.Size([5, 256])
+100%|██████████| 78/78 [19:14<00:00, 10.65s/it]100%|██████████| 78/78 [19:14<00:00, 14.81s/it]
+length of img_embed on local machine: 78/78
+local image embed size: torch.Size([39429, 256])
+local caption embed size: torch.Size([39429, 256])
+feature size on machine 2: torch.Size([512, 256])
+ 99%|█████████▊| 77/78 [19:16<00:14, 14.37s/it]batch size on machine 2: 5
+feature size on machine 2: torch.Size([5, 256])
+100%|██████████| 78/78 [19:16<00:00, 10.09s/it]100%|██████████| 78/78 [19:16<00:00, 14.83s/it]
+length of img_embed on local machine: 78/78
+local image embed size: torch.Size([39429, 256])
+local caption embed size: torch.Size([39429, 256])
+total batch size on each machine: [39429, 39429, 39429]total batch size on each machine: [39429, 39429, 39429]total batch size on each machine: [39429, 39429, 39429]
+
+
+gather list length: [39429, 39429, 39429]
+gather list length: [39429, 39429, 39429]
+gather list length: [39429, 39429, 39429]
+Feature extraction done!Feature extraction done!Feature extraction done!
+
+
+embedding size: torch.Size([118287, 256])/torch.Size([118287, 256])
+Features Saved!!!

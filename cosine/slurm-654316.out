@@ -1,0 +1,32 @@
+resnetbert imdb
+Top 1 accuracy using cosine done!
+{'cosine_acc': 0.0}
+Top 5 accuracy using cosine done!
+{'cosine_acc': 0.7}
+Top 10 accuracy using cosine done!
+{'cosine_acc': 1.0}
+Accuracy saved!
+resnetbert flickr30k
+Top 1 accuracy using cosine done!
+{'cosine_acc': 0.2}
+Top 5 accuracy using cosine done!
+{'cosine_acc': 0.4}
+Top 10 accuracy using cosine done!
+{'cosine_acc': 1.0}
+Accuracy saved!
+resnetbert coco_train
+Top 1 accuracy using cosine done!
+{'cosine_acc': 0.0}
+Top 5 accuracy using cosine done!
+{'cosine_acc': 0.4}
+Top 10 accuracy using cosine done!
+{'cosine_acc': 0.8}
+Accuracy saved!
+resnetbert celebA
+Top 1 accuracy using cosine done!
+{'cosine_acc': 0.2}
+Top 5 accuracy using cosine done!
+{'cosine_acc': 0.7}
+Top 10 accuracy using cosine done!
+{'cosine_acc': 1.4}
+Accuracy saved!

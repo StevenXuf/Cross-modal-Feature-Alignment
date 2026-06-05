@@ -1,0 +1,1337 @@
+Exception ignored on calling ctypes callback function: <function ExecutionEngine._raw_object_cache_notify at 0x7d2c23fea200>
+Traceback (most recent call last):
+  File "/home/fxu/myenv/lib/python3.10/site-packages/llvmlite/binding/executionengine.py", line 178, in _raw_object_cache_notify
+    def _raw_object_cache_notify(self, data):
+KeyboardInterrupt: 
+Traceback (most recent call last):
+  File "/home/fxu/alignment/plot_features.py", line 6, in <module>
+    import umap
+  File "/home/fxu/myenv/lib/python3.10/site-packages/umap/__init__.py", line 2, in <module>
+    from .umap_ import UMAP
+  File "/home/fxu/myenv/lib/python3.10/site-packages/umap/umap_.py", line 48, in <module>
+    from pynndescent import NNDescent
+  File "/home/fxu/myenv/lib/python3.10/site-packages/pynndescent/__init__.py", line 5, in <module>
+    from .pynndescent_ import NNDescent, PyNNDescentTransformer
+  File "/home/fxu/myenv/lib/python3.10/site-packages/pynndescent/pynndescent_.py", line 22, in <module>
+    import pynndescent.sparse as sparse
+  File "/home/fxu/myenv/lib/python3.10/site-packages/pynndescent/sparse.py", line 475, in <module>
+    def sparse_bray_curtis(ind1, data1, ind2, data2):  # pragma: no cover
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/decorators.py", line 232, in wrapper
+    disp.compile(sig)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/dispatcher.py", line 905, in compile
+    cres = self._compiler.compile(args, return_type)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/dispatcher.py", line 80, in compile
+    status, retval = self._compile_cached(args, return_type)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/dispatcher.py", line 94, in _compile_cached
+    retval = self._compile_core(args, return_type)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/dispatcher.py", line 107, in _compile_core
+    cres = compiler.compile_extra(self.targetdescr.typing_context,
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler.py", line 744, in compile_extra
+    return pipeline.compile_extra(func)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler.py", line 438, in compile_extra
+    return self._compile_bytecode()
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler.py", line 506, in _compile_bytecode
+    return self._compile_core()
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler.py", line 472, in _compile_core
+    pm.run(self.state)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 356, in run
+    self._runPass(idx, pass_inst, state)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler_lock.py", line 35, in _acquire_compile_lock
+    return func(*args, **kwargs)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 311, in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 273, in check
+    mangled = func(compiler_state)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/typed_passes.py", line 468, in run_pass
+    lower.lower()
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/lowering.py", line 187, in lower
+    self.lower_normal_function(self.fndesc)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/lowering.py", line 226, in lower_normal_function
+    entry_block_tail = self.lower_function_body()
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/lowering.py", line 256, in lower_function_body
+    self.lower_block(block)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/lowering.py", line 270, in lower_block
+    self.lower_inst(inst)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/lowering.py", line 448, in lower_inst
+    val = self.lower_assign(ty, inst)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/lowering.py", line 660, in lower_assign
+    return self.lower_expr(ty, value)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/lowering.py", line 1407, in lower_expr
+    res = self.context.special_ops[expr.op](self, expr)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/np/ufunc/array_exprs.py", line 427, in _lower_array_expr
+    return npyimpl.numpy_ufunc_kernel(
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/np/npyimpl.py", line 502, in numpy_ufunc_kernel
+    output = _build_array(context, builder, ret_ty, sig.args, arguments)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/np/npyimpl.py", line 410, in _build_array
+    arg_result = context.compile_internal(
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/base.py", line 881, in compile_internal
+    cres = self.compile_subroutine(builder, impl, sig, locals)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/base.py", line 866, in compile_subroutine
+    cres = self._compile_subroutine_no_cache(builder, impl, sig,
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/base.py", line 837, in _compile_subroutine_no_cache
+    cres = compiler.compile_internal(self.typing_context, self,
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler.py", line 818, in compile_internal
+    return pipeline.compile_extra(func)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler.py", line 438, in compile_extra
+    return self._compile_bytecode()
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler.py", line 506, in _compile_bytecode
+    return self._compile_core()
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler.py", line 472, in _compile_core
+    pm.run(self.state)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 356, in run
+    self._runPass(idx, pass_inst, state)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler_lock.py", line 35, in _acquire_compile_lock
+    return func(*args, **kwargs)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 311, in _runPass
+    mutated |= check(pss.run_pass, internal_state)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/compiler_machinery.py", line 273, in check
+    mangled = func(compiler_state)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/typed_passes.py", line 648, in run_pass
+    if guard(workfn, state, work_list, block, i, expr,
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/ir_utils.py", line 1549, in guard
+    return func(*args, **kwargs)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/typed_passes.py", line 789, in _do_work_expr
+    inlinee_info = self._get_callable_info(state, expr)
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/typed_passes.py", line 740, in _get_callable_info
+    sig = state.calltypes[expr]
+  File "/home/fxu/myenv/lib/python3.10/site-packages/numba/core/ir.py", line 256, in __hash__
+    def __hash__(self):
+KeyboardInterrupt
+tensor([ 31.5678, -13.4645])
+tensor([-31.9944,  14.6233])
+Approximate KL Divergence: 57.13802617609491
+(4000,)
+tensor([36.2584, -0.3815])
+tensor([-38.0131,   0.4794])
+Approximate KL Divergence: 54.9422245608935
+(4000,)
+tensor([-27.1604, -21.3182])
+tensor([29.2327, 22.4636])
+Approximate KL Divergence: 39.82217511912333
+(4000,)
+tensor([-34.9027,  -5.1101])
+tensor([33.4402,  5.2697])
+Approximate KL Divergence: 67.52017905885906
+(4000,)
+tensor([38.6382,  1.7012])
+tensor([-38.0283,  -1.1476])
+Approximate KL Divergence: 45.85628134943643
+(4000,)
+tensor([34.0512,  0.7100])
+tensor([-35.3053,  -0.3092])
+Approximate KL Divergence: 49.75945655305456
+(4000,)
+tensor([42.5270, -3.7695])
+tensor([-42.7178,   3.3595])
+Approximate KL Divergence: 28.024203737715826
+(4000,)
+tensor([-41.9632,   2.9512])
+tensor([42.7302, -3.3608])
+Approximate KL Divergence: 79.06823464350555
+(4000,)
+tensor([-36.0332, -22.0323])
+tensor([36.8043, 22.7807])
+Approximate KL Divergence: 70.31832673470025
+(4000,)
+tensor([-39.0645,  12.1486])
+tensor([ 39.3136, -12.4514])
+Approximate KL Divergence: 110.21416501944722
+(4000,)
+tensor([36.3274,  2.8821])
+tensor([-36.8420,  -3.1134])
+Approximate KL Divergence: 42.32136564137409
+(4000,)
+tensor([39.0608, 14.9244])
+tensor([-38.6582, -14.1495])
+Approximate KL Divergence: 52.72997258170493
+(4000,)
+tensor([45.6552,  1.2865])
+tensor([-47.5683,  -0.7068])
+Approximate KL Divergence: 50.74615484263106
+(4000,)
+tensor([-45.9549,  -0.9626])
+tensor([48.9970,  1.8853])
+Approximate KL Divergence: 101.19511424693144
+(4000,)
+tensor([-35.3680, -28.6134])
+tensor([37.8945, 31.4246])
+Approximate KL Divergence: 118.81516701755767
+(4000,)
+tensor([-42.5494,   3.6829])
+tensor([45.6161, -3.9360])
+Approximate KL Divergence: 79.32044312488384
+(4000,)
+tensor([42.9056,  2.6981])
+tensor([-44.4300,  -3.5408])
+Approximate KL Divergence: 99.32808762801619
+(4000,)
+tensor([43.2172,  5.8459])
+tensor([-42.7651,  -6.7410])
+Approximate KL Divergence: 55.292022817226176
+(4000,)
+Figure saved!
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 22.19it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 475.60it/s]
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.60it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3443.60it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2968.37it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1639.04it/s]
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 18.09it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3945.72it/s]
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 22.73it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 486.58it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 476.63it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4132.32it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 493.68it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3287.07it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 482.71it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3545.48it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3711.77it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 1805.55it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3603.35it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3390.71it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 484.00it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3603.35it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3826.92it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3724.96it/s]
+Cosine distance done!
+DONE.
+Cosine distance done!
+DONE.
+Traceback (most recent call last):
+  File "/home/fxu/alignment/plot_examples.py", line 178, in <module>
+    plot_examples.show_retrieve_examples(args.img_retrieval)
+  File "/home/fxu/alignment/plot_examples.py", line 96, in show_retrieve_examples
+    current_id=torch.randint(0,rand_sub_size,(1,),generator=torch.Generator.manual_seed(42)).tolist()
+TypeError: descriptor 'manual_seed' for 'torch._C.Generator' objects doesn't apply to a 'int' object
+Traceback (most recent call last):
+  File "/home/fxu/alignment/plot_examples.py", line 178, in <module>
+    plot_examples.show_retrieve_examples(args.img_retrieval)
+  File "/home/fxu/alignment/plot_examples.py", line 99, in show_retrieve_examples
+    current_id=torch.randint(0,rand_sub_size,(1,),generator=torch.Generator.manual_seed(0)).tolist()
+TypeError: descriptor 'manual_seed' for 'torch._C.Generator' objects doesn't apply to a 'int' object
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 22.21it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3401.71it/s]
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 17.66it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 506.56it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3816.47it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 488.85it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 488.51it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3953.16it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3591.01it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3837.42it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3979.42it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3701.95it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3539.50it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3355.44it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3358.13it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3515.76it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3715.06it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 499.50it/s]
+Cosine distance done!
+DONE.
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 19.49it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 489.82it/s]
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 19.69it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3908.95it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4052.47it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3938.31it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 470.00it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3890.82it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3901.68it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3718.35it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4161.02it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4202.71it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3956.89it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3898.05it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3894.43it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3647.22it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4152.78it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4092.00it/s]
+Cosine distance done!
+DONE.
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.63it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4447.83it/s]
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.24it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3883.61it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4072.14it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4341.93it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4104.02it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3953.16it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4032.98it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3968.12it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4190.11it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4104.02it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3813.00it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3938.31it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4457.28it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4410.41it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4232.40it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4275.54it/s]
+Cosine distance done!
+DONE.
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.01it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4140.48it/s]
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 24.31it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3894.43it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4271.19it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4306.27it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4443.12it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4419.71it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4462.03it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4433.73it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4177.59it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3956.89it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4549.14it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4396.55it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4419.71it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4447.83it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3938.31it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4116.10it/s]
+Cosine distance done!
+DONE.
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.56it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4419.71it/s]
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 24.28it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3792.32it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4128.25it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4350.94it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3930.93it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4301.85it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3816.47it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4328.49it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4219.62it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4387.35it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3858.61it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3971.88it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4378.19it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4387.35it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3715.06it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4332.96it/s]
+Cosine distance done!
+DONE.
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 22.33it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3486.54it/s]
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 23.45it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3930.93it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4165.15it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4391.94it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2585.88it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 483.10it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2508.56it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2764.87it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4232.40it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4181.76it/s]
+Cosine distance done!
+**********True**********
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4424.37it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 4490.69it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 3669.56it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 503.28it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 507.11it/s]
+Cosine distance done!
+DONE.
+Computing cosine distance
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 2998.07it/s]
+Cosine distance done!
+DONE.
+Cosine distance done!
+DONE.
+W0120 17:28:25.337000 125627067854848 torch/distributed/run.py:779] 
+W0120 17:28:25.337000 125627067854848 torch/distributed/run.py:779] *****************************************
+W0120 17:28:25.337000 125627067854848 torch/distributed/run.py:779] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0120 17:28:25.337000 125627067854848 torch/distributed/run.py:779] *****************************************
+/home/fxu/alignment/convit_models.py:18: UserWarning: Overwriting convit_tiny in registry with convit_models.convit_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_tiny(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:34: UserWarning: Overwriting convit_small in registry with convit_models.convit_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_small(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:50: UserWarning: Overwriting convit_base in registry with convit_models.convit_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_base(pretrained=False, embed_dim=48,**kwargs):
+/home/fxu/alignment/ConvNeXt.py:160: UserWarning: Overwriting convnext_tiny in registry with ConvNeXt.convnext_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_tiny(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:169: UserWarning: Overwriting convnext_small in registry with ConvNeXt.convnext_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_small(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:178: UserWarning: Overwriting convnext_base in registry with ConvNeXt.convnext_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_base(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:187: UserWarning: Overwriting convnext_large in registry with ConvNeXt.convnext_large. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_large(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:196: UserWarning: Overwriting convnext_xlarge in registry with ConvNeXt.convnext_xlarge. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_xlarge(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/convit_models.py:18: UserWarning: Overwriting convit_tiny in registry with convit_models.convit_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_tiny(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:34: UserWarning: Overwriting convit_small in registry with convit_models.convit_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_small(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:50: UserWarning: Overwriting convit_base in registry with convit_models.convit_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_base(pretrained=False, embed_dim=48,**kwargs):
+/home/fxu/alignment/ConvNeXt.py:160: UserWarning: Overwriting convnext_tiny in registry with ConvNeXt.convnext_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_tiny(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:169: UserWarning: Overwriting convnext_small in registry with ConvNeXt.convnext_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_small(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:178: UserWarning: Overwriting convnext_base in registry with ConvNeXt.convnext_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_base(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:187: UserWarning: Overwriting convnext_large in registry with ConvNeXt.convnext_large. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_large(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:196: UserWarning: Overwriting convnext_xlarge in registry with ConvNeXt.convnext_xlarge. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_xlarge(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/convit_models.py:18: UserWarning: Overwriting convit_tiny in registry with convit_models.convit_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_tiny(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:34: UserWarning: Overwriting convit_small in registry with convit_models.convit_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_small(pretrained=False, **kwargs):
+/home/fxu/alignment/convit_models.py:50: UserWarning: Overwriting convit_base in registry with convit_models.convit_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convit_base(pretrained=False, embed_dim=48,**kwargs):
+/home/fxu/alignment/ConvNeXt.py:160: UserWarning: Overwriting convnext_tiny in registry with ConvNeXt.convnext_tiny. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_tiny(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:169: UserWarning: Overwriting convnext_small in registry with ConvNeXt.convnext_small. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_small(pretrained=False,in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:178: UserWarning: Overwriting convnext_base in registry with ConvNeXt.convnext_base. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_base(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:187: UserWarning: Overwriting convnext_large in registry with ConvNeXt.convnext_large. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_large(pretrained=False, in_22k=False, **kwargs):
+/home/fxu/alignment/ConvNeXt.py:196: UserWarning: Overwriting convnext_xlarge in registry with ConvNeXt.convnext_xlarge. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def convnext_xlarge(pretrained=False, in_22k=False, **kwargs):
+Running DDP on rank: 0. World size: 3. local GPU number: 3.
+Running DDP on rank: 1. World size: 3. local GPU number: 3.
+Running DDP on rank: 2. World size: 3. local GPU number: 3.
+Extracting features from coco_train using resnetbert.
+Total number of data points: 118287
+  0%|          | 0/78 [00:00<?, ?it/s]batch size on machine 2: 512
+Total number of data points: 118287
+  0%|          | 0/78 [00:00<?, ?it/s]batch size on machine 1: 512
+Total number of data points: 118287
+  0%|          | 0/78 [00:00<?, ?it/s]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+  1%|▏         | 1/78 [00:12<16:27, 12.83s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+  1%|▏         | 1/78 [00:12<16:16, 12.69s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+  1%|▏         | 1/78 [00:12<16:08, 12.58s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+  3%|▎         | 2/78 [00:24<15:26, 12.19s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+  3%|▎         | 2/78 [00:24<15:05, 11.92s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+  3%|▎         | 2/78 [00:24<15:19, 12.10s/it]batch size on machine 1: 512
+feature size on machine 1: torch.Size([512, 768])
+  4%|▍         | 3/78 [00:36<15:11, 12.15s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+  4%|▍         | 3/78 [00:37<15:34, 12.46s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+  4%|▍         | 3/78 [00:36<15:26, 12.35s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+  5%|▌         | 4/78 [00:49<15:12, 12.33s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+  5%|▌         | 4/78 [00:50<15:28, 12.54s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+  5%|▌         | 4/78 [00:49<15:27, 12.54s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+  6%|▋         | 5/78 [01:01<14:54, 12.25s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+  6%|▋         | 5/78 [01:03<15:41, 12.90s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+  6%|▋         | 5/78 [01:03<15:44, 12.93s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+  8%|▊         | 6/78 [01:15<15:19, 12.77s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+  8%|▊         | 6/78 [01:16<15:38, 13.03s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+  8%|▊         | 6/78 [01:16<15:37, 13.02s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+  9%|▉         | 7/78 [01:28<15:28, 13.08s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+  9%|▉         | 7/78 [01:29<15:19, 12.95s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+  9%|▉         | 7/78 [01:29<15:23, 13.01s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 10%|█         | 8/78 [01:42<15:38, 13.40s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 10%|█         | 8/78 [01:43<15:32, 13.32s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 10%|█         | 8/78 [01:43<15:29, 13.28s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 12%|█▏        | 9/78 [01:56<15:21, 13.36s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 12%|█▏        | 9/78 [01:57<15:19, 13.33s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 12%|█▏        | 9/78 [01:56<15:21, 13.35s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 13%|█▎        | 10/78 [02:08<14:57, 13.20s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 13%|█▎        | 10/78 [02:09<14:53, 13.15s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 13%|█▎        | 10/78 [02:09<14:52, 13.12s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 14%|█▍        | 11/78 [02:22<14:50, 13.29s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 14%|█▍        | 11/78 [02:23<14:51, 13.31s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 14%|█▍        | 11/78 [02:22<14:46, 13.23s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 15%|█▌        | 12/78 [02:35<14:35, 13.26s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 15%|█▌        | 12/78 [02:36<14:35, 13.27s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 15%|█▌        | 12/78 [02:36<14:31, 13.20s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 17%|█▋        | 13/78 [02:48<14:21, 13.25s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 17%|█▋        | 13/78 [02:48<14:09, 13.06s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 17%|█▋        | 13/78 [02:49<14:20, 13.23s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 18%|█▊        | 14/78 [03:01<13:48, 12.94s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 18%|█▊        | 14/78 [03:01<14:02, 13.16s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 18%|█▊        | 14/78 [03:02<13:54, 13.04s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 19%|█▉        | 15/78 [03:14<13:35, 12.94s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 19%|█▉        | 15/78 [03:14<13:43, 13.08s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 19%|█▉        | 15/78 [03:15<13:38, 13.00s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 21%|██        | 16/78 [03:27<13:16, 12.85s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 21%|██        | 16/78 [03:27<13:23, 12.96s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 21%|██        | 16/78 [03:27<13:17, 12.86s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 22%|██▏       | 17/78 [03:39<12:53, 12.67s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 22%|██▏       | 17/78 [03:40<12:53, 12.68s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 22%|██▏       | 17/78 [03:39<13:01, 12.81s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 23%|██▎       | 18/78 [03:52<12:39, 12.66s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 23%|██▎       | 18/78 [03:52<12:43, 12.73s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 23%|██▎       | 18/78 [03:52<12:43, 12.73s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 24%|██▍       | 19/78 [04:04<12:14, 12.44s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 24%|██▍       | 19/78 [04:04<12:14, 12.44s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 24%|██▍       | 19/78 [04:04<12:15, 12.46s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 26%|██▌       | 20/78 [04:17<12:02, 12.45s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 26%|██▌       | 20/78 [04:16<12:04, 12.50s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 26%|██▌       | 20/78 [04:16<12:03, 12.48s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 27%|██▋       | 21/78 [04:28<11:36, 12.22s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 27%|██▋       | 21/78 [04:28<11:41, 12.31s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 27%|██▋       | 21/78 [04:28<11:42, 12.33s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 28%|██▊       | 22/78 [04:40<11:20, 12.15s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 28%|██▊       | 22/78 [04:40<11:20, 12.15s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 28%|██▊       | 22/78 [04:40<11:26, 12.26s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 29%|██▉       | 23/78 [04:52<10:53, 11.88s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 29%|██▉       | 23/78 [04:52<11:09, 12.18s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 29%|██▉       | 23/78 [04:53<11:16, 12.30s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 31%|███       | 24/78 [05:03<10:29, 11.65s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 31%|███       | 24/78 [05:04<10:51, 12.07s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 31%|███       | 24/78 [05:05<11:02, 12.27s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 32%|███▏      | 25/78 [05:15<10:28, 11.85s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 32%|███▏      | 25/78 [05:17<10:50, 12.27s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 32%|███▏      | 25/78 [05:17<10:53, 12.34s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 33%|███▎      | 26/78 [05:27<10:25, 12.03s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 33%|███▎      | 26/78 [05:28<10:30, 12.12s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 33%|███▎      | 26/78 [05:29<10:35, 12.22s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 35%|███▍      | 27/78 [05:40<10:13, 12.04s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 35%|███▍      | 27/78 [05:40<10:01, 11.79s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 35%|███▍      | 27/78 [05:40<10:15, 12.08s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 36%|███▌      | 28/78 [05:51<09:33, 11.47s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 36%|███▌      | 28/78 [05:52<10:05, 12.11s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 36%|███▌      | 28/78 [05:52<09:57, 11.94s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 37%|███▋      | 29/78 [06:03<09:28, 11.61s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 37%|███▋      | 29/78 [06:03<09:46, 11.97s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 37%|███▋      | 29/78 [06:03<09:39, 11.82s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 38%|███▊      | 30/78 [06:16<09:32, 11.93s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 38%|███▊      | 30/78 [06:16<09:46, 12.21s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 38%|███▊      | 30/78 [06:16<09:39, 12.08s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 40%|███▉      | 31/78 [06:28<09:21, 11.95s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 40%|███▉      | 31/78 [06:28<09:32, 12.19s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 40%|███▉      | 31/78 [06:28<09:22, 11.97s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 41%|████      | 32/78 [06:40<09:12, 12.01s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 41%|████      | 32/78 [06:41<09:31, 12.42s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 41%|████      | 32/78 [06:41<09:23, 12.25s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 42%|████▏     | 33/78 [06:53<09:18, 12.41s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 42%|████▏     | 33/78 [06:53<09:15, 12.34s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 42%|████▏     | 33/78 [06:54<09:25, 12.56s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 44%|████▎     | 34/78 [07:05<08:51, 12.09s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 44%|████▎     | 34/78 [07:06<09:10, 12.51s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 44%|████▎     | 34/78 [07:07<09:20, 12.73s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 45%|████▍     | 35/78 [07:16<08:29, 11.85s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 45%|████▍     | 35/78 [07:18<08:58, 12.53s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 45%|████▍     | 35/78 [07:20<09:10, 12.79s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 46%|████▌     | 36/78 [07:29<08:26, 12.06s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 46%|████▌     | 36/78 [07:32<08:57, 12.80s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 46%|████▌     | 36/78 [07:34<09:06, 13.01s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 47%|████▋     | 37/78 [07:42<08:26, 12.36s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 47%|████▋     | 37/78 [07:45<08:44, 12.79s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 47%|████▋     | 37/78 [07:47<08:50, 12.94s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 49%|████▊     | 38/78 [07:54<08:13, 12.33s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 49%|████▊     | 38/78 [07:58<08:35, 12.88s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 49%|████▊     | 38/78 [07:59<08:28, 12.72s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 50%|█████     | 39/78 [08:07<08:04, 12.42s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 50%|█████     | 39/78 [08:10<08:17, 12.75s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 50%|█████     | 39/78 [08:12<08:18, 12.79s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 51%|█████▏    | 40/78 [08:19<07:53, 12.46s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 51%|█████▏    | 40/78 [08:23<08:10, 12.91s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 51%|█████▏    | 40/78 [08:24<08:03, 12.72s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 53%|█████▎    | 41/78 [08:32<07:46, 12.60s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 53%|█████▎    | 41/78 [08:37<08:00, 12.99s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 53%|█████▎    | 41/78 [08:37<07:50, 12.72s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 54%|█████▍    | 42/78 [08:45<07:33, 12.59s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 54%|█████▍    | 42/78 [08:49<07:34, 12.62s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 54%|█████▍    | 42/78 [08:49<07:42, 12.86s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 55%|█████▌    | 43/78 [08:58<07:25, 12.73s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 55%|█████▌    | 43/78 [09:03<07:27, 12.77s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 55%|█████▌    | 43/78 [09:03<07:36, 13.05s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 56%|█████▋    | 44/78 [09:10<07:09, 12.65s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 56%|█████▋    | 44/78 [09:15<07:15, 12.80s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 56%|█████▋    | 44/78 [09:15<07:20, 12.96s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 58%|█████▊    | 45/78 [09:23<07:00, 12.73s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 58%|█████▊    | 45/78 [09:28<06:59, 12.71s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 58%|█████▊    | 45/78 [09:28<07:04, 12.87s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 59%|█████▉    | 46/78 [09:36<06:49, 12.80s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 59%|█████▉    | 46/78 [09:41<06:47, 12.74s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 59%|█████▉    | 46/78 [09:41<06:56, 13.01s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 60%|██████    | 47/78 [09:48<06:28, 12.54s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 60%|██████    | 47/78 [09:54<06:40, 12.91s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 60%|██████    | 47/78 [09:55<06:47, 13.15s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 62%|██████▏   | 48/78 [10:00<06:07, 12.26s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 62%|██████▏   | 48/78 [10:07<06:29, 12.98s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 62%|██████▏   | 48/78 [10:08<06:37, 13.24s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 63%|██████▎   | 49/78 [10:11<05:49, 12.06s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 63%|██████▎   | 49/78 [10:20<06:11, 12.82s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 63%|██████▎   | 49/78 [10:21<06:18, 13.03s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 64%|██████▍   | 50/78 [10:24<05:43, 12.28s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 64%|██████▍   | 50/78 [10:32<05:59, 12.84s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 64%|██████▍   | 50/78 [10:34<06:02, 12.96s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 65%|██████▌   | 51/78 [10:38<05:42, 12.70s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 65%|██████▌   | 51/78 [10:46<05:50, 12.97s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 65%|██████▌   | 51/78 [10:47<05:52, 13.05s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 67%|██████▋   | 52/78 [10:50<05:26, 12.57s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 67%|██████▋   | 52/78 [10:59<05:38, 13.02s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 67%|██████▋   | 52/78 [11:00<05:41, 13.15s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 68%|██████▊   | 53/78 [11:03<05:17, 12.70s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 68%|██████▊   | 53/78 [11:12<05:28, 13.13s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 68%|██████▊   | 53/78 [11:13<05:29, 13.17s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 69%|██████▉   | 54/78 [11:15<05:02, 12.61s/it]batch size on machine 0: 512
+feature size on machine 2: torch.Size([512, 768])
+ 69%|██████▉   | 54/78 [11:25<05:11, 12.96s/it]batch size on machine 2: 512
+feature size on machine 1: torch.Size([512, 768])
+ 69%|██████▉   | 54/78 [11:25<05:05, 12.71s/it]batch size on machine 1: 512
+feature size on machine 0: torch.Size([512, 768])
+ 71%|███████   | 55/78 [11:28<04:52, 12.70s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 71%|███████   | 55/78 [11:37<04:45, 12.43s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 71%|███████   | 55/78 [11:37<04:54, 12.82s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 72%|███████▏  | 56/78 [11:40<04:34, 12.49s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 72%|███████▏  | 56/78 [11:49<04:30, 12.28s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 72%|███████▏  | 56/78 [11:50<04:38, 12.65s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 73%|███████▎  | 57/78 [11:53<04:23, 12.53s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 73%|███████▎  | 57/78 [12:00<04:12, 12.03s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 73%|███████▎  | 57/78 [12:02<04:23, 12.53s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 74%|███████▍  | 58/78 [12:05<04:10, 12.52s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 74%|███████▍  | 58/78 [12:11<03:52, 11.64s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 74%|███████▍  | 58/78 [12:14<04:06, 12.33s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 76%|███████▌  | 59/78 [12:18<03:57, 12.53s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 76%|███████▌  | 59/78 [12:22<03:39, 11.56s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 76%|███████▌  | 59/78 [12:25<03:50, 12.14s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 77%|███████▋  | 60/78 [12:29<03:40, 12.23s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 77%|███████▋  | 60/78 [12:34<03:30, 11.68s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 77%|███████▋  | 60/78 [12:37<03:37, 12.09s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 78%|███████▊  | 61/78 [12:41<03:25, 12.11s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 78%|███████▊  | 61/78 [12:46<03:17, 11.61s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 78%|███████▊  | 61/78 [12:49<03:24, 12.04s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 79%|███████▉  | 62/78 [12:53<03:13, 12.11s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 79%|███████▉  | 62/78 [12:58<03:09, 11.84s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 79%|███████▉  | 62/78 [13:01<03:10, 11.88s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 81%|████████  | 63/78 [13:06<03:01, 12.13s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 81%|████████  | 63/78 [13:11<03:00, 12.00s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 81%|████████  | 63/78 [13:13<03:01, 12.12s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 82%|████████▏ | 64/78 [13:19<02:53, 12.42s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 82%|████████▏ | 64/78 [13:23<02:51, 12.26s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 82%|████████▏ | 64/78 [13:26<02:51, 12.26s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 83%|████████▎ | 65/78 [13:31<02:42, 12.52s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 83%|████████▎ | 65/78 [13:36<02:39, 12.23s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 83%|████████▎ | 65/78 [13:38<02:40, 12.31s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 85%|████████▍ | 66/78 [13:43<02:27, 12.32s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 85%|████████▍ | 66/78 [13:48<02:27, 12.33s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 85%|████████▍ | 66/78 [13:51<02:26, 12.23s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 86%|████████▌ | 67/78 [13:55<02:12, 12.08s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 86%|████████▌ | 67/78 [14:00<02:14, 12.21s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 86%|████████▌ | 67/78 [14:02<02:13, 12.12s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 87%|████████▋ | 68/78 [14:07<02:00, 12.03s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 87%|████████▋ | 68/78 [14:12<02:00, 12.09s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 87%|████████▋ | 68/78 [14:12<01:54, 11.50s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 88%|████████▊ | 69/78 [14:19<01:47, 11.99s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 88%|████████▊ | 69/78 [14:22<01:44, 11.60s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 88%|████████▊ | 69/78 [14:24<01:44, 11.64s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 90%|████████▉ | 70/78 [14:31<01:35, 11.95s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 90%|████████▉ | 70/78 [14:34<01:32, 11.54s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 90%|████████▉ | 70/78 [14:36<01:33, 11.67s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 91%|█████████ | 71/78 [14:42<01:22, 11.79s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 91%|█████████ | 71/78 [14:46<01:21, 11.66s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 91%|█████████ | 71/78 [14:48<01:23, 11.86s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 92%|█████████▏| 72/78 [14:53<01:10, 11.72s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 92%|█████████▏| 72/78 [14:57<01:09, 11.62s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 92%|█████████▏| 72/78 [15:00<01:10, 11.77s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 94%|█████████▎| 73/78 [15:05<00:59, 11.81s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 94%|█████████▎| 73/78 [15:09<00:58, 11.70s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 94%|█████████▎| 73/78 [15:12<00:58, 11.78s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 95%|█████████▍| 74/78 [15:18<00:47, 11.93s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 95%|█████████▍| 74/78 [15:21<00:46, 11.68s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 95%|█████████▍| 74/78 [15:24<00:47, 11.78s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 96%|█████████▌| 75/78 [15:29<00:35, 11.89s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 96%|█████████▌| 75/78 [15:33<00:35, 11.76s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 96%|█████████▌| 75/78 [15:36<00:35, 11.89s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 97%|█████████▋| 76/78 [15:42<00:24, 12.06s/it]batch size on machine 0: 512
+feature size on machine 1: torch.Size([512, 768])
+ 97%|█████████▋| 76/78 [15:44<00:23, 11.79s/it]batch size on machine 1: 512
+feature size on machine 2: torch.Size([512, 768])
+ 97%|█████████▋| 76/78 [15:48<00:24, 12.03s/it]batch size on machine 2: 512
+feature size on machine 0: torch.Size([512, 768])
+ 99%|█████████▊| 77/78 [15:55<00:12, 12.21s/it]batch size on machine 0: 5
+feature size on machine 0: torch.Size([5, 768])
+100%|██████████| 78/78 [15:55<00:00,  8.69s/it]100%|██████████| 78/78 [15:55<00:00, 12.25s/it]
+length of img_embed on local machine: 78/78
+local image embed size: torch.Size([39429, 512])
+local caption embed size: torch.Size([39429, 768])
+feature size on machine 1: torch.Size([512, 768])
+ 99%|█████████▊| 77/78 [15:56<00:11, 11.72s/it]batch size on machine 1: 5
+feature size on machine 1: torch.Size([5, 768])
+100%|██████████| 78/78 [15:56<00:00,  8.30s/it]100%|██████████| 78/78 [15:56<00:00, 12.27s/it]
+length of img_embed on local machine: 78/78
+local image embed size: torch.Size([39429, 512])
+local caption embed size: torch.Size([39429, 768])
+feature size on machine 2: torch.Size([512, 768])
+ 99%|█████████▊| 77/78 [15:59<00:11, 11.56s/it]batch size on machine 2: 5
+feature size on machine 2: torch.Size([5, 768])
+100%|██████████| 78/78 [15:59<00:00,  8.20s/it]100%|██████████| 78/78 [15:59<00:00, 12.30s/it]
+length of img_embed on local machine: 78/78
+local image embed size: torch.Size([39429, 512])
+local caption embed size: torch.Size([39429, 768])
+total batch size on each machine: [39429, 39429, 39429]total batch size on each machine: [39429, 39429, 39429]total batch size on each machine: [39429, 39429, 39429]
+
+
+gather list length: [39429, 39429, 39429]
+gather list length: [39429, 39429, 39429]
+gather list length: [39429, 39429, 39429]
+Feature extraction done!Feature extraction done!Feature extraction done!
+
+
+embedding size: torch.Size([118287, 768])/torch.Size([118287, 512])
+Features Saved!!!

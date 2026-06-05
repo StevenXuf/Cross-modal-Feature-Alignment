@@ -1,0 +1,24 @@
+resnetbert imdb
+tensor([-35.5592,  -0.7692])
+tensor([36.6781,  0.6515])
+tensor([-11.2065,  -0.0287], dtype=torch.float64)
+tensor([11.2065,  0.0287], dtype=torch.float64)
+Figure saved!
+resnetbert flickr30k
+tensor([-41.8166,  -1.8807])
+tensor([42.3922,  2.7447])
+tensor([-11.0889,  -0.0191], dtype=torch.float64)
+tensor([11.0889,  0.0191], dtype=torch.float64)
+Figure saved!
+resnetbert celebA
+tensor([-35.0776,  -2.7804])
+tensor([43.0769,  3.2986])
+tensor([-11.3115,   0.0187], dtype=torch.float64)
+tensor([11.3115, -0.0187], dtype=torch.float64)
+Figure saved!
+resnetbert coco_train
+tensor([-42.5269,  -3.9097])
+tensor([45.5625,  4.1070])
+tensor([-11.0354,   0.0412], dtype=torch.float64)
+tensor([11.0354, -0.0412], dtype=torch.float64)
+Figure saved!
