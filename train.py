@@ -4,7 +4,7 @@ import os
 
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-from NN import MLP
+from NN import MLP, CrossAttentionSimilarity
 
 import torch.nn as nn
 from torchmetrics.functional.pairwise import pairwise_cosine_similarity
@@ -32,7 +32,7 @@ class Train():
             patience=5,
             tolerance=.01,
             early_stopping=True,
-            img_retrieval='yes'
+            task='yes'
             ):
         self.model_name=model_name
         self.path=path+'/'+self.model_name.upper()
@@ -45,14 +45,14 @@ class Train():
         self.patience=patience
         self.tolerance=tolerance
         self.early_stopping=early_stopping
-        self.img_retrieval=img_retrieval
+        self.task=task
         
         self.dataset=dataset
         
         self.caption_embed=torch.load(self.path+f'/{self.model_name.lower()}_caption_embed_{self.dataset}.pt',mmap=True,map_location=torch.device('cuda'),weights_only=True)
         self.img_embed=torch.load(self.path+f'/{self.model_name.lower()}_img_embed_{self.dataset}.pt',mmap=True,map_location=torch.device('cuda'),weights_only=True)
         
-        if self.img_retrieval!='yes':
+        if self.task=='img2txt':
             self.caption_embed,self.img_embed=self.img_embed,self.caption_embed
 
         if self.dataset.lower()=='imdb':
@@ -61,15 +61,18 @@ class Train():
             self.idx=torch.randperm(self.caption_embed.size(0))[:20000]
         
         self.caption_embed,self.img_embed=self.caption_embed[self.idx],self.img_embed[self.idx]
-        '''
-        if self.caption_embed.size(1)<768:
-            self.caption_embed=torch.cat((self.caption_embed,torch.zeros(self.caption_embed.size(0),768-self.caption_embed.size(1)).to('cuda')),dim=1)
-            self.img_embed=torch.cat((self.img_embed,torch.zeros(self.img_embed.size(0),768-self.img_embed.size(1)).to('cuda')),dim=1)
-        '''
+
+        # if self.caption_embed.size(1) < 768:
+        #     self.caption_embed=torch.cat((self.caption_embed,torch.zeros(self.caption_embed.size(0),768-self.caption_embed.size(1)).to('cuda')),dim=1)
+        #     self.img_embed=torch.cat((self.img_embed,torch.zeros(self.img_embed.size(0),768-self.img_embed.size(1)).to('cuda')),dim=1)
+
         self.caption_embed_train,self.caption_embed_test,self.img_embed_train,self.img_embed_test=train_test_split(self.caption_embed,self.img_embed,shuffle=False,test_size=.2)
         self.caption_embed_test,self.caption_embed_val,self.img_embed_test,self.img_embed_val=train_test_split(self.caption_embed_test,self.img_embed_test,shuffle=False,test_size=.5)
         
-        self.model=MLP(in_size=self.caption_embed_train.size(1)+self.img_embed_train.size(1),hidden_sizes=hidden_sizes)
+        if self.network=='mlp':
+            self.model=MLP(in_size=self.caption_embed_train.size(1)+self.img_embed_train.size(1),hidden_sizes=hidden_sizes)
+        elif self.network=='cross_attention':
+            self.model=CrossAttentionSimilarity(feat_dim=self.caption_embed_train.size(1))
 
         #self.train_sim,self.val_sim=self.fetch_distance()
         
@@ -151,11 +154,11 @@ class Train():
 
 
     def save_model(self,epoch):
-        torch.save(self.model.module.state_dict(),self.checkpoint_path+f'/{self.network}_{self.model_name}_{self.dataset}_{self.loss_func}_epoch{epoch+1}_{self.img_retrieval}.pt')
+        torch.save(self.model.module.state_dict(),self.checkpoint_path+f'/{self.network}_{self.model_name}_{self.dataset}_{self.loss_func}_epoch{epoch+1}_{self.task}.pt')
     
     def save_loss(self,train_loss,val_loss,epoch):
-        torch.save(train_loss,self.checkpoint_path+f'/{self.network}_{self.model_name}_{self.dataset}_{self.loss_func}_epoch{epoch+1}_{self.img_retrieval}_training_loss.pt')
-        torch.save(val_loss,self.checkpoint_path+f'/{self.network}_{self.model_name}_{self.dataset}_{self.loss_func}_epoch{epoch+1}_{self.img_retrieval}_val_loss.pt')
+        torch.save(train_loss,self.checkpoint_path+f'/{self.network}_{self.model_name}_{self.dataset}_{self.loss_func}_epoch{epoch+1}_{self.task}_training_loss.pt')
+        torch.save(val_loss,self.checkpoint_path+f'/{self.network}_{self.model_name}_{self.dataset}_{self.loss_func}_epoch{epoch+1}_{self.task}_val_loss.pt')
 
     def resume(self):
         pass
@@ -177,7 +180,7 @@ class Train():
 
         plt.tight_layout()
         
-        plt.savefig(self.checkpoint_path+f'/{self.network}_{self.model_name}_{self.dataset}_{self.loss_func}_{self.img_retrieval}_loss_curves.pdf',bbox_inches='tight')
+        plt.savefig(self.checkpoint_path+f'/{self.network}_{self.model_name}_{self.dataset}_{self.loss_func}_{self.task}_loss_curves.pdf',bbox_inches='tight')
         print(f'{self.model_name} {self.dataset} figure plotted!')
     
     @record
@@ -277,7 +280,7 @@ def set_config():
     parser.add_argument('--patience',type=int,default=5,help='patience for early stopping')
     parser.add_argument('--tolerance',type=float,default=.01,help='improvement for each epoch')
     parser.add_argument('--early_stopping',type=bool,default=True)
-    parser.add_argument('--img_retrieval',type=str,default='yes')
+    parser.add_argument('--task',type=str,default='txt2img')
     parser.add_argument('--loss_func',type=str,default='mse')
     args=parser.parse_args()
     return args
@@ -298,7 +301,7 @@ if __name__=='__main__':
             patience=args.patience,
             tolerance=args.tolerance,
             early_stopping=args.early_stopping,
-            img_retrieval=args.img_retrieval,
+            task=args.task,
             loss_func=args.loss_func
             )
     train.train_model()

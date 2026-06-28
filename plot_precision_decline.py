@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import numpy as np
 
 def plot_precision_decline(img2txt_precision,txt2img_precision):
     plt.figure(figsize=(4,3))

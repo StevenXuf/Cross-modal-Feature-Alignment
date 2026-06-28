@@ -1,7 +1,4 @@
 import torch
-import timm
-import numpy as np
-import transformers
 import matplotlib.pyplot as plt
 
 from tqdm import tqdm
@@ -19,7 +16,6 @@ sys.path.append('/home/fxu/alignment/BLIP_Official')
 from models.blip_itm import blip_itm
 
 from datasets import load_dataset
-from huggingface_hub import list_datasets
 
 from convit_models import convit_base
 from ConvNeXt import convnext_small
