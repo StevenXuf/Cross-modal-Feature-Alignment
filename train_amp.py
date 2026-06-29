@@ -1,11 +1,10 @@
 import torch
 import argparse
 import os
-import time
 
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-from NN import MLP,BranchMLP
+from NN import MLP
 
 import torch.nn as nn
 import torch.distributed as dist
@@ -13,7 +12,7 @@ import torch.distributed as dist
 from torch.distributed.elastic.multiprocessing.errors import record
 from torch.nn.parallel import DistributedDataParallel as DDP
 
-from torch.utils.data import DataLoader,random_split
+from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
 
 from sklearn.model_selection import train_test_split
@@ -43,8 +42,6 @@ class Train():
 
         if self.network=='mlp':
             self.model=MLP()
-        else:
-            self.model=BranchMLP()
         
         self.dataset=dataset
         
