@@ -152,7 +152,7 @@ The paper finds cosine similarity to be a strong retrieval baseline, especially 
 | `figures/pipeline.png` | Pipeline illustration retained for this README |
 | `scripts/` (local, ignored) | Bash launchers collected from the original repository |
 
-`transformer_train.py` and `train_amp.py` are earlier training variants. The legacy `test.py` and `test_small.py` depend on the removed trainers and are not compatible with the current training workflow; use `train_main.py`'s integrated evaluation instead.
+`transformer_train.py` is an earlier training variant. Use `train_main.py` for training and its integrated retrieval evaluation.
 
 Local bash launchers, log directories, generated figures other than `figures/pipeline.png`, metric-output directories (`bray_curtis`, `canberra`, `chi_square`/`chi_squre`, `cosine`, `manhattan`, `euclidean`), `discarded_files`, `clean_code`, and `plot_centroid_info` are excluded from Git. Ignored artifacts may remain in an existing local checkout, but are not distributed by a fresh clone.
 
