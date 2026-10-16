@@ -23,7 +23,6 @@ from torch.distributed.elastic.multiprocessing.errors import record
 from torch.nn.parallel import DistributedDataParallel as DDP
 
 from load_data import LoadCOCO,LoadFlickr30K,LoadIMDB,LoadCelebA
-from sampler import DistributedEvalSampler
 sys.path.append('/home/fxu/alignment/MetaTransformer_changed/Data2Seq')
 #from Data2Seq import Data2Seq
 from convit_models import convit_base
@@ -293,7 +292,8 @@ class FeatureExtractor():
         img_embed=[]
         caption_embed=[]
         
-        sampler=DistributedEvalSampler(dataset)
+        # Preserve the unpadded, strided partition without a custom sampler.
+        sampler=range(self.rank,n_samples,self.n_total_device)
         dataloader=DataLoader(dataset,batch_size=self.batch_size,shuffle=False,sampler=sampler)
         
         start_idx=0

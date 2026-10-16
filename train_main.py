@@ -281,6 +281,7 @@ def set_config():
     parser=argparse.ArgumentParser()
     parser.add_argument('model_name',type=str,help='Multimodal name')
     parser.add_argument('dataset',type=str,help='which dataset')
+    parser.add_argument('--path',type=str,default='/data/data_fxu/alignment_features/',help='Root directory containing per-model feature folders')
     parser.add_argument('--network',type=str,default='mlp',help='which model structure')
     parser.add_argument('--lr',type=float,default=5e-5,help='learning rate')
     parser.add_argument('--n_epochs',type=int,default=100,help='number of epochs')
@@ -302,6 +303,7 @@ if __name__=='__main__':
     args=set_config()
 
     train=Train(args.model_name,args.dataset,
+            path=args.path,
             network=args.network,
             batch_size=args.batch_size,
             n_epochs=args.n_epochs,

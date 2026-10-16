@@ -1,914 +1,0 @@
-Namespace(model_name='blip', dataset='flickr30k', img_retrieval='no', loss_func='contrastive', n_train_batch_sub=10, n_val_batch_sub=5, batch_size=64, n_epochs=10, device='1', n_trials=100)
-[I 2024-08-10 21:10:04,042] A new study created in memory with name: no-name-e4675923-f433-4ae6-816c-07a90a3d5c17
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.6418796151876449, validation loss: 0.11437996476888657.
- 10%|█         | 1/10 [00:29<04:29, 29.92s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.04678435521200299, validation loss: 0.012392418086528778.
- 20%|██        | 2/10 [00:59<03:58, 29.77s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.007262613857164979, validation loss: 0.005145993921905756.
- 30%|███       | 3/10 [01:29<03:27, 29.66s/it]Epoch: 4, lr: 1e-05, training loss: 0.003532048175111413, validation loss: 0.0037863378413021563.
- 40%|████      | 4/10 [01:58<02:58, 29.68s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.002688279142603278, validation loss: 0.0033619776368141174.
- 50%|█████     | 5/10 [02:28<02:28, 29.75s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0023919977014884354, validation loss: 0.0031800566241145132.
- 60%|██████    | 6/10 [02:58<01:59, 29.79s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.002252276102080941, validation loss: 0.003080608136951923.
- 70%|███████   | 7/10 [03:28<01:29, 29.82s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.0021705463528633117, validation loss: 0.0030169454403221607.
- 80%|████████  | 8/10 [03:58<00:59, 29.86s/it]Epoch: 9, lr: 2.116185616239679e-06, training loss: 0.0021162817953154444, validation loss: 0.0029728079680353403.
- 90%|█████████ | 9/10 [04:28<00:29, 29.88s/it]Epoch: 10, lr: 1.5151515151515152e-06, training loss: 0.002078049851115793, validation loss: 0.0029411555733531713.
-100%|██████████| 10/10 [04:58<00:00, 29.92s/it]100%|██████████| 10/10 [04:58<00:00, 29.83s/it]
-[I 2024-08-10 21:15:03,102] Trial 0 finished with value: 0.0029411555733531713 and parameters: {'n_layers': 3, 'n_units_l0': 1100, 'n_units_l1': 300, 'n_units_l2': 900}. Best is trial 0 with value: 0.0029411555733531713.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.039015439432114364, validation loss: 0.0034924039617180826.
- 10%|█         | 1/10 [00:29<04:28, 29.78s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0013147039571776986, validation loss: 0.0014275295659899711.
- 20%|██        | 2/10 [00:59<03:58, 29.78s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00046110455587040634, validation loss: 0.001223581493832171.
- 30%|███       | 3/10 [01:29<03:28, 29.74s/it]Epoch: 4, lr: 1e-05, training loss: 0.0003433067002333701, validation loss: 0.001175936684012413.
- 40%|████      | 4/10 [01:58<02:57, 29.65s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.0003112273232545704, validation loss: 0.0011597278527915478.
- 50%|█████     | 5/10 [02:28<02:28, 29.61s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00029907289135735484, validation loss: 0.0011524517321959138.
-Trigger count: 1
- 60%|██████    | 6/10 [02:57<01:58, 29.59s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0002930579561507329, validation loss: 0.001148316846229136.
-Trigger count: 2
- 70%|███████   | 7/10 [03:27<01:28, 29.57s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.0002893947676056996, validation loss: 0.0011455815518274903.
-Trigger count: 3
- 80%|████████  | 8/10 [03:56<00:59, 29.55s/it]Epoch: 9, lr: 2.116185616239679e-06, training loss: 0.0002868851413950324, validation loss: 0.0011436378117650747.
-Trigger count: 4
- 90%|█████████ | 9/10 [04:26<00:29, 29.54s/it]Epoch: 10, lr: 1.5151515151515152e-06, training loss: 0.0002850765420589596, validation loss: 0.0011422190582379699.
-Trigger count: 5
-*****Early stopped at epoch 10*****
- 90%|█████████ | 9/10 [04:55<00:32, 32.88s/it]
-[I 2024-08-10 21:19:59,076] Trial 1 finished with value: 0.0011422190582379699 and parameters: {'n_layers': 4, 'n_units_l0': 700, 'n_units_l1': 300, 'n_units_l2': 700, 'n_units_l3': 500}. Best is trial 1 with value: 0.0011422190582379699.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.8300189197063446, validation loss: 0.5234126210212707.
- 10%|█         | 1/10 [00:25<03:52, 25.87s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.3630826622247696, validation loss: 0.21729123294353486.
- 20%|██        | 2/10 [00:52<03:28, 26.08s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.15760785341262817, validation loss: 0.1068558394908905.
- 30%|███       | 3/10 [01:17<03:01, 25.99s/it]Epoch: 4, lr: 1e-05, training loss: 0.0850831501185894, validation loss: 0.06702025830745698.
- 40%|████      | 4/10 [01:43<02:35, 25.88s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.05755517967045307, validation loss: 0.05026358813047409.
- 50%|█████     | 5/10 [02:09<02:09, 25.81s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.04521905779838562, validation loss: 0.04196520000696182.
- 60%|██████    | 6/10 [02:35<01:43, 25.77s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.03877178430557251, validation loss: 0.037284886837005614.
- 70%|███████   | 7/10 [03:00<01:17, 25.76s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.03498949091881513, validation loss: 0.03439380824565887.
- 80%|████████  | 8/10 [03:26<00:51, 25.72s/it]Epoch: 9, lr: 2.116185616239679e-06, training loss: 0.032591184787452224, validation loss: 0.03249992653727531.
- 90%|█████████ | 9/10 [03:52<00:25, 25.72s/it]Epoch: 10, lr: 1.5151515151515152e-06, training loss: 0.03099387250840664, validation loss: 0.03121311664581299.
-100%|██████████| 10/10 [04:17<00:00, 25.70s/it]100%|██████████| 10/10 [04:17<00:00, 25.78s/it]
-[I 2024-08-10 21:24:16,897] Trial 2 finished with value: 0.03121311664581299 and parameters: {'n_layers': 2, 'n_units_l0': 300, 'n_units_l1': 300}. Best is trial 1 with value: 0.0011422190582379699.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.08718581926077604, validation loss: 0.02241635210812092.
- 10%|█         | 1/10 [00:27<04:03, 27.06s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.012616611877456307, validation loss: 0.006653965078294277.
- 20%|██        | 2/10 [00:54<03:36, 27.08s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00452852554153651, validation loss: 0.004005253687500954.
- 30%|███       | 3/10 [01:20<03:08, 26.96s/it]Epoch: 4, lr: 1e-05, training loss: 0.002867510518990457, validation loss: 0.0032328190747648476.
- 40%|████      | 4/10 [01:47<02:41, 26.95s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.002313377836253494, validation loss: 0.0029146450106054544.
- 50%|█████     | 5/10 [02:14<02:14, 26.92s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0020619315444491805, validation loss: 0.002748143672943115.
- 60%|██████    | 6/10 [02:41<01:47, 26.93s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0019211537786759437, validation loss: 0.002646193699911237.
- 70%|███████   | 7/10 [03:08<01:20, 26.94s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.0018314516870304941, validation loss: 0.0025780387222766876.
- 80%|████████  | 8/10 [03:35<00:53, 26.94s/it]Epoch: 9, lr: 2.116185616239679e-06, training loss: 0.0017702455865219236, validation loss: 0.0025304497685283422.
- 90%|█████████ | 9/10 [04:02<00:26, 26.94s/it]Epoch: 10, lr: 1.5151515151515152e-06, training loss: 0.0017270768759772182, validation loss: 0.002496521081775427.
-100%|██████████| 10/10 [04:29<00:00, 26.93s/it]100%|██████████| 10/10 [04:29<00:00, 26.95s/it]
-[I 2024-08-10 21:28:46,409] Trial 3 finished with value: 0.002496521081775427 and parameters: {'n_layers': 2, 'n_units_l0': 300, 'n_units_l1': 1100}. Best is trial 1 with value: 0.0011422190582379699.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.06515293268021197, validation loss: 0.0019995387410745025.
- 10%|█         | 1/10 [00:35<05:21, 35.71s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0005512643518159166, validation loss: 0.0011169775854796172.
- 20%|██        | 2/10 [01:11<04:45, 35.70s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00021785901044495403, validation loss: 0.0010565416654571892.
- 30%|███       | 3/10 [01:46<04:09, 35.59s/it]Epoch: 4, lr: 1e-05, training loss: 0.00018357514345552773, validation loss: 0.001044416311196983.
- 40%|████      | 4/10 [02:22<03:33, 35.64s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00017559011903358623, validation loss: 0.0010409818962216378.
-Trigger count: 1
- 50%|█████     | 5/10 [02:58<02:58, 35.67s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00017315493896603585, validation loss: 0.0010398011188954114.
-Trigger count: 2
- 60%|██████    | 6/10 [03:33<02:22, 35.59s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00017224878538399935, validation loss: 0.001039292640052736.
-Trigger count: 3
- 70%|███████   | 7/10 [04:09<01:46, 35.64s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.00017181932198582218, validation loss: 0.0010390129638835788.
-Trigger count: 4
- 80%|████████  | 8/10 [04:45<01:11, 35.64s/it]Epoch: 9, lr: 2.116185616239679e-06, training loss: 0.00017156411049654708, validation loss: 0.0010388294933363796.
-Trigger count: 5
-*****Early stopped at epoch 9*****
- 80%|████████  | 8/10 [05:20<01:20, 40.08s/it]
-[I 2024-08-10 21:34:07,071] Trial 4 finished with value: 0.0010388294933363796 and parameters: {'n_layers': 4, 'n_units_l0': 1100, 'n_units_l1': 900, 'n_units_l2': 700, 'n_units_l3': 900}. Best is trial 4 with value: 0.0010388294933363796.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.31547432020306587, validation loss: 0.05213920995593071.
-  0%|          | 0/10 [00:28<?, ?it/s]
-[I 2024-08-10 21:34:35,785] Trial 5 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.18278203830122947, validation loss: 0.03165490627288818.
-  0%|          | 0/10 [00:27<?, ?it/s]
-[I 2024-08-10 21:35:03,143] Trial 6 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.3776227645576, validation loss: 0.06802092343568802.
-  0%|          | 0/10 [00:29<?, ?it/s]
-[I 2024-08-10 21:35:32,749] Trial 7 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.09644791414029896, validation loss: 0.00596785806119442.
- 10%|█         | 1/10 [00:29<04:29, 30.00s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0022426160459872333, validation loss: 0.0016487194690853358.
- 20%|██        | 2/10 [01:00<04:00, 30.10s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.0006054462748579681, validation loss: 0.0013075582450255752.
- 30%|███       | 3/10 [01:30<03:30, 30.14s/it]Epoch: 4, lr: 1e-05, training loss: 0.0004167816630797461, validation loss: 0.0012350017903372645.
- 40%|████      | 4/10 [02:00<03:00, 30.06s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00036933493975084276, validation loss: 0.0012119278311729432.
- 50%|█████     | 5/10 [02:30<02:30, 30.11s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0003525010048178956, validation loss: 0.0012022498762235046.
-Trigger count: 1
- 60%|██████    | 6/10 [03:00<02:00, 30.16s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00034466745564714073, validation loss: 0.0011970365419983863.
-Trigger count: 2
- 70%|███████   | 7/10 [03:30<01:30, 30.09s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.0003400901856366545, validation loss: 0.0011936849448829889.
-Trigger count: 3
- 80%|████████  | 8/10 [04:00<01:00, 30.13s/it]Epoch: 9, lr: 2.116185616239679e-06, training loss: 0.00033701393113005906, validation loss: 0.0011913288151845336.
-Trigger count: 4
- 90%|█████████ | 9/10 [04:31<00:30, 30.14s/it]Epoch: 10, lr: 1.5151515151515152e-06, training loss: 0.00033481162099633364, validation loss: 0.0011896142968907952.
-Trigger count: 5
-*****Early stopped at epoch 10*****
- 90%|█████████ | 9/10 [05:00<00:33, 33.43s/it]
-[I 2024-08-10 21:40:33,668] Trial 8 finished with value: 0.0011896142968907952 and parameters: {'n_layers': 4, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 700, 'n_units_l3': 700}. Best is trial 4 with value: 0.0010388294933363796.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.6694481164216995, validation loss: 0.19839021563529968.
-  0%|          | 0/10 [00:28<?, ?it/s]
-[I 2024-08-10 21:41:01,869] Trial 9 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.17201979480450974, validation loss: 0.0012019766960293054.
- 10%|█         | 1/10 [00:42<06:21, 42.43s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00018877603870350867, validation loss: 0.0010063422145321966.
- 20%|██        | 2/10 [01:24<05:38, 42.30s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013121746014803647, validation loss: 0.0010014768689870835.
-Trigger count: 1
- 30%|███       | 3/10 [02:06<04:55, 42.22s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012823036377085373, validation loss: 0.0010007949313148856.
-Trigger count: 2
- 40%|████      | 4/10 [02:48<04:12, 42.07s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012765978026436643, validation loss: 0.0010006353259086609.
-Trigger count: 3
- 50%|█████     | 5/10 [03:30<03:30, 42.06s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012751177855534478, validation loss: 0.0010005920426920055.
-Trigger count: 4
- 60%|██████    | 6/10 [04:12<02:48, 42.01s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012747035798383878, validation loss: 0.0010005797958001494.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:54<03:16, 49.04s/it]
-[I 2024-08-10 21:45:56,157] Trial 10 finished with value: 0.0010005797958001494 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 10 with value: 0.0010005797958001494.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.0516293729247991, validation loss: 0.0011263860622420907.
- 10%|█         | 1/10 [00:42<06:20, 42.29s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00017021508538164198, validation loss: 0.0010079788276925682.
- 20%|██        | 2/10 [01:24<05:37, 42.13s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013231951306806876, validation loss: 0.0010027370881289244.
-Trigger count: 1
- 30%|███       | 3/10 [02:06<04:53, 41.97s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001293278008233756, validation loss: 0.0010018500965088607.
-Trigger count: 2
- 40%|████      | 4/10 [02:48<04:12, 42.03s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012869577622041107, validation loss: 0.0010016276501119137.
-Trigger count: 3
- 50%|█████     | 5/10 [03:30<03:30, 42.06s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012852535874117166, validation loss: 0.0010015648556873202.
-Trigger count: 4
- 60%|██████    | 6/10 [04:11<02:47, 41.91s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012847569305449725, validation loss: 0.0010015458799898624.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:54<03:16, 49.00s/it]
-[I 2024-08-10 21:50:50,240] Trial 11 finished with value: 0.0010015458799898624 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 10 with value: 0.0010005797958001494.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.06540496036468539, validation loss: 0.0012150353752076626.
- 10%|█         | 1/10 [00:41<06:17, 41.99s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0002141703516826965, validation loss: 0.0010151840979233384.
- 20%|██        | 2/10 [01:24<05:36, 42.05s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00014008951548021286, validation loss: 0.001005821442231536.
-Trigger count: 1
- 30%|███       | 3/10 [02:06<04:54, 42.07s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013402301556197926, validation loss: 0.0010041880188509822.
-Trigger count: 2
- 40%|████      | 4/10 [02:47<04:11, 41.97s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013272509386297315, validation loss: 0.0010037709260359406.
-Trigger count: 3
- 50%|█████     | 5/10 [03:30<03:30, 42.02s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013237003004178404, validation loss: 0.0010036500170826912.
-Trigger count: 4
- 60%|██████    | 6/10 [04:12<02:48, 42.02s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0001322631098446436, validation loss: 0.0010036115301772953.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:53<03:15, 48.99s/it]
-[I 2024-08-10 21:55:44,270] Trial 12 finished with value: 0.0010036115301772953 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 10 with value: 0.0010005797958001494.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.017964731832034887, validation loss: 0.0010872196638956667.
- 10%|█         | 1/10 [00:39<05:58, 39.83s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0001590361207490787, validation loss: 0.0010078046238049866.
- 20%|██        | 2/10 [01:19<05:18, 39.76s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013232727505965158, validation loss: 0.0010031189769506455.
-Trigger count: 1
- 30%|███       | 3/10 [01:59<04:37, 39.63s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012966377398697658, validation loss: 0.0010022479109466076.
-Trigger count: 2
- 40%|████      | 4/10 [02:38<03:58, 39.67s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.0001290630505536683, validation loss: 0.0010020198533311486.
-Trigger count: 3
- 50%|█████     | 5/10 [03:18<03:18, 39.68s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012889445351902396, validation loss: 0.0010019521228969096.
-Trigger count: 4
- 60%|██████    | 6/10 [03:57<02:38, 39.61s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012884195020888, validation loss: 0.0010019293753430248.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:37<03:05, 46.29s/it]
-[I 2024-08-10 22:00:22,088] Trial 13 finished with value: 0.0010019293753430248 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 900, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 10 with value: 0.0010005797958001494.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.1180673684226349, validation loss: 0.002066168235614896.
- 10%|█         | 1/10 [00:38<05:45, 38.41s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0005755137943197041, validation loss: 0.001090660342015326.
- 20%|██        | 2/10 [01:16<05:07, 38.47s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00020292679546400904, validation loss: 0.0010393863078206778.
- 30%|███       | 3/10 [01:55<04:29, 38.48s/it]Epoch: 4, lr: 1e-05, training loss: 0.00017131164495367556, validation loss: 0.0010299435118213296.
-Trigger count: 1
- 40%|████      | 4/10 [02:33<03:50, 38.34s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00016440917243016885, validation loss: 0.00102740868460387.
-Trigger count: 2
- 50%|█████     | 5/10 [03:12<03:12, 38.41s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00016242237179540098, validation loss: 0.0010266012046486138.
-Trigger count: 3
- 60%|██████    | 6/10 [03:50<02:33, 38.43s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.000161748549726326, validation loss: 0.0010262907249853014.
-Trigger count: 4
- 70%|███████   | 7/10 [04:28<01:55, 38.38s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.00016146618436323478, validation loss: 0.001026138081215322.
-Trigger count: 5
-*****Early stopped at epoch 8*****
- 70%|███████   | 7/10 [05:07<02:11, 43.91s/it]
-[I 2024-08-10 22:05:29,521] Trial 14 finished with value: 0.001026138081215322 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 900, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 500}. Best is trial 10 with value: 0.0010005797958001494.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.08405323773622513, validation loss: 0.016065466031432152.
-  0%|          | 0/10 [00:26<?, ?it/s]
-[I 2024-08-10 22:05:56,336] Trial 15 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.24509024037979543, validation loss: 0.004357418604195118.
-  0%|          | 0/10 [00:38<?, ?it/s]
-[I 2024-08-10 22:06:34,413] Trial 16 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.06664461456239223, validation loss: 0.0074490695260465145.
-  0%|          | 0/10 [00:29<?, ?it/s]
-[I 2024-08-10 22:07:03,455] Trial 17 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.07533515256363899, validation loss: 0.0024825717322528363.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-10 22:07:36,777] Trial 18 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.0404285671422258, validation loss: 0.0031949992291629313.
-  0%|          | 0/10 [00:30<?, ?it/s]
-[I 2024-08-10 22:08:07,363] Trial 19 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.09318678309209645, validation loss: 0.005299910251051187.
-  0%|          | 0/10 [00:31<?, ?it/s]
-[I 2024-08-10 22:08:38,892] Trial 20 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.012579015499795787, validation loss: 0.0010431430768221618.
- 10%|█         | 1/10 [00:39<05:54, 39.40s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0001424650676199235, validation loss: 0.0010027471231296658.
- 20%|██        | 2/10 [01:19<05:16, 39.53s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00012849448685301468, validation loss: 0.0010007421486079692.
-Trigger count: 1
- 30%|███       | 3/10 [01:58<04:37, 39.58s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012717788922600448, validation loss: 0.0010004000272601844.
-Trigger count: 2
- 40%|████      | 4/10 [02:38<03:57, 39.61s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012688653951045125, validation loss: 0.001000313926488161.
-Trigger count: 3
- 50%|█████     | 5/10 [03:17<03:18, 39.63s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012680615182034672, validation loss: 0.0010002891998738051.
-Trigger count: 4
- 60%|██████    | 6/10 [03:57<02:38, 39.62s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0001267819185159169, validation loss: 0.0010002814000472427.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:37<03:04, 46.21s/it]
-[I 2024-08-10 22:13:16,198] Trial 21 finished with value: 0.0010002814000472427 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 900, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.14711393672041595, validation loss: 0.0017074279021471739.
- 10%|█         | 1/10 [00:40<06:02, 40.32s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0003498095407849178, validation loss: 0.0010479288641363383.
- 20%|██        | 2/10 [01:20<05:22, 40.34s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00015895303804427385, validation loss: 0.0010193233378231526.
- 30%|███       | 3/10 [02:00<04:42, 40.29s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001448075199732557, validation loss: 0.0010143612511456014.
-Trigger count: 1
- 40%|████      | 4/10 [02:40<04:01, 40.20s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00014184062456479296, validation loss: 0.0010130906011909246.
-Trigger count: 2
- 50%|█████     | 5/10 [03:21<03:20, 40.17s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00014103049907134845, validation loss: 0.0010127196554094553.
-Trigger count: 3
- 60%|██████    | 6/10 [04:01<02:40, 40.15s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00014078436215640976, validation loss: 0.0010125991655513644.
-Trigger count: 4
- 70%|███████   | 7/10 [04:41<02:00, 40.12s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.00014069860335439444, validation loss: 0.001012551039457321.
-Trigger count: 5
-*****Early stopped at epoch 8*****
- 70%|███████   | 7/10 [05:21<02:17, 45.90s/it]
-[I 2024-08-10 22:18:37,579] Trial 22 finished with value: 0.001012551039457321 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 900}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.06475166631862521, validation loss: 0.002191396802663803.
-  0%|          | 0/10 [00:35<?, ?it/s]
-[I 2024-08-10 22:19:12,776] Trial 23 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.033033331888145764, validation loss: 0.0011333145666867495.
- 10%|█         | 1/10 [00:40<06:00, 40.02s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00017608950729481877, validation loss: 0.0010104518383741378.
- 20%|██        | 2/10 [01:20<05:20, 40.12s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013464159419527278, validation loss: 0.0010040397522971035.
-Trigger count: 1
- 30%|███       | 3/10 [02:00<04:41, 40.16s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013094093155814336, validation loss: 0.0010028902441263198.
-Trigger count: 2
- 40%|████      | 4/10 [02:40<04:00, 40.08s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.0001301308802794665, validation loss: 0.0010025938274338842.
-Trigger count: 3
- 50%|█████     | 5/10 [03:20<03:20, 40.12s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012990712275495753, validation loss: 0.0010025071911513805.
-Trigger count: 4
- 60%|██████    | 6/10 [04:00<02:40, 40.13s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0001298390459851362, validation loss: 0.001002479181624949.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:40<03:07, 46.77s/it]
-[I 2024-08-10 22:23:53,464] Trial 24 finished with value: 0.001002479181624949 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 900}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.01888951740693301, validation loss: 0.002563975332304835.
-  0%|          | 0/10 [00:29<?, ?it/s]
-[I 2024-08-10 22:24:22,633] Trial 25 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.4596883876249194, validation loss: 0.007049626763910055.
-  0%|          | 0/10 [00:38<?, ?it/s]
-[I 2024-08-10 22:25:00,750] Trial 26 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.12231672273483127, validation loss: 0.002330834791064262.
-  0%|          | 0/10 [00:36<?, ?it/s]
-[I 2024-08-10 22:25:36,960] Trial 27 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.22974339658394455, validation loss: 0.006176643818616867.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-10 22:26:11,741] Trial 28 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.47809792309999466, validation loss: 0.11241407096385955.
-  0%|          | 0/10 [00:28<?, ?it/s]
-[I 2024-08-10 22:26:40,356] Trial 29 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.6860242366790772, validation loss: 0.2594648540019989.
-  0%|          | 0/10 [00:26<?, ?it/s]
-[I 2024-08-10 22:27:06,476] Trial 30 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.09946973930927924, validation loss: 0.001368850958533585.
- 10%|█         | 1/10 [00:39<05:57, 39.68s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0002662847939063795, validation loss: 0.0010242654709145427.
- 20%|██        | 2/10 [01:19<05:17, 39.69s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00014658789441455156, validation loss: 0.001009301352314651.
- 30%|███       | 3/10 [01:58<04:36, 39.55s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001376130574499257, validation loss: 0.0010067390045151114.
-Trigger count: 1
- 40%|████      | 4/10 [02:38<03:57, 39.62s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013573385804193093, validation loss: 0.0010060888715088367.
-Trigger count: 2
- 50%|█████     | 5/10 [03:18<03:18, 39.64s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013522400986403226, validation loss: 0.0010059015825390817.
-Trigger count: 3
- 60%|██████    | 6/10 [03:57<02:38, 39.57s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00013507170951925217, validation loss: 0.0010058426298201085.
-Trigger count: 4
- 70%|███████   | 7/10 [04:37<01:58, 39.62s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.00013502067449735477, validation loss: 0.0010058200918138028.
-Trigger count: 5
-*****Early stopped at epoch 8*****
- 70%|███████   | 7/10 [05:16<02:15, 45.27s/it]
-[I 2024-08-10 22:32:23,425] Trial 31 finished with value: 0.0010058200918138028 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 900, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.16149612875888125, validation loss: 0.0017265998525545002.
-  0%|          | 0/10 [00:40<?, ?it/s]
-[I 2024-08-10 22:33:03,778] Trial 32 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.04921903473441489, validation loss: 0.0014340055175125598.
- 10%|█         | 1/10 [00:36<05:29, 36.63s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00031253011838998644, validation loss: 0.0010466725332662463.
- 20%|██        | 2/10 [01:13<04:54, 36.77s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00016654619248583912, validation loss: 0.00102187090087682.
- 20%|██        | 2/10 [01:50<07:20, 55.08s/it]
-[I 2024-08-10 22:34:53,983] Trial 33 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.44773527048528194, validation loss: 0.009731651283800602.
-  0%|          | 0/10 [00:36<?, ?it/s]
-[I 2024-08-10 22:35:30,539] Trial 34 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.13564108978025616, validation loss: 0.003190506575629115.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-10 22:36:05,218] Trial 35 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.06869992592837662, validation loss: 0.0019017550395801664.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-10 22:36:39,466] Trial 36 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.06343554580816999, validation loss: 0.0014151768293231726.
- 10%|█         | 1/10 [00:38<05:44, 38.23s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0002926333298091777, validation loss: 0.001038065948523581.
- 20%|██        | 2/10 [01:16<05:04, 38.02s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00015733455657027662, validation loss: 0.00101678934879601.
- 30%|███       | 3/10 [01:54<04:26, 38.12s/it]Epoch: 4, lr: 1e-05, training loss: 0.00014498769160127268, validation loss: 0.001012805080972612.
-Trigger count: 1
- 40%|████      | 4/10 [02:32<03:49, 38.20s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00014224628685042263, validation loss: 0.0010117432102560997.
-Trigger count: 2
- 50%|█████     | 5/10 [03:10<03:11, 38.23s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0001414658734574914, validation loss: 0.0010114151518791914.
-Trigger count: 3
- 60%|██████    | 6/10 [03:49<02:33, 38.26s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00014121094427537172, validation loss: 0.0010112963151186704.
-Trigger count: 4
- 70%|███████   | 7/10 [04:27<01:54, 38.25s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.00014111010095803068, validation loss: 0.0010112410876899959.
-Trigger count: 5
-*****Early stopped at epoch 8*****
- 70%|███████   | 7/10 [05:05<02:11, 43.68s/it]
-[I 2024-08-10 22:41:45,308] Trial 37 finished with value: 0.0010112410876899959 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 1100, 'n_units_l2': 900, 'n_units_l3': 900, 'n_units_l4': 700}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.032880026497878134, validation loss: 0.0017520132940262556.
-  0%|          | 0/10 [00:32<?, ?it/s]
-[I 2024-08-10 22:42:17,846] Trial 38 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.09889085441827775, validation loss: 0.029391788691282273.
-  0%|          | 0/10 [00:26<?, ?it/s]
-[I 2024-08-10 22:42:44,661] Trial 39 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.01589220532332547, validation loss: 0.0013637044932693243.
- 10%|█         | 1/10 [00:32<04:50, 32.26s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0002946532375062816, validation loss: 0.0010571490041911603.
- 10%|█         | 1/10 [01:04<09:44, 64.90s/it]
-[I 2024-08-10 22:43:49,613] Trial 40 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.05549595790216699, validation loss: 0.001323456852696836.
- 10%|█         | 1/10 [00:39<05:58, 39.89s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0002684133069124073, validation loss: 0.0010294519132003188.
- 20%|██        | 2/10 [01:19<05:19, 39.97s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00015295642224373297, validation loss: 0.0010128096910193563.
- 30%|███       | 3/10 [01:59<04:39, 39.98s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001423023160896264, validation loss: 0.0010097053600475192.
-Trigger count: 1
- 40%|████      | 4/10 [02:39<03:59, 40.00s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013993656175443904, validation loss: 0.00100888148881495.
-Trigger count: 2
- 50%|█████     | 5/10 [03:19<03:19, 39.97s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013926575338700785, validation loss: 0.0010086289141327143.
-Trigger count: 3
- 60%|██████    | 6/10 [03:59<02:40, 40.02s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0001390487974276766, validation loss: 0.0010085387155413627.
-Trigger count: 4
- 70%|███████   | 7/10 [04:39<02:00, 40.00s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.0001389644414302893, validation loss: 0.0010084976209327578.
-Trigger count: 5
-*****Early stopped at epoch 8*****
- 70%|███████   | 7/10 [05:19<02:17, 45.71s/it]
-[I 2024-08-10 22:49:09,654] Trial 41 finished with value: 0.0010084976209327578 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 900}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.15057709808461367, validation loss: 0.0014075206825509667.
- 10%|█         | 1/10 [00:40<06:04, 40.45s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00025298697291873393, validation loss: 0.0010198648320510983.
- 20%|██        | 2/10 [01:21<05:24, 40.60s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00014042379334568977, validation loss: 0.00100670054089278.
- 30%|███       | 3/10 [02:01<04:44, 40.65s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013344317558221518, validation loss: 0.0010046151699498295.
-Trigger count: 1
- 40%|████      | 4/10 [02:42<04:03, 40.64s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013205434806877746, validation loss: 0.001004102686420083.
-Trigger count: 2
- 50%|█████     | 5/10 [03:23<03:23, 40.63s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013168721925467254, validation loss: 0.001003959495574236.
-Trigger count: 3
- 60%|██████    | 6/10 [04:03<02:42, 40.65s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00013158164510969074, validation loss: 0.0010039170971140265.
-Trigger count: 4
- 70%|███████   | 7/10 [04:44<02:01, 40.63s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.00013154911866877227, validation loss: 0.0010039028245955705.
-Trigger count: 5
-*****Early stopped at epoch 8*****
- 70%|███████   | 7/10 [05:24<02:19, 46.42s/it]
-[I 2024-08-10 22:54:34,687] Trial 42 finished with value: 0.0010039028245955705 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.055141030348022466, validation loss: 0.0011977924033999443.
- 10%|█         | 1/10 [00:40<06:01, 40.21s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0002036495367065072, validation loss: 0.0010152102913707495.
- 20%|██        | 2/10 [01:20<05:21, 40.19s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.0001391049212543294, validation loss: 0.0010061118518933654.
-Trigger count: 1
- 30%|███       | 3/10 [02:00<04:41, 40.20s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013357116695260628, validation loss: 0.001004488323815167.
-Trigger count: 2
- 40%|████      | 4/10 [02:40<04:00, 40.10s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.0001323731237789616, validation loss: 0.00100407050922513.
-Trigger count: 3
- 50%|█████     | 5/10 [03:20<03:20, 40.07s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0001320439827395603, validation loss: 0.0010039489716291428.
-Trigger count: 4
- 60%|██████    | 6/10 [04:00<02:40, 40.04s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00013194457424106076, validation loss: 0.0010039100656285883.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:40<03:07, 46.76s/it]
-[I 2024-08-10 22:59:15,296] Trial 43 finished with value: 0.0010039100656285883 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 900}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.06296748865861446, validation loss: 0.0012300034519284963.
- 10%|█         | 1/10 [00:39<05:55, 39.51s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00021843362628715113, validation loss: 0.0010164363775402308.
- 20%|██        | 2/10 [01:18<05:15, 39.44s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00014089408796280622, validation loss: 0.0010063602589070798.
-Trigger count: 1
- 30%|███       | 3/10 [01:57<04:34, 39.28s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013450347760226577, validation loss: 0.0010045979637652636.
-Trigger count: 2
- 40%|████      | 4/10 [02:37<03:56, 39.35s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.0001331347943050787, validation loss: 0.0010041473666206001.
-Trigger count: 3
- 50%|█████     | 5/10 [03:16<03:16, 39.38s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013276002864586188, validation loss: 0.00100401658564806.
-Trigger count: 4
- 60%|██████    | 6/10 [03:56<02:37, 39.30s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00013264697627164425, validation loss: 0.0010039747226983308.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:35<03:03, 45.91s/it]
-[I 2024-08-10 23:03:50,828] Trial 44 finished with value: 0.0010039747226983308 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 900, 'n_units_l2': 1100, 'n_units_l3': 900, 'n_units_l4': 1100}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.05880852618138306, validation loss: 0.0012940327869728208.
- 10%|█         | 1/10 [00:39<05:58, 39.87s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00025519196642562745, validation loss: 0.0010254414519295096.
- 20%|██        | 2/10 [01:19<05:19, 39.97s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00014921413239790126, validation loss: 0.001010809955187142.
- 30%|███       | 3/10 [01:59<04:39, 39.94s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013977386406622828, validation loss: 0.0010081149870529772.
-Trigger count: 1
- 40%|████      | 4/10 [02:39<03:59, 39.83s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013770279474556446, validation loss: 0.001007406390272081.
-Trigger count: 2
- 50%|█████     | 5/10 [03:19<03:19, 39.86s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013712248473893852, validation loss: 0.0010071925120428205.
-Trigger count: 3
- 60%|██████    | 6/10 [03:59<02:39, 39.87s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.000136939124786295, validation loss: 0.0010071185184642672.
-Trigger count: 4
- 70%|███████   | 7/10 [04:38<01:59, 39.79s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.0001368706041830592, validation loss: 0.0010070858523249626.
-Trigger count: 5
-*****Early stopped at epoch 8*****
- 70%|███████   | 7/10 [05:18<02:16, 45.56s/it]
-[I 2024-08-10 23:09:09,823] Trial 45 finished with value: 0.0010070858523249626 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 1100, 'n_units_l2': 900, 'n_units_l3': 1100, 'n_units_l4': 900}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.3535387922078371, validation loss: 0.01188975740224123.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-10 23:09:43,184] Trial 46 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.0953009205753915, validation loss: 0.0013105654390528799.
- 10%|█         | 1/10 [00:40<06:03, 40.44s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00023650830407859758, validation loss: 0.0010228696512058378.
- 20%|██        | 2/10 [01:20<05:23, 40.38s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00014297885209089146, validation loss: 0.0010093057295307516.
- 30%|███       | 3/10 [02:01<04:42, 40.39s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013569967268267646, validation loss: 0.0010069035459309816.
-Trigger count: 1
- 40%|████      | 4/10 [02:41<04:02, 40.39s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013415721041383223, validation loss: 0.0010062877554446459.
-Trigger count: 2
- 50%|█████     | 5/10 [03:21<03:21, 40.39s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013373768160818145, validation loss: 0.0010061099892482162.
-Trigger count: 3
- 60%|██████    | 6/10 [04:02<02:41, 40.44s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0001336126835667528, validation loss: 0.0010060543660074472.
-Trigger count: 4
- 70%|███████   | 7/10 [04:42<02:01, 40.45s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.00013357123389141635, validation loss: 0.0010060333414003253.
-Trigger count: 5
-*****Early stopped at epoch 8*****
- 70%|███████   | 7/10 [05:23<02:18, 46.21s/it]
-[I 2024-08-10 23:15:06,720] Trial 47 finished with value: 0.0010060333414003253 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 900, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 21 with value: 0.0010002814000472427.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.34898009747266767, validation loss: 0.11987659484148025.
-  0%|          | 0/10 [00:26<?, ?it/s]
-[I 2024-08-10 23:15:33,545] Trial 48 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.07871695635840296, validation loss: 0.005177201051265001.
-  0%|          | 0/10 [00:32<?, ?it/s]
-[I 2024-08-10 23:16:06,256] Trial 49 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.13092370387166738, validation loss: 0.01683622896671295.
-  0%|          | 0/10 [00:28<?, ?it/s]
-[I 2024-08-10 23:16:34,360] Trial 50 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.043516158024431206, validation loss: 0.0010376386111602188.
- 10%|█         | 1/10 [00:42<06:26, 42.96s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00014067640295252205, validation loss: 0.0010009608697146178.
- 20%|██        | 2/10 [01:26<05:44, 43.02s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00012718485813820735, validation loss: 0.0009998867055401206.
-Trigger count: 1
- 30%|███       | 3/10 [02:08<05:00, 42.93s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001262301710085012, validation loss: 0.0009997447254136206.
-Trigger count: 2
- 40%|████      | 4/10 [02:51<04:17, 42.99s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012603480427060277, validation loss: 0.0009997128741815685.
-Trigger count: 3
- 50%|█████     | 5/10 [03:35<03:35, 43.03s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012598311877809465, validation loss: 0.0009997043991461397.
-Trigger count: 4
- 60%|██████    | 6/10 [04:17<02:51, 42.97s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0001259685042896308, validation loss: 0.0009997019544243813.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:01<03:20, 50.17s/it]
-[I 2024-08-10 23:21:35,460] Trial 51 finished with value: 0.0009997019544243813 and parameters: {'n_layers': 5, 'n_units_l0': 900, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.12324064701097086, validation loss: 0.0012243649223819375.
- 10%|█         | 1/10 [00:44<06:36, 44.03s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00020437630446394904, validation loss: 0.001012451807036996.
- 20%|██        | 2/10 [01:28<05:52, 44.10s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013604607374873012, validation loss: 0.001004316587932408.
-Trigger count: 1
- 30%|███       | 3/10 [02:12<05:08, 44.10s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013131313608027995, validation loss: 0.001002975949086249.
-Trigger count: 2
- 40%|████      | 4/10 [02:56<04:24, 44.01s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013034027797402813, validation loss: 0.0010026422096416354.
-Trigger count: 3
- 50%|█████     | 5/10 [03:40<03:40, 44.06s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013008006499148905, validation loss: 0.001002548122778535.
-Trigger count: 4
- 60%|██████    | 6/10 [04:24<02:56, 44.08s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00013000454782741144, validation loss: 0.0010025199502706529.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:08<03:25, 51.39s/it]
-[I 2024-08-10 23:26:43,874] Trial 52 finished with value: 0.0010025199502706529 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.22180766279925593, validation loss: 0.0013158913468942046.
- 10%|█         | 1/10 [00:43<06:28, 43.11s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00023312166595133022, validation loss: 0.0010111552895978094.
- 20%|██        | 2/10 [01:26<05:44, 43.05s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.0001355780434096232, validation loss: 0.0010031433310359716.
-Trigger count: 1
- 30%|███       | 3/10 [02:09<05:01, 43.04s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001305152036366053, validation loss: 0.0010019718203693629.
-Trigger count: 2
- 40%|████      | 4/10 [02:52<04:18, 43.03s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012954657286172732, validation loss: 0.001001692097634077.
-Trigger count: 3
- 50%|█████     | 5/10 [03:35<03:35, 43.04s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0001292942586587742, validation loss: 0.001001615240238607.
-Trigger count: 4
- 60%|██████    | 6/10 [04:18<02:52, 43.02s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0001292228334932588, validation loss: 0.0010015930514782668.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:01<03:20, 50.19s/it]
-[I 2024-08-10 23:31:45,089] Trial 53 finished with value: 0.0010015930514782668 and parameters: {'n_layers': 5, 'n_units_l0': 900, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.08767713166307659, validation loss: 0.0012697152094915509.
- 10%|█         | 1/10 [00:43<06:28, 43.13s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00023264423216460273, validation loss: 0.0010182867990806699.
- 20%|██        | 2/10 [01:26<05:44, 43.09s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00014251356915337965, validation loss: 0.0010070356773212552.
- 30%|███       | 3/10 [02:09<05:00, 42.98s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013540460931835697, validation loss: 0.0010050849290564657.
-Trigger count: 1
- 40%|████      | 4/10 [02:52<04:18, 43.03s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013389456726145, validation loss: 0.0010045875562354923.
-Trigger count: 2
- 50%|█████     | 5/10 [03:35<03:35, 43.04s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013348238135222346, validation loss: 0.001004443410784006.
-Trigger count: 3
- 60%|██████    | 6/10 [04:18<02:51, 42.96s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00013335846888367086, validation loss: 0.001004397589713335.
-Trigger count: 4
- 70%|███████   | 7/10 [05:01<02:09, 43.01s/it]Epoch: 8, lr: 2.9411764705882355e-06, training loss: 0.00013331652880879118, validation loss: 0.0010043798480182885.
-Trigger count: 5
-*****Early stopped at epoch 8*****
- 70%|███████   | 7/10 [05:44<02:27, 49.17s/it]
-[I 2024-08-10 23:37:29,320] Trial 54 finished with value: 0.0010043798480182885 and parameters: {'n_layers': 5, 'n_units_l0': 900, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.1513008506037295, validation loss: 0.00665802713483572.
-  0%|          | 0/10 [00:32<?, ?it/s]
-[I 2024-08-10 23:38:01,912] Trial 55 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.04272700228029862, validation loss: 0.0018584576901048422.
-  0%|          | 0/10 [00:35<?, ?it/s]
-[I 2024-08-10 23:38:36,999] Trial 56 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.0646294982987456, validation loss: 0.0012179763754829765.
- 10%|█         | 1/10 [00:40<06:05, 40.59s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00021458555274875835, validation loss: 0.0010149439563974737.
- 20%|██        | 2/10 [01:21<05:25, 40.68s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013985181431053206, validation loss: 0.0010056135710328818.
-Trigger count: 1
- 30%|███       | 3/10 [02:01<04:44, 40.66s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013382740289671346, validation loss: 0.0010039994493126869.
-Trigger count: 2
- 40%|████      | 4/10 [02:42<04:03, 40.60s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013254391960799695, validation loss: 0.001003588386811316.
-Trigger count: 3
- 50%|█████     | 5/10 [03:23<03:22, 40.57s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0001321931544225663, validation loss: 0.0010034692473709582.
-Trigger count: 4
- 60%|██████    | 6/10 [04:03<02:42, 40.53s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00013208749442128465, validation loss: 0.001003431249409914.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:43<03:09, 47.32s/it]
-[I 2024-08-10 23:43:20,998] Trial 57 finished with value: 0.001003431249409914 and parameters: {'n_layers': 5, 'n_units_l0': 900, 'n_units_l1': 900, 'n_units_l2': 1100, 'n_units_l3': 900, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.15168148633092643, validation loss: 0.0022492312360554933.
-  0%|          | 0/10 [00:37<?, ?it/s]
-[I 2024-08-10 23:43:58,441] Trial 58 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.055614981584949416, validation loss: 0.0013762702932581306.
-  0%|          | 0/10 [00:38<?, ?it/s]
-[I 2024-08-10 23:44:36,506] Trial 59 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.7131412081420422, validation loss: 0.006374376639723778.
-  0%|          | 0/10 [00:38<?, ?it/s]
-[I 2024-08-10 23:45:15,443] Trial 60 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.044901999417925255, validation loss: 0.0011556829558685422.
- 10%|█         | 1/10 [00:40<06:04, 40.46s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00018984153430210427, validation loss: 0.001011674338951707.
- 20%|██        | 2/10 [01:21<05:26, 40.84s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.0001364561525406316, validation loss: 0.0010044852970167994.
-Trigger count: 1
- 30%|███       | 3/10 [02:02<04:46, 40.99s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013189283781684936, validation loss: 0.0010032120626419783.
-Trigger count: 2
- 40%|████      | 4/10 [02:43<04:06, 41.08s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013090821594232693, validation loss: 0.0010028854478150607.
-Trigger count: 3
- 50%|█████     | 5/10 [03:25<03:25, 41.14s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013063804362900555, validation loss: 0.0010027905460447072.
-Trigger count: 4
- 60%|██████    | 6/10 [04:06<02:44, 41.12s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00013055651215836405, validation loss: 0.001002760138362646.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:47<03:11, 47.90s/it]
-[I 2024-08-10 23:50:02,930] Trial 61 finished with value: 0.001002760138362646 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 900}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.0235288620373467, validation loss: 0.0010386883281171323.
- 10%|█         | 1/10 [00:40<06:02, 40.26s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0001438811101252213, validation loss: 0.0010019117267802357.
- 20%|██        | 2/10 [01:20<05:22, 40.34s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00012827603495679796, validation loss: 0.0010003339033573867.
-Trigger count: 1
- 30%|███       | 3/10 [02:01<04:42, 40.38s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012696091434918343, validation loss: 0.001000080956146121.
-Trigger count: 2
- 40%|████      | 4/10 [02:41<04:02, 40.37s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012667924747802317, validation loss: 0.0010000193025916815.
-Trigger count: 3
- 50%|█████     | 5/10 [03:21<03:22, 40.43s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012660322827287018, validation loss: 0.0010000020265579224.
-Trigger count: 4
- 60%|██████    | 6/10 [04:02<02:41, 40.45s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012658120249398053, validation loss: 0.000999996904283762.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:42<03:08, 47.15s/it]
-[I 2024-08-10 23:54:45,872] Trial 62 finished with value: 0.000999996904283762 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.026420855787000617, validation loss: 0.001060595572926104.
- 10%|█         | 1/10 [00:41<06:17, 41.99s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00014966861926950513, validation loss: 0.0010040141409263016.
- 20%|██        | 2/10 [01:23<05:35, 41.96s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00012966602662345394, validation loss: 0.0010012625483796001.
-Trigger count: 1
- 30%|███       | 3/10 [02:05<04:53, 41.94s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012787445884896443, validation loss: 0.0010007880628108978.
-Trigger count: 2
- 40%|████      | 4/10 [02:47<04:11, 41.85s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012748328008456157, validation loss: 0.0010006683645769955.
-Trigger count: 3
- 50%|█████     | 5/10 [03:29<03:29, 41.81s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012737646175082774, validation loss: 0.0010006342781707644.
-Trigger count: 4
- 60%|██████    | 6/10 [04:11<02:47, 41.79s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012734490301227197, validation loss: 0.0010006236843764782.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:52<03:15, 48.81s/it]
-[I 2024-08-10 23:59:38,786] Trial 63 finished with value: 0.0010006236843764782 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.13766716600512155, validation loss: 0.0012092012912034988.
- 10%|█         | 1/10 [00:41<06:17, 41.94s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0001919177986565046, validation loss: 0.0010086309397593141.
- 20%|██        | 2/10 [01:23<05:35, 41.93s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.0001327642545220442, validation loss: 0.0010025018360465764.
-Trigger count: 1
- 30%|███       | 3/10 [02:05<04:53, 41.91s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001292167347855866, validation loss: 0.0010015727020800114.
-Trigger count: 2
- 40%|████      | 4/10 [02:47<04:11, 41.89s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012851507926825434, validation loss: 0.001001348695717752.
-Trigger count: 3
- 50%|█████     | 5/10 [03:29<03:29, 41.89s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0001283308331039734, validation loss: 0.0010012870421633123.
-Trigger count: 4
- 60%|██████    | 6/10 [04:11<02:47, 41.91s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012827872415073217, validation loss: 0.0010012693703174591.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:53<03:15, 48.90s/it]
-[I 2024-08-11 00:04:32,236] Trial 64 finished with value: 0.0010012693703174591 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.11219853504444473, validation loss: 0.0014313654042780398.
-  0%|          | 0/10 [00:40<?, ?it/s]
-[I 2024-08-11 00:05:12,690] Trial 65 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.10100819648650941, validation loss: 0.001185737270861864.
- 10%|█         | 1/10 [00:42<06:18, 42.10s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00019427175138844177, validation loss: 0.0010093735530972482.
- 20%|██        | 2/10 [01:24<05:36, 42.04s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013410182582447306, validation loss: 0.0010029699187725782.
-Trigger count: 1
- 30%|███       | 3/10 [02:06<04:54, 42.03s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013008188689127563, validation loss: 0.0010019482811912893.
-Trigger count: 2
- 40%|████      | 4/10 [02:48<04:12, 42.01s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012926789349876344, validation loss: 0.001001697452738881.
-Trigger count: 3
- 50%|█████     | 5/10 [03:30<03:29, 41.98s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.000129051816475112, validation loss: 0.0010016274405643343.
-Trigger count: 4
- 60%|██████    | 6/10 [04:12<02:47, 41.99s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012898979184683412, validation loss: 0.0010016067652031779.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:54<03:16, 49.01s/it]
-[I 2024-08-11 00:10:06,792] Trial 66 finished with value: 0.0010016067652031779 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.15343319290550425, validation loss: 0.0016842153621837498.
-  0%|          | 0/10 [00:39<?, ?it/s]
-[I 2024-08-11 00:10:46,458] Trial 67 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.05140612291288562, validation loss: 0.0013109279796481132.
-  0%|          | 0/10 [00:39<?, ?it/s]
-[I 2024-08-11 00:11:25,772] Trial 68 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.19984287098050119, validation loss: 0.008686265721917153.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-11 00:11:59,053] Trial 69 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.28540015909820793, validation loss: 0.01242392770946026.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-11 00:12:32,264] Trial 70 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.03594025722559309, validation loss: 0.001044076308608055.
- 10%|█         | 1/10 [00:43<06:28, 43.17s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00014227156498236582, validation loss: 0.0010018443223088979.
- 20%|██        | 2/10 [01:26<05:45, 43.21s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.0001276896975468844, validation loss: 0.0010002664988860489.
-Trigger count: 1
- 30%|███       | 3/10 [02:09<05:02, 43.18s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001265706174308434, validation loss: 0.0010000258451327681.
-Trigger count: 2
- 40%|████      | 4/10 [02:52<04:18, 43.14s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012633641745196655, validation loss: 0.0009999683126807213.
-Trigger count: 3
- 50%|█████     | 5/10 [03:35<03:35, 43.12s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012627393734874204, validation loss: 0.0009999525034800171.
-Trigger count: 4
- 60%|██████    | 6/10 [04:18<02:52, 43.16s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012625613017007707, validation loss: 0.0009999479399994016.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:02<03:21, 50.35s/it]
-[I 2024-08-11 00:17:34,433] Trial 71 finished with value: 0.0009999479399994016 and parameters: {'n_layers': 5, 'n_units_l0': 900, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.0352668683975935, validation loss: 0.0011066910810768604.
- 10%|█         | 1/10 [00:42<06:26, 42.91s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00016997115744743496, validation loss: 0.0010074792662635446.
- 20%|██        | 2/10 [01:26<05:44, 43.10s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013309285131981596, validation loss: 0.0010026366915553808.
-Trigger count: 1
- 30%|███       | 3/10 [02:09<05:01, 43.11s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001299076815485023, validation loss: 0.0010017928201705218.
-Trigger count: 2
- 40%|████      | 4/10 [02:52<04:18, 43.14s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012921766174258664, validation loss: 0.0010015778010711075.
-Trigger count: 3
- 50%|█████     | 5/10 [03:35<03:35, 43.14s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012902817543363198, validation loss: 0.00100151551887393.
-Trigger count: 4
- 60%|██████    | 6/10 [04:18<02:52, 43.12s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012897098786197604, validation loss: 0.001001495635136962.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:01<03:21, 50.30s/it]
-[I 2024-08-11 00:22:36,311] Trial 72 finished with value: 0.001001495635136962 and parameters: {'n_layers': 5, 'n_units_l0': 900, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.0681769153685309, validation loss: 0.0011546218767762185.
- 10%|█         | 1/10 [00:43<06:29, 43.23s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00018419685802655293, validation loss: 0.0010084852809086442.
- 20%|██        | 2/10 [01:26<05:45, 43.18s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013349258806556464, validation loss: 0.0010027288924902677.
-Trigger count: 1
- 30%|███       | 3/10 [02:09<05:02, 43.19s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012983867927687242, validation loss: 0.0010017907712608575.
-Trigger count: 2
- 40%|████      | 4/10 [02:52<04:18, 43.17s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012908562493976205, validation loss: 0.0010015583829954267.
-Trigger count: 3
- 50%|█████     | 5/10 [03:35<03:35, 43.17s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012888387282146142, validation loss: 0.001001492841169238.
-Trigger count: 4
- 60%|██████    | 6/10 [04:19<02:52, 43.18s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012882510345662012, validation loss: 0.0010014730738475918.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:02<03:21, 50.38s/it]
-[I 2024-08-11 00:27:38,655] Trial 73 finished with value: 0.0010014730738475918 and parameters: {'n_layers': 5, 'n_units_l0': 900, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.02436090772971511, validation loss: 0.0010566228302195668.
- 10%|█         | 1/10 [00:43<06:29, 43.24s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00014925547293387353, validation loss: 0.0010035399813205005.
- 20%|██        | 2/10 [01:26<05:45, 43.17s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00012950473465025424, validation loss: 0.0010010089026764035.
-Trigger count: 1
- 30%|███       | 3/10 [02:09<05:01, 43.14s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012776169605785981, validation loss: 0.001000579376704991.
-Trigger count: 2
- 40%|████      | 4/10 [02:52<04:18, 43.07s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012738232471747323, validation loss: 0.0010004715761169792.
-Trigger count: 3
- 50%|█████     | 5/10 [03:35<03:35, 43.04s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012727858702419326, validation loss: 0.0010004408191889524.
-Trigger count: 4
- 60%|██████    | 6/10 [04:18<02:52, 43.12s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012724773841910064, validation loss: 0.001000431226566434.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:01<03:21, 50.32s/it]
-[I 2024-08-11 00:32:40,635] Trial 74 finished with value: 0.001000431226566434 and parameters: {'n_layers': 5, 'n_units_l0': 900, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.04124515098228585, validation loss: 0.0010631601791828871.
- 10%|█         | 1/10 [00:44<06:37, 44.15s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0001518973585916683, validation loss: 0.001003218232654035.
- 20%|██        | 2/10 [01:28<05:54, 44.31s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00012944523914484307, validation loss: 0.001000781962648034.
-Trigger count: 1
- 30%|███       | 3/10 [02:12<05:09, 44.28s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001276438881177455, validation loss: 0.0010003905976191164.
-Trigger count: 2
- 40%|████      | 4/10 [02:57<04:25, 44.29s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012726178101729602, validation loss: 0.0010002947878092528.
-Trigger count: 3
- 50%|█████     | 5/10 [03:41<03:41, 44.28s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0001271588684176095, validation loss: 0.0010002679890021681.
-Trigger count: 4
- 60%|██████    | 6/10 [04:25<02:56, 44.25s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012712901952909305, validation loss: 0.001000259956344962.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:09<03:26, 51.64s/it]
-[I 2024-08-11 00:37:50,553] Trial 75 finished with value: 0.001000259956344962 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.08275950737297535, validation loss: 0.0018518490018323065.
-  0%|          | 0/10 [00:38<?, ?it/s]
-[I 2024-08-11 00:38:29,522] Trial 76 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.0869981749507133, validation loss: 0.0010897284140810371.
- 10%|█         | 1/10 [00:42<06:24, 42.72s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00015892687515588476, validation loss: 0.0010037708096206188.
- 20%|██        | 2/10 [01:25<05:40, 42.52s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00012956195132574067, validation loss: 0.0010008821496739983.
-Trigger count: 1
- 30%|███       | 3/10 [02:07<04:56, 42.34s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012758008087985218, validation loss: 0.001000442262738943.
-Trigger count: 2
- 40%|████      | 4/10 [02:49<04:14, 42.42s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012717659410554916, validation loss: 0.0010003366274759173.
-Trigger count: 3
- 50%|█████     | 5/10 [03:32<03:32, 42.50s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012706978741334752, validation loss: 0.0010003076866269111.
-Trigger count: 4
- 60%|██████    | 6/10 [04:14<02:49, 42.46s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0001270395005121827, validation loss: 0.0010002992814406753.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:56<03:17, 49.46s/it]
-[I 2024-08-11 00:43:26,365] Trial 77 finished with value: 0.0010002992814406753 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 900, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.03219723555084784, validation loss: 0.001120655471459031.
- 10%|█         | 1/10 [00:41<06:15, 41.76s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00017470019956817852, validation loss: 0.0010105898138135672.
- 20%|██        | 2/10 [01:23<05:32, 41.57s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013522247754735873, validation loss: 0.0010043098591268063.
-Trigger count: 1
- 30%|███       | 3/10 [02:04<04:50, 41.48s/it]Epoch: 4, lr: 1e-05, training loss: 0.00013143464166205377, validation loss: 0.0010031465208157897.
-Trigger count: 2
- 40%|████      | 4/10 [02:45<04:08, 41.36s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00013058678596280515, validation loss: 0.0010028415359556674.
-Trigger count: 3
- 50%|█████     | 5/10 [03:27<03:27, 41.47s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00013034879812039434, validation loss: 0.001002750382758677.
-Trigger count: 4
- 60%|██████    | 6/10 [04:08<02:45, 41.47s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00013027427776250987, validation loss: 0.0010027195792645216.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:50<03:13, 48.40s/it]
-[I 2024-08-11 00:48:16,824] Trial 78 finished with value: 0.0010027195792645216 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 900, 'n_units_l3': 900, 'n_units_l4': 900}. Best is trial 51 with value: 0.0009997019544243813.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.14151899696444162, validation loss: 0.0013509477488696576.
-  0%|          | 0/10 [00:42<?, ?it/s]
-[I 2024-08-11 00:48:59,791] Trial 79 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.0717252504080534, validation loss: 0.0023027467075735332.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-11 00:49:34,171] Trial 80 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.046129421089426616, validation loss: 0.0010186335304751993.
- 10%|█         | 1/10 [00:44<06:38, 44.28s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0001337600580882281, validation loss: 0.0010000603972002864.
- 20%|██        | 2/10 [01:28<05:53, 44.19s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.0001261367811821401, validation loss: 0.0009996359469369054.
-Trigger count: 1
- 30%|███       | 3/10 [02:12<05:09, 44.15s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001256254457985051, validation loss: 0.0009995950851589442.
-Trigger count: 2
- 40%|████      | 4/10 [02:56<04:24, 44.14s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012552222469821572, validation loss: 0.0009995877277106046.
-Trigger count: 3
- 50%|█████     | 5/10 [03:40<03:40, 44.17s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012549509847303852, validation loss: 0.0009995859814807772.
-Trigger count: 4
- 60%|██████    | 6/10 [04:24<02:56, 44.12s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012548751983558758, validation loss: 0.0009995855158194899.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:08<03:25, 51.46s/it]
-[I 2024-08-11 00:54:43,009] Trial 81 finished with value: 0.0009995855158194899 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.05082941769796889, validation loss: 0.0011275384342297912.
- 10%|█         | 1/10 [00:43<06:35, 43.89s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00017011059826472775, validation loss: 0.0010083884000778199.
- 20%|██        | 2/10 [01:27<05:51, 43.94s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013278378028189764, validation loss: 0.0010029491735622288.
-Trigger count: 1
- 30%|███       | 3/10 [02:11<05:07, 43.95s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001296898233704269, validation loss: 0.001002015802077949.
-Trigger count: 2
- 40%|████      | 4/10 [02:55<04:23, 43.95s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012902635062346236, validation loss: 0.0010017801309004427.
-Trigger count: 3
- 50%|█████     | 5/10 [03:39<03:39, 43.97s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012884598545497282, validation loss: 0.0010017129126936198.
-Trigger count: 4
- 60%|██████    | 6/10 [04:23<02:55, 43.97s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012879272690042854, validation loss: 0.0010016921907663346.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:07<03:25, 51.29s/it]
-[I 2024-08-11 00:59:50,796] Trial 82 finished with value: 0.0010016921907663346 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.1084448675333988, validation loss: 0.0013543187873438002.
-  0%|          | 0/10 [00:43<?, ?it/s]
-[I 2024-08-11 01:00:34,364] Trial 83 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.08808492140669841, validation loss: 0.0011159449117258192.
- 10%|█         | 1/10 [00:44<06:36, 44.03s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0001668775308644399, validation loss: 0.0010050758952274918.
- 20%|██        | 2/10 [01:27<05:48, 43.62s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.0001305194164160639, validation loss: 0.0010013246908783912.
-Trigger count: 1
- 30%|███       | 3/10 [02:11<05:05, 43.71s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001280995405977592, validation loss: 0.0010007486678659915.
-Trigger count: 2
- 40%|████      | 4/10 [02:55<04:22, 43.81s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.0001276090639294125, validation loss: 0.0010006095049902796.
-Trigger count: 3
- 50%|█████     | 5/10 [03:39<03:39, 43.85s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012747917062370107, validation loss: 0.0010005711345002055.
-Trigger count: 4
- 60%|██████    | 6/10 [04:23<02:55, 43.88s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012744218547595666, validation loss: 0.001000559888780117.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:07<03:24, 51.18s/it]
-[I 2024-08-11 01:05:41,500] Trial 84 finished with value: 0.001000559888780117 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.07541319734009448, validation loss: 0.0011307901004329324.
- 10%|█         | 1/10 [00:44<06:36, 44.04s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.0001734722449327819, validation loss: 0.0010067394468933344.
- 20%|██        | 2/10 [01:28<05:52, 44.01s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013200303219491617, validation loss: 0.0010020249523222447.
-Trigger count: 1
- 30%|███       | 3/10 [02:11<05:07, 43.97s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001290086642256938, validation loss: 0.0010012691374868155.
-Trigger count: 2
- 40%|████      | 4/10 [02:55<04:23, 43.95s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.0001283907564356923, validation loss: 0.001001083431765437.
-Trigger count: 3
- 50%|█████     | 5/10 [03:39<03:39, 43.98s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0001282257799175568, validation loss: 0.001001031557098031.
-Trigger count: 4
- 60%|██████    | 6/10 [04:23<02:55, 43.97s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012817822862416507, validation loss: 0.0010010161902755498.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:07<03:25, 51.30s/it]
-[I 2024-08-11 01:10:49,367] Trial 85 finished with value: 0.0010010161902755498 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.3694520019926131, validation loss: 0.003317864891141653.
-  0%|          | 0/10 [00:41<?, ?it/s]
-[I 2024-08-11 01:11:31,382] Trial 86 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.12767578270286323, validation loss: 0.019356077536940575.
-  0%|          | 0/10 [00:26<?, ?it/s]
-[I 2024-08-11 01:11:58,004] Trial 87 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.02185341065051034, validation loss: 0.0010323505150154233.
- 10%|█         | 1/10 [00:43<06:35, 43.90s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00013942865189164877, validation loss: 0.0010014429222792386.
- 20%|██        | 2/10 [01:27<05:50, 43.80s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00012754748167935758, validation loss: 0.001000159652903676.
-Trigger count: 1
- 30%|███       | 3/10 [02:11<05:06, 43.73s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012653207959374414, validation loss: 0.0009999575326219202.
-Trigger count: 2
- 40%|████      | 4/10 [02:55<04:23, 43.89s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.0001263135578483343, validation loss: 0.0009999085916206241.
-Trigger count: 3
- 50%|█████     | 5/10 [03:39<03:39, 43.95s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0001262544494238682, validation loss: 0.0009998949244618416.
-Trigger count: 4
- 60%|██████    | 6/10 [04:23<02:56, 44.01s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012623727234313266, validation loss: 0.000999890873208642.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:07<03:25, 51.27s/it]
-[I 2024-08-11 01:17:05,719] Trial 88 finished with value: 0.000999890873208642 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.04220285416813567, validation loss: 0.0010873405262827873.
- 10%|█         | 1/10 [00:41<06:17, 41.99s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00016025023651309312, validation loss: 0.0010053518461063504.
- 20%|██        | 2/10 [01:24<05:36, 42.06s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.0001311476094997488, validation loss: 0.0010017120046541094.
-Trigger count: 1
- 30%|███       | 3/10 [02:06<04:54, 42.06s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001287113773287274, validation loss: 0.001001097820699215.
-Trigger count: 2
- 40%|████      | 4/10 [02:48<04:12, 42.08s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012818799878004937, validation loss: 0.0010009438963606953.
-Trigger count: 3
- 50%|█████     | 5/10 [03:30<03:30, 42.09s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012804590660380198, validation loss: 0.001000900287181139.
-Trigger count: 4
- 60%|██████    | 6/10 [04:12<02:48, 42.06s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012800415133824573, validation loss: 0.001000886899419129.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [04:54<03:16, 49.06s/it]
-[I 2024-08-11 01:22:00,201] Trial 89 finished with value: 0.001000886899419129 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 900, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 900}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.06452266019186936, validation loss: 0.001512348442338407.
-  0%|          | 0/10 [00:38<?, ?it/s]
-[I 2024-08-11 01:22:38,442] Trial 90 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.11429456947080326, validation loss: 0.0012154799420386552.
-  0%|          | 0/10 [00:43<?, ?it/s]
-[I 2024-08-11 01:23:22,291] Trial 91 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.06362531958438922, validation loss: 0.0011319537879899144.
- 10%|█         | 1/10 [00:44<06:36, 44.11s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00017487087461631745, validation loss: 0.0010079706087708473.
- 20%|██        | 2/10 [01:28<05:52, 44.08s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013277936668600887, validation loss: 0.0010026765754446386.
-Trigger count: 1
- 30%|███       | 3/10 [02:11<05:07, 43.96s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012954959674971178, validation loss: 0.001001788373105228.
-Trigger count: 2
- 40%|████      | 4/10 [02:55<04:23, 43.85s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012887188349850476, validation loss: 0.0010015662061050533.
-Trigger count: 3
- 50%|█████     | 5/10 [03:39<03:39, 43.95s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.0001286895145312883, validation loss: 0.0010015035048127174.
-Trigger count: 4
- 60%|██████    | 6/10 [04:23<02:55, 43.97s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012863642477896066, validation loss: 0.0010014845756813884.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:07<03:25, 51.31s/it]
-[I 2024-08-11 01:28:30,210] Trial 92 finished with value: 0.0010014845756813884 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.09140521775698289, validation loss: 0.0013193123741075397.
-  0%|          | 0/10 [00:41<?, ?it/s]
-[I 2024-08-11 01:29:11,818] Trial 93 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.12281698679726105, validation loss: 0.0011811868986114859.
- 10%|█         | 1/10 [00:44<06:36, 44.06s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00018432959332130848, validation loss: 0.0010069966781884431.
- 20%|██        | 2/10 [01:28<05:51, 43.99s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013165843702154235, validation loss: 0.00100183195900172.
-Trigger count: 1
- 30%|███       | 3/10 [02:11<05:07, 43.96s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012856095272582025, validation loss: 0.0010010690661147238.
-Trigger count: 2
- 40%|████      | 4/10 [02:55<04:23, 43.95s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.0001279539384995587, validation loss: 0.001000886969268322.
-Trigger count: 3
- 50%|█████     | 5/10 [03:39<03:39, 43.99s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012779480166500435, validation loss: 0.0010008369572460651.
-Trigger count: 4
- 60%|██████    | 6/10 [04:23<02:55, 43.98s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012774964998243376, validation loss: 0.001000822428613901.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:07<03:25, 51.30s/it]
-[I 2024-08-11 01:34:19,676] Trial 94 finished with value: 0.001000822428613901 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.09326804587908555, validation loss: 0.001132913725450635.
- 10%|█         | 1/10 [00:43<06:33, 43.74s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00017136098904302344, validation loss: 0.001006409339606762.
- 20%|██        | 2/10 [01:27<05:49, 43.69s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.00013145063712727278, validation loss: 0.001001867838203907.
-Trigger count: 1
- 30%|███       | 3/10 [02:10<05:05, 43.65s/it]Epoch: 4, lr: 1e-05, training loss: 0.0001286582846660167, validation loss: 0.0010011498117819429.
-Trigger count: 2
- 40%|████      | 4/10 [02:54<04:21, 43.61s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012808576720999554, validation loss: 0.0010009743738919497.
-Trigger count: 3
- 50%|█████     | 5/10 [03:38<03:38, 43.72s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012793346104444936, validation loss: 0.001000925712287426.
-Trigger count: 4
- 60%|██████    | 6/10 [04:21<02:54, 43.60s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.0001278898591408506, validation loss: 0.0010009114630520344.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:05<03:23, 50.97s/it]
-[I 2024-08-11 01:39:25,572] Trial 95 finished with value: 0.0010009114630520344 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.20807976722717286, validation loss: 0.01723133772611618.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-11 01:40:00,078] Trial 96 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.016180142032681033, validation loss: 0.0010256877867504954.
- 10%|█         | 1/10 [00:43<06:34, 43.85s/it]Epoch: 2, lr: 1.6666666666666667e-05, training loss: 0.00013649885368067772, validation loss: 0.001001130579970777.
- 20%|██        | 2/10 [01:28<05:53, 44.14s/it]Epoch: 3, lr: 1.3060193748187072e-05, training loss: 0.000127102762053255, validation loss: 0.0010000632610172033.
-Trigger count: 1
- 30%|███       | 3/10 [02:12<05:09, 44.18s/it]Epoch: 4, lr: 1e-05, training loss: 0.00012627502728719265, validation loss: 0.0009998948546126485.
-Trigger count: 2
- 40%|████      | 4/10 [02:56<04:25, 44.23s/it]Epoch: 5, lr: 7.511055241116742e-06, training loss: 0.00012609558179974557, validation loss: 0.0009998540859669446.
-Trigger count: 3
- 50%|█████     | 5/10 [03:40<03:41, 44.24s/it]Epoch: 6, lr: 5.555555555555556e-06, training loss: 0.00012604685325641186, validation loss: 0.0009998427238315343.
-Trigger count: 4
- 60%|██████    | 6/10 [04:25<02:56, 44.21s/it]Epoch: 7, lr: 4.060515157080614e-06, training loss: 0.00012603262148331852, validation loss: 0.0009998392313718795.
-Trigger count: 5
-*****Early stopped at epoch 7*****
- 60%|██████    | 6/10 [05:09<03:26, 51.55s/it]
-[I 2024-08-11 01:45:09,459] Trial 97 finished with value: 0.0009998392313718795 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 1100, 'n_units_l4': 1100}. Best is trial 81 with value: 0.0009995855158194899.
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.03144171234453097, validation loss: 0.0015146279009059071.
-  0%|          | 0/10 [00:36<?, ?it/s]
-[I 2024-08-11 01:45:46,113] Trial 98 pruned. 
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, lr: 2.0710678118654755e-05, training loss: 0.36489617293700577, validation loss: 0.00841717915609479.
-  0%|          | 0/10 [00:36<?, ?it/s]
-[I 2024-08-11 01:46:22,567] Trial 99 pruned. 
-Study statistics: 
-  Number of finished trials:  100
-  Number of pruned trials:  51
-  Number of complete trials:  49
-Best trial:
-  Value:  0.0009995855158194899
-  Params: 
-    n_layers: 5
-    n_units_l0: 1100
-    n_units_l1: 1100
-    n_units_l2: 1100
-    n_units_l3: 1100
-    n_units_l4: 1100

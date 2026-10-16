@@ -1,849 +1,0 @@
-Namespace(model_name='resnetbert', dataset='flickr30k', img_retrieval='yes', loss_func='mse', n_train_batch_sub=10, n_val_batch_sub=5, batch_size=64, n_epochs=10, device='0', n_trials=100)
-[I 2024-08-05 02:58:42,744] A new study created in memory with name: no-name-a40a5858-0031-4f77-abb2-3e0f5ca65f4b
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.200933851, validation loss: 0.154593751.
- 10%|█         | 1/10 [00:26<03:55, 26.18s/it]Epoch: 2, training loss: 0.122416511, validation loss: 0.104961582.
- 20%|██        | 2/10 [00:51<03:26, 25.83s/it]Epoch: 3, training loss: 0.088174677, validation loss: 0.080242997.
- 30%|███       | 3/10 [01:17<03:00, 25.83s/it]Epoch: 4, training loss: 0.069159026, validation loss: 0.065539014.
- 40%|████      | 4/10 [01:43<02:34, 25.78s/it]Epoch: 5, training loss: 0.057721464, validation loss: 0.056328531.
- 50%|█████     | 5/10 [02:09<02:08, 25.79s/it]Epoch: 6, training loss: 0.050114553, validation loss: 0.050031877.
- 60%|██████    | 6/10 [02:34<01:43, 25.82s/it]Epoch: 7, training loss: 0.044601073, validation loss: 0.045321738.
- 70%|███████   | 7/10 [03:00<01:17, 25.86s/it]Epoch: 8, training loss: 0.040410359, validation loss: 0.041648617.
- 80%|████████  | 8/10 [03:26<00:51, 25.84s/it]Epoch: 9, training loss: 0.037120014, validation loss: 0.038731281.
- 90%|█████████ | 9/10 [03:52<00:25, 25.80s/it]Epoch: 10, training loss: 0.034471465, validation loss: 0.036380134.
-100%|██████████| 10/10 [04:18<00:00, 25.79s/it]100%|██████████| 10/10 [04:18<00:00, 25.82s/it]
-[I 2024-08-05 03:03:01,716] Trial 0 finished with value: 0.03638013377785683 and parameters: {'n_layers': 2, 'n_units_l0': 300, 'n_units_l1': 700}. Best is trial 0 with value: 0.03638013377785683.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.246575330, validation loss: 0.145075056.
- 10%|█         | 1/10 [00:24<03:38, 24.33s/it]Epoch: 2, training loss: 0.142816641, validation loss: 0.110718122.
- 20%|██        | 2/10 [00:49<03:17, 24.64s/it]Epoch: 3, training loss: 0.103219457, validation loss: 0.086858530.
- 30%|███       | 3/10 [01:13<02:51, 24.55s/it]Epoch: 4, training loss: 0.080568735, validation loss: 0.071646079.
- 40%|████      | 4/10 [01:37<02:26, 24.46s/it]Epoch: 5, training loss: 0.065407115, validation loss: 0.060060763.
- 50%|█████     | 5/10 [02:02<02:02, 24.40s/it]Epoch: 6, training loss: 0.054656021, validation loss: 0.051660880.
- 60%|██████    | 6/10 [02:26<01:37, 24.32s/it]Epoch: 7, training loss: 0.046863512, validation loss: 0.044847587.
- 70%|███████   | 7/10 [02:50<01:12, 24.27s/it]Epoch: 8, training loss: 0.040913652, validation loss: 0.039733392.
- 80%|████████  | 8/10 [03:14<00:48, 24.24s/it]Epoch: 9, training loss: 0.036423480, validation loss: 0.035866521.
- 90%|█████████ | 9/10 [03:38<00:24, 24.23s/it]Epoch: 10, training loss: 0.033032668, validation loss: 0.033027408.
-100%|██████████| 10/10 [04:03<00:00, 24.23s/it]100%|██████████| 10/10 [04:03<00:00, 24.32s/it]
-[I 2024-08-05 03:07:04,913] Trial 1 finished with value: 0.03302740752696991 and parameters: {'n_layers': 2, 'n_units_l0': 100, 'n_units_l1': 500}. Best is trial 1 with value: 0.03302740752696991.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.238755158, validation loss: 0.158120507.
- 10%|█         | 1/10 [00:28<04:13, 28.20s/it]Epoch: 2, training loss: 0.123282591, validation loss: 0.092587849.
- 20%|██        | 2/10 [00:56<03:47, 28.46s/it]Epoch: 3, training loss: 0.085260917, validation loss: 0.074376163.
- 30%|███       | 3/10 [01:25<03:18, 28.38s/it]Epoch: 4, training loss: 0.067987247, validation loss: 0.062861550.
- 40%|████      | 4/10 [01:53<02:49, 28.29s/it]Epoch: 5, training loss: 0.057105810, validation loss: 0.054914448.
- 50%|█████     | 5/10 [02:21<02:21, 28.22s/it]Epoch: 6, training loss: 0.049690953, validation loss: 0.049598454.
- 60%|██████    | 6/10 [02:49<01:52, 28.22s/it]Epoch: 7, training loss: 0.044301211, validation loss: 0.044988948.
- 70%|███████   | 7/10 [03:17<01:24, 28.24s/it]Epoch: 8, training loss: 0.040140079, validation loss: 0.041525633.
- 80%|████████  | 8/10 [03:45<00:56, 28.20s/it]Epoch: 9, training loss: 0.036943725, validation loss: 0.038919878.
- 90%|█████████ | 9/10 [04:14<00:28, 28.18s/it]Epoch: 10, training loss: 0.034415502, validation loss: 0.036886697.
-100%|██████████| 10/10 [04:42<00:00, 28.20s/it]100%|██████████| 10/10 [04:42<00:00, 28.24s/it]
-[I 2024-08-05 03:11:47,322] Trial 2 finished with value: 0.036886696517467496 and parameters: {'n_layers': 2, 'n_units_l0': 900, 'n_units_l1': 300}. Best is trial 1 with value: 0.03302740752696991.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.342744584, validation loss: 0.243026733.
- 10%|█         | 1/10 [00:23<03:35, 23.92s/it]Epoch: 2, training loss: 0.227840251, validation loss: 0.198057488.
- 20%|██        | 2/10 [00:48<03:13, 24.16s/it]Epoch: 3, training loss: 0.194813555, validation loss: 0.181148255.
- 30%|███       | 3/10 [01:12<02:48, 24.05s/it]Epoch: 4, training loss: 0.175467835, validation loss: 0.163921177.
- 40%|████      | 4/10 [01:35<02:23, 23.95s/it]Epoch: 5, training loss: 0.159424284, validation loss: 0.151426733.
- 50%|█████     | 5/10 [01:59<01:59, 23.89s/it]Epoch: 6, training loss: 0.146771766, validation loss: 0.139693853.
- 60%|██████    | 6/10 [02:23<01:35, 23.84s/it]Epoch: 7, training loss: 0.135649924, validation loss: 0.130085626.
- 70%|███████   | 7/10 [02:47<01:11, 23.82s/it]Epoch: 8, training loss: 0.126280390, validation loss: 0.121607742.
- 80%|████████  | 8/10 [03:11<00:47, 23.80s/it]Epoch: 9, training loss: 0.118181260, validation loss: 0.114508779.
- 90%|█████████ | 9/10 [03:34<00:23, 23.78s/it]Epoch: 10, training loss: 0.111284194, validation loss: 0.108296342.
-100%|██████████| 10/10 [03:58<00:00, 23.77s/it]100%|██████████| 10/10 [03:58<00:00, 23.85s/it]
-[I 2024-08-05 03:15:45,856] Trial 3 finished with value: 0.10829634219408035 and parameters: {'n_layers': 1, 'n_units_l0': 100}. Best is trial 1 with value: 0.03302740752696991.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.206526197, validation loss: 0.145350420.
- 10%|█         | 1/10 [00:27<04:07, 27.51s/it]Epoch: 2, training loss: 0.101986935, validation loss: 0.079870889.
- 20%|██        | 2/10 [00:55<03:41, 27.73s/it]Epoch: 3, training loss: 0.061617747, validation loss: 0.049758995.
- 30%|███       | 3/10 [01:22<03:13, 27.61s/it]Epoch: 4, training loss: 0.041771704, validation loss: 0.034726927.
- 40%|████      | 4/10 [01:50<02:44, 27.47s/it]Epoch: 5, training loss: 0.030736894, validation loss: 0.027333006.
- 50%|█████     | 5/10 [02:17<02:17, 27.41s/it]Epoch: 6, training loss: 0.023594897, validation loss: 0.021815851.
- 60%|██████    | 6/10 [02:44<01:49, 27.37s/it]Epoch: 7, training loss: 0.018867597, validation loss: 0.017791856.
- 70%|███████   | 7/10 [03:12<01:22, 27.41s/it]Epoch: 8, training loss: 0.015624725, validation loss: 0.015311162.
- 80%|████████  | 8/10 [03:39<00:54, 27.39s/it]Epoch: 9, training loss: 0.013597144, validation loss: 0.013681051.
- 90%|█████████ | 9/10 [04:06<00:27, 27.40s/it]Epoch: 10, training loss: 0.012260362, validation loss: 0.012492464.
-100%|██████████| 10/10 [04:34<00:00, 27.43s/it]100%|██████████| 10/10 [04:34<00:00, 27.45s/it]
-[I 2024-08-05 03:20:20,373] Trial 4 finished with value: 0.012492464296519757 and parameters: {'n_layers': 2, 'n_units_l0': 900, 'n_units_l1': 100}. Best is trial 4 with value: 0.012492464296519757.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.239454055, validation loss: 0.088290541.
- 10%|█         | 1/10 [00:28<04:20, 28.97s/it]Epoch: 2, training loss: 0.105466111, validation loss: 0.065832730.
- 20%|██        | 2/10 [00:57<03:51, 28.91s/it]Epoch: 3, training loss: 0.067528476, validation loss: 0.058280284.
- 30%|███       | 3/10 [01:26<03:21, 28.74s/it]Epoch: 4, training loss: 0.051643332, validation loss: 0.052086444.
- 40%|████      | 4/10 [01:55<02:52, 28.79s/it]Epoch: 5, training loss: 0.043898006, validation loss: 0.044964214.
- 50%|█████     | 5/10 [02:24<02:24, 28.81s/it]Epoch: 6, training loss: 0.038889049, validation loss: 0.039786115.
- 60%|██████    | 6/10 [02:52<01:54, 28.73s/it]Epoch: 7, training loss: 0.035163776, validation loss: 0.036677673.
- 70%|███████   | 7/10 [03:21<01:26, 28.75s/it]Epoch: 8, training loss: 0.032325654, validation loss: 0.034620013.
- 80%|████████  | 8/10 [03:50<00:57, 28.77s/it]Epoch: 9, training loss: 0.030136570, validation loss: 0.032996078.
- 90%|█████████ | 9/10 [04:18<00:28, 28.72s/it]Epoch: 10, training loss: 0.028398066, validation loss: 0.031654626.
-100%|██████████| 10/10 [04:47<00:00, 28.79s/it]100%|██████████| 10/10 [04:47<00:00, 28.78s/it]
-[I 2024-08-05 03:25:08,242] Trial 5 finished with value: 0.03165462613105774 and parameters: {'n_layers': 3, 'n_units_l0': 500, 'n_units_l1': 700, 'n_units_l2': 700}. Best is trial 4 with value: 0.012492464296519757.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.316426945, validation loss: 0.178127339.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-05 03:25:41,671] Trial 6 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.241514429, validation loss: 0.108956717.
- 10%|█         | 1/10 [00:32<04:50, 32.28s/it]Epoch: 2, training loss: 0.051458110, validation loss: 0.018807936.
- 20%|██        | 2/10 [01:04<04:18, 32.25s/it]Epoch: 3, training loss: 0.019430020, validation loss: 0.015891101.
- 30%|███       | 3/10 [01:36<03:44, 32.12s/it]Epoch: 4, training loss: 0.011840347, validation loss: 0.009819311.
- 40%|████      | 4/10 [02:08<03:12, 32.13s/it]Epoch: 5, training loss: 0.008553994, validation loss: 0.007690297.
- 50%|█████     | 5/10 [02:40<02:40, 32.11s/it]Epoch: 6, training loss: 0.006736295, validation loss: 0.006109329.
- 60%|██████    | 6/10 [03:12<02:08, 32.04s/it]Epoch: 7, training loss: 0.005624091, validation loss: 0.005299859.
- 70%|███████   | 7/10 [03:44<01:36, 32.09s/it]Epoch: 8, training loss: 0.004899019, validation loss: 0.004664010.
- 80%|████████  | 8/10 [04:16<01:04, 32.11s/it]Epoch: 9, training loss: 0.004357844, validation loss: 0.004206828.
- 90%|█████████ | 9/10 [04:48<00:32, 32.03s/it]Epoch: 10, training loss: 0.003932938, validation loss: 0.003827138.
-100%|██████████| 10/10 [05:20<00:00, 32.06s/it]100%|██████████| 10/10 [05:20<00:00, 32.09s/it]
-[I 2024-08-05 03:31:02,642] Trial 7 finished with value: 0.003827138477936387 and parameters: {'n_layers': 4, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 900, 'n_units_l3': 900}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.260150832, validation loss: 0.127522337.
- 10%|█         | 1/10 [00:28<04:16, 28.49s/it]Epoch: 2, training loss: 0.113130018, validation loss: 0.073534837.
- 20%|██        | 2/10 [00:57<03:48, 28.59s/it]Epoch: 3, training loss: 0.070444563, validation loss: 0.055999250.
- 30%|███       | 3/10 [01:25<03:20, 28.59s/it]Epoch: 4, training loss: 0.051944495, validation loss: 0.046343793.
- 40%|████      | 4/10 [01:54<02:51, 28.50s/it]Epoch: 5, training loss: 0.042490020, validation loss: 0.040380053.
- 50%|█████     | 5/10 [02:22<02:22, 28.54s/it]Epoch: 6, training loss: 0.036993986, validation loss: 0.036640651.
- 60%|██████    | 6/10 [02:51<01:54, 28.51s/it]Epoch: 7, training loss: 0.033344379, validation loss: 0.034005928.
- 70%|███████   | 7/10 [03:19<01:25, 28.45s/it]Epoch: 8, training loss: 0.030652923, validation loss: 0.031997286.
- 80%|████████  | 8/10 [03:47<00:56, 28.46s/it]Epoch: 9, training loss: 0.028559111, validation loss: 0.030365144.
- 90%|█████████ | 9/10 [04:16<00:28, 28.48s/it]Epoch: 10, training loss: 0.026868922, validation loss: 0.028997059.
-100%|██████████| 10/10 [04:44<00:00, 28.45s/it]100%|██████████| 10/10 [04:44<00:00, 28.49s/it]
-[I 2024-08-05 03:35:47,546] Trial 8 finished with value: 0.028997058793902398 and parameters: {'n_layers': 3, 'n_units_l0': 300, 'n_units_l1': 1100, 'n_units_l2': 500}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.287146740, validation loss: 0.189599711.
-  0%|          | 0/10 [00:25<?, ?it/s]
-[I 2024-08-05 03:36:13,208] Trial 9 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.217596825, validation loss: 0.053418114.
- 10%|█         | 1/10 [00:40<06:07, 40.88s/it]Epoch: 2, training loss: 0.035835322, validation loss: 0.026216088.
- 20%|██        | 2/10 [01:21<05:24, 40.62s/it]Epoch: 3, training loss: 0.016582678, validation loss: 0.015025356.
- 30%|███       | 3/10 [02:02<04:44, 40.67s/it]Epoch: 4, training loss: 0.010712239, validation loss: 0.010701448.
- 40%|████      | 4/10 [02:42<04:03, 40.66s/it]Epoch: 5, training loss: 0.008312629, validation loss: 0.008456144.
- 50%|█████     | 5/10 [03:23<03:22, 40.59s/it]Epoch: 6, training loss: 0.007063742, validation loss: 0.007271680.
- 60%|██████    | 6/10 [04:03<02:42, 40.63s/it]Epoch: 7, training loss: 0.006285206, validation loss: 0.006632889.
- 70%|███████   | 7/10 [04:44<02:01, 40.60s/it]Epoch: 8, training loss: 0.005744563, validation loss: 0.006209996.
- 80%|████████  | 8/10 [05:24<01:21, 40.53s/it]Epoch: 9, training loss: 0.005333804, validation loss: 0.005859945.
- 90%|█████████ | 9/10 [06:05<00:40, 40.58s/it]Epoch: 10, training loss: 0.005000237, validation loss: 0.005571878.
-100%|██████████| 10/10 [06:46<00:00, 40.60s/it]100%|██████████| 10/10 [06:46<00:00, 40.61s/it]
-[I 2024-08-05 03:42:59,396] Trial 10 finished with value: 0.005571878235787153 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 1100, 'n_units_l2': 1100, 'n_units_l3': 900, 'n_units_l4': 100}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.313057134, validation loss: 0.153901669.
-  0%|          | 0/10 [00:40<?, ?it/s]
-[I 2024-08-05 03:43:39,740] Trial 11 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.388826089, validation loss: 0.118900207.
- 10%|█         | 1/10 [00:37<05:40, 37.86s/it]Epoch: 2, training loss: 0.111059822, validation loss: 0.088968796.
- 10%|█         | 1/10 [01:15<11:21, 75.77s/it]
-[I 2024-08-05 03:44:55,571] Trial 12 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.162175384, validation loss: 0.069828038.
- 10%|█         | 1/10 [00:29<04:21, 29.02s/it]Epoch: 2, training loss: 0.043693208, validation loss: 0.028528741.
- 20%|██        | 2/10 [00:58<03:52, 29.10s/it]Epoch: 3, training loss: 0.023838184, validation loss: 0.020579392.
- 30%|███       | 3/10 [01:27<03:23, 29.12s/it]Epoch: 4, training loss: 0.016891026, validation loss: 0.015284336.
- 40%|████      | 4/10 [01:56<02:54, 29.07s/it]Epoch: 5, training loss: 0.013804676, validation loss: 0.013326764.
- 50%|█████     | 5/10 [02:25<02:25, 29.03s/it]Epoch: 6, training loss: 0.011896044, validation loss: 0.011989404.
- 60%|██████    | 6/10 [02:54<01:56, 29.03s/it]Epoch: 7, training loss: 0.010608531, validation loss: 0.010816238.
- 70%|███████   | 7/10 [03:23<01:27, 29.04s/it]Epoch: 8, training loss: 0.009632872, validation loss: 0.009988028.
- 80%|████████  | 8/10 [03:52<00:57, 28.99s/it]Epoch: 9, training loss: 0.008893397, validation loss: 0.009343455.
- 90%|█████████ | 9/10 [04:21<00:28, 28.93s/it]Epoch: 10, training loss: 0.008301851, validation loss: 0.008814870.
-100%|██████████| 10/10 [04:49<00:00, 28.89s/it]100%|██████████| 10/10 [04:49<00:00, 28.99s/it]
-[I 2024-08-05 03:49:45,474] Trial 13 finished with value: 0.00881487000733614 and parameters: {'n_layers': 4, 'n_units_l0': 900, 'n_units_l1': 500, 'n_units_l2': 100, 'n_units_l3': 100}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.940881477, validation loss: 1.030756736.
-  0%|          | 0/10 [00:38<?, ?it/s]
-[I 2024-08-05 03:50:24,124] Trial 14 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.174182871, validation loss: 0.096883708.
- 10%|█         | 1/10 [00:29<04:26, 29.57s/it]Epoch: 2, training loss: 0.052628063, validation loss: 0.030909144.
- 20%|██        | 2/10 [00:59<03:56, 29.62s/it]Epoch: 3, training loss: 0.028052568, validation loss: 0.025403030.
- 30%|███       | 3/10 [01:28<03:27, 29.61s/it]Epoch: 4, training loss: 0.019231692, validation loss: 0.017155452.
- 40%|████      | 4/10 [01:58<02:57, 29.53s/it]Epoch: 5, training loss: 0.015177052, validation loss: 0.015228580.
- 50%|█████     | 5/10 [02:27<02:27, 29.57s/it]Epoch: 6, training loss: 0.013301860, validation loss: 0.014057371.
- 60%|██████    | 6/10 [02:57<01:58, 29.63s/it]Epoch: 7, training loss: 0.011976782, validation loss: 0.012751134.
- 70%|███████   | 7/10 [03:27<01:28, 29.55s/it]Epoch: 8, training loss: 0.011003617, validation loss: 0.011943099.
- 80%|████████  | 8/10 [03:56<00:59, 29.64s/it]Epoch: 9, training loss: 0.010226977, validation loss: 0.011218016.
- 90%|█████████ | 9/10 [04:26<00:29, 29.62s/it]Epoch: 10, training loss: 0.009589402, validation loss: 0.010637146.
-100%|██████████| 10/10 [04:55<00:00, 29.53s/it]100%|██████████| 10/10 [04:55<00:00, 29.57s/it]
-[I 2024-08-05 03:55:19,920] Trial 15 finished with value: 0.0106371458619833 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 300, 'n_units_l2': 700, 'n_units_l3': 500, 'n_units_l4': 100}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.551689485, validation loss: 0.249323034.
-  0%|          | 0/10 [00:36<?, ?it/s]
-[I 2024-08-05 03:55:56,796] Trial 16 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.259499140, validation loss: 0.146597502.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-05 03:56:30,366] Trial 17 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.286534130, validation loss: 0.062666387.
- 10%|█         | 1/10 [00:32<04:53, 32.59s/it]Epoch: 2, training loss: 0.083913372, validation loss: 0.040956468.
- 20%|██        | 2/10 [01:04<04:19, 32.39s/it]Epoch: 3, training loss: 0.046080744, validation loss: 0.035530604.
- 30%|███       | 3/10 [01:36<03:45, 32.17s/it]Epoch: 4, training loss: 0.032149692, validation loss: 0.031370629.
- 40%|████      | 4/10 [02:09<03:13, 32.27s/it]Epoch: 5, training loss: 0.026925590, validation loss: 0.025323717.
- 50%|█████     | 5/10 [02:41<02:41, 32.40s/it]Epoch: 6, training loss: 0.023133291, validation loss: 0.023730304.
- 60%|██████    | 6/10 [03:14<02:09, 32.35s/it]Epoch: 7, training loss: 0.020801915, validation loss: 0.021990413.
- 70%|███████   | 7/10 [03:46<01:36, 32.33s/it]Epoch: 8, training loss: 0.019199270, validation loss: 0.020736616.
- 80%|████████  | 8/10 [04:18<01:04, 32.22s/it]Epoch: 9, training loss: 0.017898848, validation loss: 0.019788884.
- 90%|█████████ | 9/10 [04:50<00:32, 32.27s/it]Epoch: 10, training loss: 0.016839110, validation loss: 0.019002346.
-100%|██████████| 10/10 [05:23<00:00, 32.32s/it]100%|██████████| 10/10 [05:23<00:00, 32.31s/it]
-[I 2024-08-05 04:01:53,568] Trial 18 finished with value: 0.019002345949411394 and parameters: {'n_layers': 4, 'n_units_l0': 1100, 'n_units_l1': 700, 'n_units_l2': 500, 'n_units_l3': 500}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.396910688, validation loss: 0.230589822.
-  0%|          | 0/10 [00:38<?, ?it/s]
-[I 2024-08-05 04:02:31,926] Trial 19 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.346145721, validation loss: 0.131351340.
-  0%|          | 0/10 [00:28<?, ?it/s]
-[I 2024-08-05 04:03:00,932] Trial 20 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.127489312, validation loss: 0.059031017.
- 10%|█         | 1/10 [00:28<04:18, 28.72s/it]Epoch: 2, training loss: 0.039286469, validation loss: 0.025872702.
- 20%|██        | 2/10 [00:57<03:50, 28.85s/it]Epoch: 3, training loss: 0.022058929, validation loss: 0.019676632.
- 30%|███       | 3/10 [01:26<03:22, 28.91s/it]Epoch: 4, training loss: 0.015092175, validation loss: 0.013932932.
- 40%|████      | 4/10 [01:55<02:53, 28.84s/it]Epoch: 5, training loss: 0.011033821, validation loss: 0.010782821.
- 50%|█████     | 5/10 [02:24<02:24, 28.85s/it]Epoch: 6, training loss: 0.008792867, validation loss: 0.008771070.
- 60%|██████    | 6/10 [02:53<01:55, 28.84s/it]Epoch: 7, training loss: 0.007398342, validation loss: 0.007554972.
- 70%|███████   | 7/10 [03:21<01:26, 28.76s/it]Epoch: 8, training loss: 0.006493886, validation loss: 0.006718859.
- 80%|████████  | 8/10 [03:50<00:57, 28.81s/it]Epoch: 9, training loss: 0.005861584, validation loss: 0.006078927.
- 90%|█████████ | 9/10 [04:19<00:28, 28.83s/it]Epoch: 10, training loss: 0.005384772, validation loss: 0.005595319.
-100%|██████████| 10/10 [04:48<00:00, 28.77s/it]100%|██████████| 10/10 [04:48<00:00, 28.81s/it]
-[I 2024-08-05 04:07:49,066] Trial 21 finished with value: 0.005595319252461195 and parameters: {'n_layers': 4, 'n_units_l0': 900, 'n_units_l1': 500, 'n_units_l2': 100, 'n_units_l3': 100}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.147999074, validation loss: 0.079003598.
- 10%|█         | 1/10 [00:28<04:19, 28.86s/it]Epoch: 2, training loss: 0.045607662, validation loss: 0.035064589.
- 20%|██        | 2/10 [00:57<03:50, 28.83s/it]Epoch: 3, training loss: 0.026855579, validation loss: 0.021387734.
- 30%|███       | 3/10 [01:26<03:20, 28.69s/it]Epoch: 4, training loss: 0.018382507, validation loss: 0.015916215.
- 40%|████      | 4/10 [01:55<02:52, 28.75s/it]Epoch: 5, training loss: 0.014480561, validation loss: 0.013461163.
- 50%|█████     | 5/10 [02:23<02:24, 28.82s/it]Epoch: 6, training loss: 0.012231523, validation loss: 0.011622455.
- 60%|██████    | 6/10 [02:52<01:55, 28.78s/it]Epoch: 7, training loss: 0.010790144, validation loss: 0.010488139.
- 70%|███████   | 7/10 [03:21<01:26, 28.83s/it]Epoch: 8, training loss: 0.009739774, validation loss: 0.009670002.
- 80%|████████  | 8/10 [03:50<00:57, 28.84s/it]Epoch: 9, training loss: 0.008972242, validation loss: 0.009042271.
- 90%|█████████ | 9/10 [04:19<00:28, 28.76s/it]Epoch: 10, training loss: 0.008362174, validation loss: 0.008531625.
-100%|██████████| 10/10 [04:47<00:00, 28.78s/it]100%|██████████| 10/10 [04:47<00:00, 28.79s/it]
-[I 2024-08-05 04:12:37,004] Trial 22 finished with value: 0.00853162482380867 and parameters: {'n_layers': 4, 'n_units_l0': 900, 'n_units_l1': 300, 'n_units_l2': 300, 'n_units_l3': 100}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.239923405, validation loss: 0.106710204.
-  0%|          | 0/10 [00:29<?, ?it/s]
-[I 2024-08-05 04:13:06,601] Trial 23 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.342735492, validation loss: 0.181908089.
-  0%|          | 0/10 [00:36<?, ?it/s]
-[I 2024-08-05 04:13:43,410] Trial 24 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.197806501, validation loss: 0.063221648.
- 10%|█         | 1/10 [00:30<04:38, 30.95s/it]Epoch: 2, training loss: 0.053505625, validation loss: 0.039458657.
- 20%|██        | 2/10 [01:01<04:07, 30.89s/it]Epoch: 3, training loss: 0.031064315, validation loss: 0.025506743.
- 30%|███       | 3/10 [01:32<03:35, 30.78s/it]Epoch: 4, training loss: 0.022150622, validation loss: 0.019972739.
- 40%|████      | 4/10 [02:03<03:05, 30.86s/it]Epoch: 5, training loss: 0.017275497, validation loss: 0.016934995.
- 50%|█████     | 5/10 [02:34<02:34, 30.90s/it]Epoch: 6, training loss: 0.014500561, validation loss: 0.014328289.
- 60%|██████    | 6/10 [03:05<02:03, 30.80s/it]Epoch: 7, training loss: 0.012498765, validation loss: 0.012523422.
- 70%|███████   | 7/10 [03:35<01:32, 30.82s/it]Epoch: 8, training loss: 0.010980507, validation loss: 0.011195397.
- 80%|████████  | 8/10 [04:06<01:01, 30.84s/it]Epoch: 9, training loss: 0.009782629, validation loss: 0.010105075.
- 90%|█████████ | 9/10 [04:37<00:30, 30.82s/it]Epoch: 10, training loss: 0.008806302, validation loss: 0.009196918.
-100%|██████████| 10/10 [05:08<00:00, 30.88s/it]100%|██████████| 10/10 [05:08<00:00, 30.85s/it]
-[I 2024-08-05 04:18:52,001] Trial 25 finished with value: 0.009196917526423931 and parameters: {'n_layers': 4, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 700, 'n_units_l3': 900}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.218991648, validation loss: 0.130448177.
-  0%|          | 0/10 [00:32<?, ?it/s]
-[I 2024-08-05 04:19:24,348] Trial 26 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.193872990, validation loss: 0.091371627.
- 10%|█         | 1/10 [00:29<04:27, 29.72s/it]Epoch: 2, training loss: 0.060228541, validation loss: 0.054341335.
- 10%|█         | 1/10 [00:59<08:54, 59.41s/it]
-[I 2024-08-05 04:20:23,813] Trial 27 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.324973287, validation loss: 0.091437215.
- 10%|█         | 1/10 [00:31<04:41, 31.24s/it]Epoch: 2, training loss: 0.115980919, validation loss: 0.060934231.
- 10%|█         | 1/10 [01:02<09:25, 62.82s/it]
-[I 2024-08-05 04:21:26,693] Trial 28 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.255944267, validation loss: 0.193854114.
-  0%|          | 0/10 [00:27<?, ?it/s]
-[I 2024-08-05 04:21:53,956] Trial 29 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.359912400, validation loss: 0.178410184.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 04:22:28,801] Trial 30 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.322921222, validation loss: 0.140787551.
-  0%|          | 0/10 [00:28<?, ?it/s]
-[I 2024-08-05 04:22:57,626] Trial 31 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.314828968, validation loss: 0.106073205.
-  0%|          | 0/10 [00:28<?, ?it/s]
-[I 2024-08-05 04:23:26,207] Trial 32 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.108556372, validation loss: 0.053218395.
- 10%|█         | 1/10 [00:26<03:59, 26.62s/it]Epoch: 2, training loss: 0.037604111, validation loss: 0.025056995.
- 20%|██        | 2/10 [00:52<03:30, 26.36s/it]Epoch: 3, training loss: 0.022118093, validation loss: 0.018491264.
- 30%|███       | 3/10 [01:19<03:05, 26.44s/it]Epoch: 4, training loss: 0.015731366, validation loss: 0.013079995.
- 40%|████      | 4/10 [01:45<02:38, 26.38s/it]Epoch: 5, training loss: 0.011767368, validation loss: 0.010530727.
- 50%|█████     | 5/10 [02:11<02:11, 26.35s/it]Epoch: 6, training loss: 0.009598633, validation loss: 0.008942109.
- 60%|██████    | 6/10 [02:38<01:45, 26.35s/it]Epoch: 7, training loss: 0.008171491, validation loss: 0.007832912.
- 70%|███████   | 7/10 [03:04<01:19, 26.34s/it]Epoch: 8, training loss: 0.007163611, validation loss: 0.007084268.
- 80%|████████  | 8/10 [03:30<00:52, 26.34s/it]Epoch: 9, training loss: 0.006424626, validation loss: 0.006447753.
- 90%|█████████ | 9/10 [03:57<00:26, 26.34s/it]Epoch: 10, training loss: 0.005836971, validation loss: 0.005952626.
-100%|██████████| 10/10 [04:23<00:00, 26.33s/it]100%|██████████| 10/10 [04:23<00:00, 26.36s/it]
-[I 2024-08-05 04:27:49,846] Trial 33 finished with value: 0.0059526262804865835 and parameters: {'n_layers': 4, 'n_units_l0': 700, 'n_units_l1': 100, 'n_units_l2': 300, 'n_units_l3': 100}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.117031529, validation loss: 0.054436102.
- 10%|█         | 1/10 [00:27<04:10, 27.82s/it]Epoch: 2, training loss: 0.038428540, validation loss: 0.026314700.
- 20%|██        | 2/10 [00:55<03:43, 27.97s/it]Epoch: 3, training loss: 0.022594113, validation loss: 0.017894978.
- 30%|███       | 3/10 [01:23<03:15, 27.96s/it]Epoch: 4, training loss: 0.015670241, validation loss: 0.014030795.
- 40%|████      | 4/10 [01:51<02:47, 27.96s/it]Epoch: 5, training loss: 0.012636039, validation loss: 0.011802304.
- 50%|█████     | 5/10 [02:19<02:19, 27.90s/it]Epoch: 6, training loss: 0.010641906, validation loss: 0.010213111.
- 60%|██████    | 6/10 [02:47<01:51, 27.98s/it]Epoch: 7, training loss: 0.009314708, validation loss: 0.009049728.
- 70%|███████   | 7/10 [03:15<01:24, 28.01s/it]Epoch: 8, training loss: 0.008280491, validation loss: 0.008167521.
- 80%|████████  | 8/10 [03:43<00:55, 27.94s/it]Epoch: 9, training loss: 0.007482307, validation loss: 0.007458287.
- 90%|█████████ | 9/10 [04:11<00:27, 27.98s/it]Epoch: 10, training loss: 0.006852329, validation loss: 0.006903637.
-100%|██████████| 10/10 [04:39<00:00, 27.99s/it]100%|██████████| 10/10 [04:39<00:00, 27.97s/it]
-[I 2024-08-05 04:32:29,596] Trial 34 finished with value: 0.006903636641800404 and parameters: {'n_layers': 5, 'n_units_l0': 700, 'n_units_l1': 100, 'n_units_l2': 100, 'n_units_l3': 300, 'n_units_l4': 700}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.163667388, validation loss: 0.093203063.
-  0%|          | 0/10 [00:26<?, ?it/s]
-[I 2024-08-05 04:32:56,049] Trial 35 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.213946101, validation loss: 0.112214078.
-  0%|          | 0/10 [00:25<?, ?it/s]
-[I 2024-08-05 04:33:21,883] Trial 36 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.128135380, validation loss: 0.057274980.
- 10%|█         | 1/10 [00:27<04:10, 27.83s/it]Epoch: 2, training loss: 0.037208306, validation loss: 0.031565896.
- 20%|██        | 2/10 [00:55<03:42, 27.83s/it]Epoch: 3, training loss: 0.024731453, validation loss: 0.021040189.
- 30%|███       | 3/10 [01:23<03:14, 27.74s/it]Epoch: 4, training loss: 0.017534386, validation loss: 0.016170720.
- 40%|████      | 4/10 [01:50<02:45, 27.61s/it]Epoch: 5, training loss: 0.014317264, validation loss: 0.014023959.
- 50%|█████     | 5/10 [02:18<02:17, 27.57s/it]Epoch: 6, training loss: 0.012322762, validation loss: 0.012492425.
- 60%|██████    | 6/10 [02:45<01:50, 27.55s/it]Epoch: 7, training loss: 0.010875719, validation loss: 0.011200323.
- 70%|███████   | 7/10 [03:13<01:22, 27.58s/it]Epoch: 8, training loss: 0.009732200, validation loss: 0.010101004.
- 80%|████████  | 8/10 [03:41<00:55, 27.60s/it]Epoch: 9, training loss: 0.008792101, validation loss: 0.009182358.
- 90%|█████████ | 9/10 [04:08<00:27, 27.60s/it]Epoch: 10, training loss: 0.008023033, validation loss: 0.008430001.
-100%|██████████| 10/10 [04:36<00:00, 27.60s/it]100%|██████████| 10/10 [04:36<00:00, 27.62s/it]
-[I 2024-08-05 04:37:58,161] Trial 37 finished with value: 0.008430000953376293 and parameters: {'n_layers': 5, 'n_units_l0': 500, 'n_units_l1': 100, 'n_units_l2': 700, 'n_units_l3': 300, 'n_units_l4': 300}. Best is trial 7 with value: 0.003827138477936387.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.286778155, validation loss: 0.163634732.
-  0%|          | 0/10 [00:26<?, ?it/s]
-[I 2024-08-05 04:38:24,359] Trial 38 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.193838661, validation loss: 0.075771011.
- 10%|█         | 1/10 [00:33<05:03, 33.76s/it]Epoch: 2, training loss: 0.031591091, validation loss: 0.013144747.
- 20%|██        | 2/10 [01:07<04:31, 33.93s/it]Epoch: 3, training loss: 0.009597315, validation loss: 0.005566112.
- 30%|███       | 3/10 [01:41<03:58, 34.04s/it]Epoch: 4, training loss: 0.004790893, validation loss: 0.003596787.
- 40%|████      | 4/10 [02:15<03:24, 34.02s/it]Epoch: 5, training loss: 0.003124147, validation loss: 0.002826461.
- 50%|█████     | 5/10 [02:50<02:50, 34.11s/it]Epoch: 6, training loss: 0.002449751, validation loss: 0.002319038.
- 60%|██████    | 6/10 [03:23<02:15, 33.97s/it]Epoch: 7, training loss: 0.002066329, validation loss: 0.001983777.
- 70%|███████   | 7/10 [03:58<01:42, 34.03s/it]Epoch: 8, training loss: 0.001802637, validation loss: 0.001772987.
- 80%|████████  | 8/10 [04:32<01:08, 34.09s/it]Epoch: 9, training loss: 0.001620393, validation loss: 0.001625201.
- 90%|█████████ | 9/10 [05:06<00:34, 34.12s/it]Epoch: 10, training loss: 0.001489163, validation loss: 0.001509560.
-100%|██████████| 10/10 [05:40<00:00, 34.20s/it]100%|██████████| 10/10 [05:40<00:00, 34.09s/it]
-[I 2024-08-05 04:44:05,294] Trial 39 finished with value: 0.001509560481645167 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 900, 'n_units_l3': 900, 'n_units_l4': 700}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.565369149, validation loss: 0.189530322.
-  0%|          | 0/10 [00:36<?, ?it/s]
-[I 2024-08-05 04:44:41,612] Trial 40 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.154392696, validation loss: 0.064859457.
- 10%|█         | 1/10 [00:35<05:19, 35.52s/it]Epoch: 2, training loss: 0.036845619, validation loss: 0.024424317.
- 20%|██        | 2/10 [01:11<04:44, 35.54s/it]Epoch: 3, training loss: 0.016256260, validation loss: 0.010705661.
- 30%|███       | 3/10 [01:46<04:08, 35.54s/it]Epoch: 4, training loss: 0.009470083, validation loss: 0.007715467.
- 40%|████      | 4/10 [02:22<03:33, 35.53s/it]Epoch: 5, training loss: 0.006553043, validation loss: 0.005738669.
- 50%|█████     | 5/10 [02:57<02:57, 35.48s/it]Epoch: 6, training loss: 0.004920246, validation loss: 0.004460924.
- 60%|██████    | 6/10 [03:32<02:21, 35.46s/it]Epoch: 7, training loss: 0.003895579, validation loss: 0.003637842.
- 70%|███████   | 7/10 [04:08<01:46, 35.47s/it]Epoch: 8, training loss: 0.003219946, validation loss: 0.003075981.
- 80%|████████  | 8/10 [04:43<01:10, 35.48s/it]Epoch: 9, training loss: 0.002731681, validation loss: 0.002649999.
- 90%|█████████ | 9/10 [05:19<00:35, 35.47s/it]Epoch: 10, training loss: 0.002377800, validation loss: 0.002355539.
-100%|██████████| 10/10 [05:54<00:00, 35.46s/it]100%|██████████| 10/10 [05:54<00:00, 35.48s/it]
-[I 2024-08-05 04:50:36,505] Trial 41 finished with value: 0.002355539472773671 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 900, 'n_units_l3': 900, 'n_units_l4': 900}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.276407430, validation loss: 0.131929350.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 04:51:11,109] Trial 42 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.254612030, validation loss: 0.108762555.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-05 04:51:44,371] Trial 43 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.414443952, validation loss: 0.099740441.
-  0%|          | 0/10 [00:37<?, ?it/s]
-[I 2024-08-05 04:52:22,181] Trial 44 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.514472684, validation loss: 0.225616089.
-  0%|          | 0/10 [00:40<?, ?it/s]
-[I 2024-08-05 04:53:02,799] Trial 45 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.298790458, validation loss: 0.171056679.
-  0%|          | 0/10 [00:28<?, ?it/s]
-[I 2024-08-05 04:53:31,357] Trial 46 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.199387283, validation loss: 0.058699887.
- 10%|█         | 1/10 [00:34<05:08, 34.31s/it]Epoch: 2, training loss: 0.031369201, validation loss: 0.019132027.
- 20%|██        | 2/10 [01:08<04:33, 34.23s/it]Epoch: 3, training loss: 0.015200575, validation loss: 0.012764569.
- 30%|███       | 3/10 [01:42<03:59, 34.21s/it]Epoch: 4, training loss: 0.008848424, validation loss: 0.007757353.
- 40%|████      | 4/10 [02:16<03:24, 34.15s/it]Epoch: 5, training loss: 0.006257843, validation loss: 0.005985206.
- 50%|█████     | 5/10 [02:50<02:50, 34.12s/it]Epoch: 6, training loss: 0.005079423, validation loss: 0.004789250.
- 60%|██████    | 6/10 [03:25<02:16, 34.15s/it]Epoch: 7, training loss: 0.004252069, validation loss: 0.004134242.
- 70%|███████   | 7/10 [03:59<01:42, 34.18s/it]Epoch: 8, training loss: 0.003681526, validation loss: 0.003649240.
- 80%|████████  | 8/10 [04:33<01:08, 34.20s/it]Epoch: 9, training loss: 0.003249094, validation loss: 0.003236059.
- 90%|█████████ | 9/10 [05:07<00:34, 34.19s/it]Epoch: 10, training loss: 0.002904120, validation loss: 0.002915830.
-100%|██████████| 10/10 [05:41<00:00, 34.19s/it]100%|██████████| 10/10 [05:41<00:00, 34.18s/it]
-[I 2024-08-05 04:59:13,281] Trial 47 finished with value: 0.002915829746052623 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 700, 'n_units_l4': 900}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.149564018, validation loss: 0.036959906.
- 10%|█         | 1/10 [00:34<05:09, 34.34s/it]Epoch: 2, training loss: 0.023650817, validation loss: 0.013681576.
- 20%|██        | 2/10 [01:08<04:34, 34.29s/it]Epoch: 3, training loss: 0.011732985, validation loss: 0.008543720.
- 30%|███       | 3/10 [01:42<03:58, 34.12s/it]Epoch: 4, training loss: 0.007567897, validation loss: 0.006149050.
- 40%|████      | 4/10 [02:16<03:25, 34.20s/it]Epoch: 5, training loss: 0.005493226, validation loss: 0.004902488.
- 50%|█████     | 5/10 [02:51<02:50, 34.19s/it]Epoch: 6, training loss: 0.004317495, validation loss: 0.004045049.
- 60%|██████    | 6/10 [03:25<02:16, 34.12s/it]Epoch: 7, training loss: 0.003531954, validation loss: 0.003375102.
- 70%|███████   | 7/10 [03:59<01:42, 34.16s/it]Epoch: 8, training loss: 0.002960929, validation loss: 0.002890208.
- 80%|████████  | 8/10 [04:33<01:08, 34.22s/it]Epoch: 9, training loss: 0.002542601, validation loss: 0.002517642.
- 90%|█████████ | 9/10 [05:07<00:34, 34.16s/it]Epoch: 10, training loss: 0.002225985, validation loss: 0.002227935.
-100%|██████████| 10/10 [05:41<00:00, 34.19s/it]100%|██████████| 10/10 [05:41<00:00, 34.19s/it]
-[I 2024-08-05 05:04:55,230] Trial 48 finished with value: 0.002227934543043375 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 700, 'n_units_l4': 900}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.213610578, validation loss: 0.036380350.
- 10%|█         | 1/10 [00:34<05:06, 34.07s/it]Epoch: 2, training loss: 0.036019817, validation loss: 0.027288138.
- 20%|██        | 2/10 [01:08<04:34, 34.28s/it]Epoch: 3, training loss: 0.019804799, validation loss: 0.015991953.
- 30%|███       | 3/10 [01:42<04:00, 34.30s/it]Epoch: 4, training loss: 0.012871248, validation loss: 0.010791919.
- 40%|████      | 4/10 [02:16<03:25, 34.17s/it]Epoch: 5, training loss: 0.009228698, validation loss: 0.008655755.
- 50%|█████     | 5/10 [02:51<02:50, 34.19s/it]Epoch: 6, training loss: 0.007153275, validation loss: 0.006887828.
- 60%|██████    | 6/10 [03:25<02:16, 34.20s/it]Epoch: 7, training loss: 0.005754428, validation loss: 0.005639351.
- 70%|███████   | 7/10 [03:59<01:42, 34.09s/it]Epoch: 8, training loss: 0.004751448, validation loss: 0.004727834.
- 80%|████████  | 8/10 [04:33<01:08, 34.12s/it]Epoch: 9, training loss: 0.004024224, validation loss: 0.004032212.
- 90%|█████████ | 9/10 [05:07<00:34, 34.13s/it]Epoch: 10, training loss: 0.003470227, validation loss: 0.003498973.
-100%|██████████| 10/10 [05:41<00:00, 34.09s/it]100%|██████████| 10/10 [05:41<00:00, 34.14s/it]
-[I 2024-08-05 05:10:36,747] Trial 49 finished with value: 0.0034989725332707166 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 700, 'n_units_l4': 900}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.285570955, validation loss: 0.086941183.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 05:11:11,170] Trial 50 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.316196204, validation loss: 0.089205182.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 05:11:45,570] Trial 51 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.174019666, validation loss: 0.049902846.
- 10%|█         | 1/10 [00:34<05:12, 34.68s/it]Epoch: 2, training loss: 0.030610067, validation loss: 0.019457230.
- 20%|██        | 2/10 [01:09<04:38, 34.76s/it]Epoch: 3, training loss: 0.015454716, validation loss: 0.013387613.
- 30%|███       | 3/10 [01:44<04:03, 34.80s/it]Epoch: 4, training loss: 0.009987104, validation loss: 0.008049156.
- 40%|████      | 4/10 [02:18<03:28, 34.69s/it]Epoch: 5, training loss: 0.006910447, validation loss: 0.006327322.
- 50%|█████     | 5/10 [02:53<02:53, 34.75s/it]Epoch: 6, training loss: 0.005272884, validation loss: 0.004979675.
- 60%|██████    | 6/10 [03:28<02:19, 34.77s/it]Epoch: 7, training loss: 0.004165150, validation loss: 0.004102006.
- 70%|███████   | 7/10 [04:03<01:44, 34.71s/it]Epoch: 8, training loss: 0.003454033, validation loss: 0.003478247.
- 80%|████████  | 8/10 [04:37<01:09, 34.76s/it]Epoch: 9, training loss: 0.002948892, validation loss: 0.003014706.
- 90%|█████████ | 9/10 [05:12<00:34, 34.78s/it]Epoch: 10, training loss: 0.002571938, validation loss: 0.002661152.
-100%|██████████| 10/10 [05:47<00:00, 34.73s/it]100%|██████████| 10/10 [05:47<00:00, 34.74s/it]
-[I 2024-08-05 05:17:33,061] Trial 52 finished with value: 0.0026611521374434234 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 700, 'n_units_l4': 1100}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.372776276, validation loss: 0.055633801.
- 10%|█         | 1/10 [00:34<05:13, 34.81s/it]Epoch: 2, training loss: 0.047969013, validation loss: 0.020790705.
- 20%|██        | 2/10 [01:09<04:37, 34.69s/it]Epoch: 3, training loss: 0.012954156, validation loss: 0.007901197.
- 30%|███       | 3/10 [01:43<04:02, 34.63s/it]Epoch: 4, training loss: 0.006390122, validation loss: 0.005153829.
- 40%|████      | 4/10 [02:18<03:27, 34.65s/it]Epoch: 5, training loss: 0.004431356, validation loss: 0.004143339.
- 50%|█████     | 5/10 [02:53<02:53, 34.66s/it]Epoch: 6, training loss: 0.003583588, validation loss: 0.003336466.
- 60%|██████    | 6/10 [03:27<02:18, 34.66s/it]Epoch: 7, training loss: 0.003040954, validation loss: 0.002896306.
- 70%|███████   | 7/10 [04:02<01:43, 34.65s/it]Epoch: 8, training loss: 0.002686322, validation loss: 0.002617498.
- 80%|████████  | 8/10 [04:37<01:09, 34.67s/it]Epoch: 9, training loss: 0.002436187, validation loss: 0.002382031.
- 90%|█████████ | 9/10 [05:11<00:34, 34.66s/it]Epoch: 10, training loss: 0.002237323, validation loss: 0.002200295.
-100%|██████████| 10/10 [05:46<00:00, 34.63s/it]100%|██████████| 10/10 [05:46<00:00, 34.65s/it]
-[I 2024-08-05 05:23:19,662] Trial 53 finished with value: 0.0022002953104674817 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 700, 'n_units_l4': 1100}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.298570623, validation loss: 0.084541531.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 05:23:54,391] Trial 54 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.163863898, validation loss: 0.063066796.
- 10%|█         | 1/10 [00:32<04:56, 32.90s/it]Epoch: 2, training loss: 0.028130640, validation loss: 0.014071066.
- 20%|██        | 2/10 [01:06<04:24, 33.05s/it]Epoch: 3, training loss: 0.012383867, validation loss: 0.008826268.
- 30%|███       | 3/10 [01:39<03:51, 33.06s/it]Epoch: 4, training loss: 0.007294921, validation loss: 0.005990816.
- 40%|████      | 4/10 [02:12<03:18, 33.01s/it]Epoch: 5, training loss: 0.005270461, validation loss: 0.004630080.
- 50%|█████     | 5/10 [02:45<02:45, 33.04s/it]Epoch: 6, training loss: 0.004154192, validation loss: 0.003867940.
- 60%|██████    | 6/10 [03:18<02:12, 33.06s/it]Epoch: 7, training loss: 0.003493701, validation loss: 0.003382315.
- 70%|███████   | 7/10 [03:51<01:38, 32.98s/it]Epoch: 8, training loss: 0.003033971, validation loss: 0.003021609.
- 80%|████████  | 8/10 [04:24<01:06, 33.04s/it]Epoch: 9, training loss: 0.002696115, validation loss: 0.002718156.
- 90%|█████████ | 9/10 [04:57<00:33, 33.05s/it]Epoch: 10, training loss: 0.002429659, validation loss: 0.002474309.
-100%|██████████| 10/10 [05:30<00:00, 32.97s/it]100%|██████████| 10/10 [05:30<00:00, 33.01s/it]
-[I 2024-08-05 05:29:24,547] Trial 55 finished with value: 0.0024743089452385902 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 500, 'n_units_l4': 1100}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.309671180, validation loss: 0.113102293.
-  0%|          | 0/10 [00:37<?, ?it/s]
-[I 2024-08-05 05:30:01,950] Trial 56 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.236270072, validation loss: 0.119069374.
-  0%|          | 0/10 [00:32<?, ?it/s]
-[I 2024-08-05 05:30:34,619] Trial 57 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.305223024, validation loss: 0.130005354.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-05 05:31:08,616] Trial 58 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.159114973, validation loss: 0.042804497.
- 10%|█         | 1/10 [00:32<04:52, 32.52s/it]Epoch: 2, training loss: 0.030610263, validation loss: 0.020620936.
- 20%|██        | 2/10 [01:04<04:17, 32.20s/it]Epoch: 3, training loss: 0.016543479, validation loss: 0.011526873.
- 30%|███       | 3/10 [01:36<03:45, 32.26s/it]Epoch: 4, training loss: 0.010615279, validation loss: 0.009196460.
- 40%|████      | 4/10 [02:08<03:13, 32.22s/it]Epoch: 5, training loss: 0.007942854, validation loss: 0.007066833.
- 50%|█████     | 5/10 [02:41<02:40, 32.15s/it]Epoch: 6, training loss: 0.006238146, validation loss: 0.005760004.
- 60%|██████    | 6/10 [03:13<02:08, 32.16s/it]Epoch: 7, training loss: 0.005135190, validation loss: 0.004904455.
- 70%|███████   | 7/10 [03:45<01:36, 32.15s/it]Epoch: 8, training loss: 0.004340115, validation loss: 0.004264055.
- 80%|████████  | 8/10 [04:17<01:04, 32.18s/it]Epoch: 9, training loss: 0.003728709, validation loss: 0.003727463.
- 90%|█████████ | 9/10 [04:49<00:32, 32.23s/it]Epoch: 10, training loss: 0.003246967, validation loss: 0.003323691.
-100%|██████████| 10/10 [05:22<00:00, 32.23s/it]100%|██████████| 10/10 [05:22<00:00, 32.21s/it]
-[I 2024-08-05 05:36:30,830] Trial 59 finished with value: 0.0033236910123378037 and parameters: {'n_layers': 5, 'n_units_l0': 900, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 500, 'n_units_l4': 1100}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.276906583, validation loss: 0.204247016.
-  0%|          | 0/10 [00:26<?, ?it/s]
-[I 2024-08-05 05:36:57,686] Trial 60 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.278635385, validation loss: 0.118933269.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-05 05:37:31,699] Trial 61 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.282770616, validation loss: 0.110923055.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-05 05:38:05,467] Trial 62 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.549197767, validation loss: 0.093113948.
-  0%|          | 0/10 [00:36<?, ?it/s]
-[I 2024-08-05 05:38:41,775] Trial 63 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.260872879, validation loss: 0.098444967.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 05:39:16,041] Trial 64 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.229083367, validation loss: 0.058208185.
- 10%|█         | 1/10 [00:34<05:12, 34.69s/it]Epoch: 2, training loss: 0.047682272, validation loss: 0.033604572.
- 10%|█         | 1/10 [01:09<10:22, 69.20s/it]
-[I 2024-08-05 05:40:25,314] Trial 65 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.197001583, validation loss: 0.076933156.
-  0%|          | 0/10 [00:35<?, ?it/s]
-[I 2024-08-05 05:41:00,920] Trial 66 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.194271613, validation loss: 0.049006130.
- 10%|█         | 1/10 [00:33<05:01, 33.53s/it]Epoch: 2, training loss: 0.033877236, validation loss: 0.027167911.
- 20%|██        | 2/10 [01:07<04:28, 33.53s/it]Epoch: 3, training loss: 0.017789294, validation loss: 0.012271229.
- 30%|███       | 3/10 [01:40<03:54, 33.55s/it]Epoch: 4, training loss: 0.010384805, validation loss: 0.008575402.
- 40%|████      | 4/10 [02:14<03:21, 33.57s/it]Epoch: 5, training loss: 0.007468652, validation loss: 0.006844052.
- 50%|█████     | 5/10 [02:47<02:48, 33.62s/it]Epoch: 6, training loss: 0.005956693, validation loss: 0.005788402.
- 60%|██████    | 6/10 [03:21<02:14, 33.62s/it]Epoch: 7, training loss: 0.004968196, validation loss: 0.004924300.
- 70%|███████   | 7/10 [03:54<01:40, 33.55s/it]Epoch: 8, training loss: 0.004265302, validation loss: 0.004302319.
- 80%|████████  | 8/10 [04:28<01:07, 33.56s/it]Epoch: 9, training loss: 0.003736013, validation loss: 0.003805730.
- 90%|█████████ | 9/10 [05:02<00:33, 33.58s/it]Epoch: 10, training loss: 0.003329192, validation loss: 0.003412219.
-100%|██████████| 10/10 [05:35<00:00, 33.59s/it]100%|██████████| 10/10 [05:35<00:00, 33.58s/it]
-[I 2024-08-05 05:46:36,799] Trial 67 finished with value: 0.003412219462916255 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 900, 'n_units_l3': 700, 'n_units_l4': 900}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.163542859, validation loss: 0.068121259.
-  0%|          | 0/10 [00:31<?, ?it/s]
-[I 2024-08-05 05:47:08,057] Trial 68 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.099489399, validation loss: 0.051205218.
- 10%|█         | 1/10 [00:30<04:36, 30.70s/it]Epoch: 2, training loss: 0.029613413, validation loss: 0.021724520.
- 20%|██        | 2/10 [01:01<04:04, 30.61s/it]Epoch: 3, training loss: 0.016844970, validation loss: 0.016061948.
- 30%|███       | 3/10 [01:31<03:34, 30.62s/it]Epoch: 4, training loss: 0.012525954, validation loss: 0.011664902.
- 40%|████      | 4/10 [02:02<03:03, 30.63s/it]Epoch: 5, training loss: 0.010166842, validation loss: 0.009515348.
- 50%|█████     | 5/10 [02:33<02:33, 30.62s/it]Epoch: 6, training loss: 0.008592262, validation loss: 0.008419964.
- 60%|██████    | 6/10 [03:03<02:02, 30.64s/it]Epoch: 7, training loss: 0.007539114, validation loss: 0.007590925.
- 70%|███████   | 7/10 [03:34<01:31, 30.63s/it]Epoch: 8, training loss: 0.006766029, validation loss: 0.006882200.
- 80%|████████  | 8/10 [04:05<01:01, 30.62s/it]Epoch: 9, training loss: 0.006155419, validation loss: 0.006301261.
- 90%|█████████ | 9/10 [04:35<00:30, 30.58s/it]Epoch: 10, training loss: 0.005652472, validation loss: 0.005813730.
-100%|██████████| 10/10 [05:06<00:00, 30.57s/it]100%|██████████| 10/10 [05:06<00:00, 30.60s/it]
-[I 2024-08-05 05:52:14,162] Trial 69 finished with value: 0.005813730042427778 and parameters: {'n_layers': 4, 'n_units_l0': 900, 'n_units_l1': 100, 'n_units_l2': 900, 'n_units_l3': 700}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.446703067, validation loss: 0.102351771.
-  0%|          | 0/10 [00:37<?, ?it/s]
-[I 2024-08-05 05:52:52,055] Trial 70 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.301974164, validation loss: 0.102294913.
-  0%|          | 0/10 [00:32<?, ?it/s]
-[I 2024-08-05 05:53:25,053] Trial 71 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.238059321, validation loss: 0.115163150.
-  0%|          | 0/10 [00:32<?, ?it/s]
-[I 2024-08-05 05:53:57,971] Trial 72 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.291147246, validation loss: 0.101626104.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 05:54:32,303] Trial 73 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.243339880, validation loss: 0.097345522.
-  0%|          | 0/10 [00:32<?, ?it/s]
-[I 2024-08-05 05:55:05,125] Trial 74 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.345215500, validation loss: 0.115108389.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 05:55:39,412] Trial 75 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.244001894, validation loss: 0.044215328.
- 10%|█         | 1/10 [00:33<05:01, 33.47s/it]Epoch: 2, training loss: 0.055415831, validation loss: 0.042814456.
- 10%|█         | 1/10 [01:06<10:02, 66.92s/it]
-[I 2024-08-05 05:56:46,403] Trial 76 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.274990786, validation loss: 0.036962228.
- 10%|█         | 1/10 [00:33<05:02, 33.58s/it]Epoch: 2, training loss: 0.035927578, validation loss: 0.016319236.
- 20%|██        | 2/10 [01:07<04:28, 33.53s/it]Epoch: 3, training loss: 0.010347196, validation loss: 0.007008402.
- 30%|███       | 3/10 [01:40<03:54, 33.48s/it]Epoch: 4, training loss: 0.005235684, validation loss: 0.004645534.
- 40%|████      | 4/10 [02:13<03:20, 33.47s/it]Epoch: 5, training loss: 0.003749018, validation loss: 0.003292533.
- 50%|█████     | 5/10 [02:47<02:47, 33.47s/it]Epoch: 6, training loss: 0.003004510, validation loss: 0.002817897.
- 60%|██████    | 6/10 [03:20<02:13, 33.44s/it]Epoch: 7, training loss: 0.002551822, validation loss: 0.002527818.
- 70%|███████   | 7/10 [03:54<01:40, 33.40s/it]Epoch: 8, training loss: 0.002288304, validation loss: 0.002277900.
- 80%|████████  | 8/10 [04:27<01:06, 33.42s/it]Epoch: 9, training loss: 0.002080938, validation loss: 0.002099533.
- 90%|█████████ | 9/10 [05:01<00:33, 33.42s/it]Epoch: 10, training loss: 0.001920154, validation loss: 0.001953080.
-100%|██████████| 10/10 [05:34<00:00, 33.41s/it]100%|██████████| 10/10 [05:34<00:00, 33.44s/it]
-[I 2024-08-05 06:02:20,866] Trial 77 finished with value: 0.001953080017119646 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 700, 'n_units_l3': 700, 'n_units_l4': 1100}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.175362905, validation loss: 0.051341348.
- 10%|█         | 1/10 [00:30<04:31, 30.15s/it]Epoch: 2, training loss: 0.041537046, validation loss: 0.026786036.
- 10%|█         | 1/10 [01:00<09:04, 60.53s/it]
-[I 2024-08-05 06:03:21,466] Trial 78 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.338882004, validation loss: 0.185844290.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 06:03:55,593] Trial 79 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.219899382, validation loss: 0.087290390.
-  0%|          | 0/10 [00:27<?, ?it/s]
-[I 2024-08-05 06:04:23,033] Trial 80 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.369331266, validation loss: 0.144076845.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 06:04:57,643] Trial 81 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.167061426, validation loss: 0.072025375.
-  0%|          | 0/10 [00:31<?, ?it/s]
-[I 2024-08-05 06:05:29,666] Trial 82 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.446215337, validation loss: 0.046262088.
- 10%|█         | 1/10 [00:36<05:24, 36.08s/it]Epoch: 2, training loss: 0.054183533, validation loss: 0.021847648.
- 20%|██        | 2/10 [01:12<04:49, 36.14s/it]Epoch: 3, training loss: 0.014145860, validation loss: 0.007212498.
- 30%|███       | 3/10 [01:48<04:12, 36.10s/it]Epoch: 4, training loss: 0.007084760, validation loss: 0.004834173.
- 40%|████      | 4/10 [02:24<03:36, 36.06s/it]Epoch: 5, training loss: 0.004406884, validation loss: 0.003632274.
- 50%|█████     | 5/10 [03:00<03:00, 36.03s/it]Epoch: 6, training loss: 0.003273892, validation loss: 0.002998505.
- 60%|██████    | 6/10 [03:36<02:24, 36.04s/it]Epoch: 7, training loss: 0.002781986, validation loss: 0.002650568.
- 70%|███████   | 7/10 [04:12<01:48, 36.03s/it]Epoch: 8, training loss: 0.002463673, validation loss: 0.002377006.
- 80%|████████  | 8/10 [04:48<01:12, 36.01s/it]Epoch: 9, training loss: 0.002230685, validation loss: 0.002201800.
- 90%|█████████ | 9/10 [05:24<00:35, 36.00s/it]Epoch: 10, training loss: 0.002062255, validation loss: 0.002071827.
-100%|██████████| 10/10 [06:00<00:00, 36.01s/it]100%|██████████| 10/10 [06:00<00:00, 36.04s/it]
-[I 2024-08-05 06:11:30,102] Trial 83 finished with value: 0.002071827184408903 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 900, 'n_units_l4': 1100}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.349865361, validation loss: 0.129783490.
-  0%|          | 0/10 [00:35<?, ?it/s]
-[I 2024-08-05 06:12:05,588] Trial 84 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.236978568, validation loss: 0.088675550.
-  0%|          | 0/10 [00:32<?, ?it/s]
-[I 2024-08-05 06:12:38,080] Trial 85 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.751139532, validation loss: 0.320992857.
-  0%|          | 0/10 [00:35<?, ?it/s]
-[I 2024-08-05 06:13:13,713] Trial 86 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.930396093, validation loss: 0.974508536.
-  0%|          | 0/10 [00:39<?, ?it/s]
-[I 2024-08-05 06:13:52,915] Trial 87 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.127649960, validation loss: 0.034824494.
- 10%|█         | 1/10 [00:27<04:11, 27.97s/it]Epoch: 2, training loss: 0.037084240, validation loss: 0.029382675.
- 10%|█         | 1/10 [00:55<08:23, 55.92s/it]
-[I 2024-08-05 06:14:48,896] Trial 88 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.203059766, validation loss: 0.026088065.
- 10%|█         | 1/10 [00:33<05:00, 33.42s/it]Epoch: 2, training loss: 0.029809792, validation loss: 0.020549307.
- 20%|██        | 2/10 [01:06<04:27, 33.46s/it]Epoch: 3, training loss: 0.012724386, validation loss: 0.008249560.
- 30%|███       | 3/10 [01:40<03:54, 33.53s/it]Epoch: 4, training loss: 0.006516867, validation loss: 0.005274307.
- 40%|████      | 4/10 [02:13<03:20, 33.47s/it]Epoch: 5, training loss: 0.004424934, validation loss: 0.004204715.
- 50%|█████     | 5/10 [02:46<02:46, 33.32s/it]Epoch: 6, training loss: 0.003479137, validation loss: 0.003266042.
- 60%|██████    | 6/10 [03:20<02:12, 33.24s/it]Epoch: 7, training loss: 0.002916910, validation loss: 0.002818848.
- 70%|███████   | 7/10 [03:53<01:40, 33.36s/it]Epoch: 8, training loss: 0.002528002, validation loss: 0.002487170.
- 80%|████████  | 8/10 [04:27<01:07, 33.53s/it]Epoch: 9, training loss: 0.002247832, validation loss: 0.002225446.
- 90%|█████████ | 9/10 [05:00<00:33, 33.41s/it]Epoch: 10, training loss: 0.002038065, validation loss: 0.002043409.
-100%|██████████| 10/10 [05:34<00:00, 33.40s/it]100%|██████████| 10/10 [05:34<00:00, 33.41s/it]
-[I 2024-08-05 06:20:23,047] Trial 89 finished with value: 0.0020434091333299876 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 700, 'n_units_l4': 900}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.192115099, validation loss: 0.052670836.
- 10%|█         | 1/10 [00:34<05:12, 34.70s/it]Epoch: 2, training loss: 0.034356826, validation loss: 0.024578400.
- 20%|██        | 2/10 [01:08<04:35, 34.42s/it]Epoch: 3, training loss: 0.018406443, validation loss: 0.015605051.
- 30%|███       | 3/10 [01:43<04:01, 34.52s/it]Epoch: 4, training loss: 0.012080575, validation loss: 0.011141582.
- 40%|████      | 4/10 [02:18<03:27, 34.59s/it]Epoch: 5, training loss: 0.008876177, validation loss: 0.008546231.
- 50%|█████     | 5/10 [02:52<02:53, 34.60s/it]Epoch: 6, training loss: 0.006933318, validation loss: 0.006871584.
- 60%|██████    | 6/10 [03:27<02:18, 34.65s/it]Epoch: 7, training loss: 0.005632075, validation loss: 0.005698276.
- 70%|███████   | 7/10 [04:02<01:44, 34.69s/it]Epoch: 8, training loss: 0.004710573, validation loss: 0.004819853.
- 80%|████████  | 8/10 [04:37<01:09, 34.68s/it]Epoch: 9, training loss: 0.004033280, validation loss: 0.004161436.
- 90%|█████████ | 9/10 [05:11<00:34, 34.68s/it]Epoch: 10, training loss: 0.003527495, validation loss: 0.003668447.
-100%|██████████| 10/10 [05:46<00:00, 34.67s/it]100%|██████████| 10/10 [05:46<00:00, 34.64s/it]
-[I 2024-08-05 06:26:09,522] Trial 90 finished with value: 0.0036684468388557432 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 900, 'n_units_l4': 700}. Best is trial 39 with value: 0.001509560481645167.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.325092278, validation loss: 0.148050886.
-  0%|          | 0/10 [00:33<?, ?it/s]
-[I 2024-08-05 06:26:43,481] Trial 91 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.239809830, validation loss: 0.039088563.
- 10%|█         | 1/10 [00:34<05:06, 34.02s/it]Epoch: 2, training loss: 0.039716017, validation loss: 0.027313472.
- 10%|█         | 1/10 [01:07<10:11, 67.89s/it]
-[I 2024-08-05 06:27:51,452] Trial 92 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.199079305, validation loss: 0.026700078.
- 10%|█         | 1/10 [00:34<05:09, 34.38s/it]Epoch: 2, training loss: 0.022681443, validation loss: 0.015207122.
- 20%|██        | 2/10 [01:08<04:34, 34.36s/it]Epoch: 3, training loss: 0.008247761, validation loss: 0.005967149.
- 30%|███       | 3/10 [01:42<04:00, 34.31s/it]Epoch: 4, training loss: 0.003850078, validation loss: 0.003345570.
- 40%|████      | 4/10 [02:17<03:25, 34.29s/it]Epoch: 5, training loss: 0.002612260, validation loss: 0.002264134.
- 50%|█████     | 5/10 [02:51<02:51, 34.32s/it]Epoch: 6, training loss: 0.002046256, validation loss: 0.001914788.
- 60%|██████    | 6/10 [03:25<02:17, 34.32s/it]Epoch: 7, training loss: 0.001729979, validation loss: 0.001733444.
- 70%|███████   | 7/10 [04:00<01:42, 34.30s/it]Epoch: 8, training loss: 0.001558588, validation loss: 0.001567674.
- 80%|████████  | 8/10 [04:34<01:08, 34.32s/it]Epoch: 9, training loss: 0.001437237, validation loss: 0.001461362.
- 90%|█████████ | 9/10 [05:08<00:34, 34.34s/it]Epoch: 10, training loss: 0.001343776, validation loss: 0.001380250.
-100%|██████████| 10/10 [05:43<00:00, 34.34s/it]100%|██████████| 10/10 [05:43<00:00, 34.33s/it]
-[I 2024-08-05 06:33:34,811] Trial 93 finished with value: 0.0013802500674501062 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 700, 'n_units_l4': 1100}. Best is trial 93 with value: 0.0013802500674501062.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.150379424, validation loss: 0.039636343.
- 10%|█         | 1/10 [00:34<05:08, 34.23s/it]Epoch: 2, training loss: 0.023675540, validation loss: 0.017762697.
- 20%|██        | 2/10 [01:08<04:35, 34.39s/it]Epoch: 3, training loss: 0.011373061, validation loss: 0.008323472.
- 30%|███       | 3/10 [01:43<04:00, 34.37s/it]Epoch: 4, training loss: 0.006191934, validation loss: 0.005222903.
- 40%|████      | 4/10 [02:17<03:26, 34.39s/it]Epoch: 5, training loss: 0.004411350, validation loss: 0.003846264.
- 50%|█████     | 5/10 [02:51<02:51, 34.38s/it]Epoch: 6, training loss: 0.003458151, validation loss: 0.003068157.
- 60%|██████    | 6/10 [03:26<02:17, 34.35s/it]Epoch: 7, training loss: 0.002892438, validation loss: 0.002630483.
- 70%|███████   | 7/10 [04:00<01:43, 34.35s/it]Epoch: 8, training loss: 0.002510185, validation loss: 0.002328031.
- 80%|████████  | 8/10 [04:34<01:08, 34.36s/it]Epoch: 9, training loss: 0.002237271, validation loss: 0.002094884.
- 90%|█████████ | 9/10 [05:09<00:34, 34.36s/it]Epoch: 10, training loss: 0.002032658, validation loss: 0.001912424.
-100%|██████████| 10/10 [05:43<00:00, 34.34s/it]100%|██████████| 10/10 [05:43<00:00, 34.35s/it]
-[I 2024-08-05 06:39:18,418] Trial 94 finished with value: 0.0019124237587675452 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 1100, 'n_units_l3': 700, 'n_units_l4': 1100}. Best is trial 93 with value: 0.0013802500674501062.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.271501203, validation loss: 0.117018846.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 06:39:52,792] Trial 95 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.343050011, validation loss: 0.101474541.
-  0%|          | 0/10 [00:34<?, ?it/s]
-[I 2024-08-05 06:40:27,020] Trial 96 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.216255727, validation loss: 0.035640362.
- 10%|█         | 1/10 [00:33<04:58, 33.20s/it]Epoch: 2, training loss: 0.048727892, validation loss: 0.025166196.
- 20%|██        | 2/10 [01:06<04:24, 33.09s/it]Epoch: 3, training loss: 0.023830512, validation loss: 0.021890540.
- 20%|██        | 2/10 [01:39<06:36, 49.51s/it]
-[I 2024-08-05 06:42:06,116] Trial 97 pruned. 
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.143119914, validation loss: 0.033006927.
- 10%|█         | 1/10 [00:35<05:19, 35.49s/it]Epoch: 2, training loss: 0.020249192, validation loss: 0.012094841.
- 20%|██        | 2/10 [01:10<04:43, 35.38s/it]Epoch: 3, training loss: 0.009395910, validation loss: 0.008091597.
- 30%|███       | 3/10 [01:46<04:07, 35.40s/it]Epoch: 4, training loss: 0.005781799, validation loss: 0.004752455.
- 40%|████      | 4/10 [02:21<03:32, 35.39s/it]Epoch: 5, training loss: 0.003972320, validation loss: 0.003688625.
- 50%|█████     | 5/10 [02:56<02:56, 35.35s/it]Epoch: 6, training loss: 0.003047473, validation loss: 0.002938749.
- 60%|██████    | 6/10 [03:32<02:21, 35.32s/it]Epoch: 7, training loss: 0.002461892, validation loss: 0.002411091.
- 70%|███████   | 7/10 [04:07<01:46, 35.35s/it]Epoch: 8, training loss: 0.002084195, validation loss: 0.002079727.
- 80%|████████  | 8/10 [04:42<01:10, 35.34s/it]Epoch: 9, training loss: 0.001823258, validation loss: 0.001833392.
- 90%|█████████ | 9/10 [05:18<00:35, 35.31s/it]Epoch: 10, training loss: 0.001634030, validation loss: 0.001651428.
-100%|██████████| 10/10 [05:53<00:00, 35.29s/it]100%|██████████| 10/10 [05:53<00:00, 35.34s/it]
-[I 2024-08-05 06:47:59,561] Trial 98 finished with value: 0.0016514277085661888 and parameters: {'n_layers': 5, 'n_units_l0': 1100, 'n_units_l1': 100, 'n_units_l2': 900, 'n_units_l3': 900, 'n_units_l4': 1100}. Best is trial 93 with value: 0.0013802500674501062.
-Task information:
-resnetbert flickr30k yes mse
-  0%|          | 0/10 [00:00<?, ?it/s]Epoch: 1, training loss: 0.245611270, validation loss: 0.165463501.
-  0%|          | 0/10 [00:27<?, ?it/s]
-[I 2024-08-05 06:48:26,944] Trial 99 pruned. 
-Study statistics: 
-  Number of finished trials:  100
-  Number of pruned trials:  64
-  Number of complete trials:  36
-Best trial:
-  Value:  0.0013802500674501062
-  Params: 
-    n_layers: 5
-    n_units_l0: 1100
-    n_units_l1: 100
-    n_units_l2: 1100
-    n_units_l3: 700
-    n_units_l4: 1100

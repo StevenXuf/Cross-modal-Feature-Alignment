@@ -21,7 +21,6 @@ from torch.distributed.elastic.multiprocessing.errors import record
 from torch.nn.parallel import DistributedDataParallel as DDP
 
 from load_data import LoadCOCO,LoadFlickr30K,LoadIMDB,LoadCelebA
-from sampler import DistributedEvalSampler
 sys.path.append('/home/users/u101139/alignment/MetaTransformer_changed/Data2Seq')
 from Data2Seq import Data2Seq
 

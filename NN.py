@@ -41,7 +41,10 @@ class MLP(nn.Module):
                 if isinstance(module,nn.Linear):
                     nn.init.kaiming_uniform_(module.weight)
 
-    def forward(self,x):
+    def forward(self,x,img_feat=None):
+        # Accept either concatenated features or the two inputs used by train_main.
+        if img_feat is not None:
+            x=torch.cat((x,img_feat),dim=1)
         for layer in self.layers:
             x=layer(x)
         return x

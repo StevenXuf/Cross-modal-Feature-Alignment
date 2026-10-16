@@ -1,0 +1,45 @@
+# Local launchers and cluster-specific bash scripts.
+/scripts/
+
+# Experiment logs and scheduler output.
+log*/
+logs*/
+*.log
+slurm-*.out
+nohup.ou
+nohup.out
+
+# Generated figures; retain the experiment pipeline used by the README.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+*.tif
+*.tiff
+*.pdf
+*.eps
+*.ps
+/figures/*
+!/figures/pipeline.png
+
+# Metric outputs and archived experiments (including historical spellings).
+bray_curtis/
+canberra/
+chi_squre/
+chi_square/
+cosine/
+manhattan/
+euclidean/
+discarded_files/
+clean_code/
+plot_centroid_info/
+
+# Python and notebook artifacts.
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
